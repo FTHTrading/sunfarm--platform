@@ -87,6 +87,30 @@ const STRUCTURES = [
     pct_equity: 0.20, pct_token: 0.15, pct_green_bond: 0.25,
     pri_applied: true, pri_type: 'dfc', blended_finance: true,
   },
+
+  // ── ACQUISITION SCENARIOS ($35M + $55M = $90M total basis) ──────
+  {
+    name: 'Full Asset Acquisition ($90M basis)',
+    pct_senior_debt: 0.60, pct_concessional_debt: 0, pct_mezzanine: 0,
+    pct_equity: 0.40, pct_token: 0, pct_green_bond: 0,
+    pri_applied: false, pri_type: 'none', blended_finance: false,
+    total_basis_override: 90_000_000,
+  },
+  {
+    name: 'Staged Acquisition ($90M, PRI-Enhanced)',
+    pct_senior_debt: 0.35, pct_concessional_debt: 0.20, pct_mezzanine: 0.10,
+    pct_equity: 0.20, pct_token: 0.15, pct_green_bond: 0,
+    pri_applied: true, pri_type: 'miga', blended_finance: true,
+    total_basis_override: 90_000_000,
+  },
+  {
+    name: 'Option + Flip ($70M basis, 20% equity sell-down Yr 5)',
+    pct_senior_debt: 0.60, pct_concessional_debt: 0, pct_mezzanine: 0,
+    pct_equity: 0.27, pct_token: 0.13, pct_green_bond: 0,
+    pri_applied: false, pri_type: 'none', blended_finance: false,
+    total_basis_override: 70_000_000,
+    equity_selldown_yr5_pct: 0.20,
+  },
 ];
 
 // ── WACC CALCULATOR ───────────────────────────────────────────
@@ -170,7 +194,7 @@ function analyzeStructure(structure) {
   const { wacc, components } = calculateWACC(structure);
   const riskScore = calculateRiskScore(structure);
 
-  const totalCapex = ASSUMPTIONS.capex_usd;
+  const totalCapex = structure.total_basis_override || ASSUMPTIONS.capex_usd;
   const equityAmount = totalCapex * structure.pct_equity;
   const totalDebt = totalCapex * (structure.pct_senior_debt + structure.pct_concessional_debt +
                                    structure.pct_mezzanine + structure.pct_green_bond);

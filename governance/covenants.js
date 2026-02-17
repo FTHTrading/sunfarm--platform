@@ -69,6 +69,44 @@ const COVENANTS = [
     cure_days: 60,
     remedy: 'BESS O&M escalation; vendor warranty claim; replacement evaluation.',
   },
+
+  // ── ACQUISITION COVENANTS ($35M Full-Asset Acquisition) ─────────
+  {
+    name: 'Acquisition Leverage Ratio',
+    metric: 'acquisition_leverage',
+    warning: 0.75,
+    default_threshold: 0.85,
+    direction: 'max',
+    cure_days: 60,
+    remedy: 'Total debt cannot exceed 85% of total basis ($90M). Equity injection required or acquisition price renegotiation.',
+  },
+  {
+    name: 'Purchase Price Ceiling Test',
+    metric: 'purchase_price_to_appraisal',
+    warning: 0.80,
+    default_threshold: 1.00,
+    direction: 'max',
+    cure_days: 30,
+    remedy: 'Purchase price must not exceed appraised value. Independent reappraisal required if breached.',
+  },
+  {
+    name: 'Total Basis DSCR Stress',
+    metric: 'total_basis_dscr',
+    warning: 1.50,
+    default_threshold: 1.20,
+    direction: 'min',
+    cure_days: 90,
+    remedy: 'If total basis exceeds $75M, DSCR must remain above 1.20x. Cash sweep activated; distributions suspended; acquisition price adjustment triggered.',
+  },
+  {
+    name: 'Earn-Out Compliance',
+    metric: 'earnout_compliance_score',
+    warning: 0.90,
+    default_threshold: 0.70,
+    direction: 'min',
+    cure_days: 45,
+    remedy: 'Earn-out milestone payments must be in compliance. Escrow holdback increased to 15% if compliance score drops below 70%.',
+  },
 ];
 
 // ── COVENANT STATUS ENUM ─────────────────────────────────────────

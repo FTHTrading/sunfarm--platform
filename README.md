@@ -34,6 +34,7 @@
 - [Implementation Timeline](#-implementation-timeline)
 - [Capital Strategy](#-capital-strategy)
 - [Governance & Enforcement](#-governance--enforcement)
+- [$35M Full-Asset Acquisition](#-35m-full-asset-acquisition)
 - [Repository Structure](#-repository-structure)
 - [Quick Start](#-quick-start)
 - [Regulatory Status](#-regulatory-status)
@@ -545,6 +546,86 @@ Deterministic audit bundle export: `export/audit_bundle.js`
 
 ---
 
+## $35M Full-Asset Acquisition
+
+### Transaction Summary
+
+The platform models the full acquisition of the SunFarm SPV — including titled land (440.68 ha), the 25-year definitive concession (CNE-CP-0012-2020), all permits, and development rights — for a total purchase price of **$35,000,000 USD**.
+
+| Parameter | Value |
+|---|---|
+| **Purchase Price** | $35,000,000 |
+| **Independent Appraisal** | $47,900,000 |
+| **Discount to Appraisal** | 26.9% |
+| **Structure** | Staged milestone payments |
+| **Total Basis (Acquisition + CAPEX)** | $90,000,000 |
+| **Escrow Holdback** | $3,500,000 (10%) |
+| **Governing Law** | Dominican Republic (ICC arbitration) |
+
+### Staged Payment Architecture
+
+```mermaid
+flowchart LR
+    subgraph Payments["$35M Staged Payments"]
+        S["Signing<br/>$5M"]
+        FC["Financial Close<br/>$10M"]
+        NTP["Notice to Proceed<br/>$10M"]
+        COD["Commercial Operation<br/>$10M"]
+    end
+
+    subgraph Escrow["Escrow"]
+        E["$3.5M Holdback<br/>10% of Total"]
+        R["Release: 12 months<br/>post-COD"]
+    end
+
+    S --> FC --> NTP --> COD
+    COD --> E --> R
+```
+
+### Capital Impact — $90M Total Basis
+
+The acquisition transforms the capital structure by adding $35M to the $55M CAPEX, creating a $90M total basis. The acquisition-impact model tests 27 combinations (3 scenarios × 3 D/E ratios × 3 revenue multipliers) to identify the break-even acquisition price.
+
+| Scenario | Total Basis | D/E | Levered IRR | Min DSCR | Verdict |
+|---|---|---|---|---|---|
+| Full Acquisition | $90M | 60/40 | ~18–22% | ~1.5x | Viable — above 18% floor |
+| Discounted Basis | $80M | 60/40 | ~22–26% | ~1.8x | Strong |
+| Baseline (no acquisition) | $55M | 60/40 | 43.3% | 3.90x | Reference |
+
+### Acquisition Covenants
+
+Four acquisition-specific covenants are enforced in `governance/covenants.js`:
+
+| Covenant | Metric | Warning | Default | Cure |
+|---|---|---|---|---|
+| Acquisition Leverage | Total debt / total basis | > 75% | > 85% | 60 days |
+| Purchase Price Ceiling | Price / appraisal | > 80% | > 100% | 30 days |
+| Total Basis DSCR Stress | DSCR at $90M basis | < 1.50x | < 1.20x | 90 days |
+| Earn-Out Compliance | Milestone score | < 90% | < 70% | 45 days |
+
+### Risk Mitigation
+
+- **27% discount to appraisal** — built-in equity cushion from day one
+- **Staged payments** — capital deployed only as milestones achieved
+- **Escrow holdback** — 10% retained for 12 months post-COD
+- **Earn-out adjustments** — upward max $1.5M, downward max $7M (20%)
+- **Rep survival** — 36 months general, 60 months title, perpetual fraud
+- **PRI coverage** — MIGA political risk insurance available for staged acquisition
+
+### Acquisition Documents
+
+| Document | Path |
+|---|---|
+| Asset Purchase Framework | `docs/legal/acquisition-35M/asset-purchase-framework.md` |
+| Share Purchase Agreement | `docs/legal/acquisition-35M/share-purchase-agreement.md` |
+| Promesa de Venta | `docs/legal/acquisition-35M/promesa-de-venta.md` |
+| Earn-Out Addendum | `docs/legal/acquisition-35M/earn-out-addendum.md` |
+| Closing Checklist | `docs/legal/acquisition-35M/closing-checklist.md` |
+
+Deterministic acquisition model: `models/acquisition-impact.js`
+
+---
+
 ## Repository Structure
 
 ```
@@ -559,7 +640,8 @@ sunfarm-platform/
 │   ├── token-waterfall.js            # O&M → Debt → Reserve → Preferred → Common
 │   ├── bess-revenue-engine.js        # 5-stream revenue stacking with scenario toggling
 │   ├── carbon-credit-engine.js       # 4 market scenarios + forward sale analysis
-│   └── land-monetization.js          # LandCo 4-stream model + land-only IRR
+│   ├── land-monetization.js          # LandCo 4-stream model + land-only IRR
+│   └── acquisition-impact.js         # $35M acquisition: 27-combo matrix, break-even, staging
 │
 ├── capital/
 │   ├── green-bond/                   # ICMA-aligned green bond + TVRD + SPO + term sheet
@@ -610,6 +692,7 @@ sunfarm-platform/
 │   ├── index.html                    # GitHub Pages investor portal
 │   ├── assets/                       # Portal styling
 │   ├── legal/                        # Entity formation, concession, contracts
+│   │   └── acquisition-35M/          # APF, SPA, promesa, earn-out, closing checklist
 │   ├── regulatory/                   # CNE, SIE, Ley 57-07, TVRD, BESS compliance memos
 │   ├── land/                         # Title, surveys, catastro
 │   ├── environmental/                # EIA, licenses, monitoring

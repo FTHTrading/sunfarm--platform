@@ -15,6 +15,15 @@ const { PROJECT, ASSUMPTIONS, TOKEN_DEFAULTS } = require('../config/project.js')
 const { evaluateAllCovenants, COVENANTS } = require('../governance/covenants.js');
 const { generateAuditTrail } = require('../governance/governance-adapter.js');
 
+// ── ACQUISITION MODEL (optional) ──────────────────────────────────
+
+let acquisitionModule = null;
+try {
+  acquisitionModule = require('../models/acquisition-impact.js');
+} catch {
+  // acquisition-impact.js not present — non-blocking
+}
+
 // ── BUNDLE CONFIGURATION ─────────────────────────────────────────
 
 const BUNDLE_VERSION = '2.0.0';
@@ -137,6 +146,99 @@ function collectCapitalInventory() {
   return inventory;
 }
 
+/**
+ * Collect acquisition structure data and hashes.
+ *
+ * @returns {Object} Acquisition analysis data with integrity hashes
+ */
+function collectAcquisitionData() {
+  if (!acquisitionModule) {
+    return { status: 'not_available', note: 'acquisition-impact.js not loaded' };
+  }
+
+  const data = {};
+
+  // Acquisition configuration
+  if (acquisitionModule.ACQUISITION) {
+    data.configuration = acquisitionModule.ACQUISITION;
+    data.configuration_hash = crypto
+      .createHash('sha256')
+      .update(JSON.stringify(acquisitionModule.ACQUISITION))
+      .digest('hex')
+      .slice(0, 16);
+  }
+
+  // Staged payment analysis
+  if (typeof acquisitionModule.stagedPaymentAnalysis === 'function') {
+    try {
+      data.staged_payments = acquisitionModule.stagedPaymentAnalysis(0.08);
+      data.staged_payment_hash = crypto
+        .createHash('sha256')
+        .update(JSON.stringify(data.staged_payments))
+        .digest('hex')
+        .slice(0, 16);
+    } catch {
+      data.staged_payments = { status: 'error' };
+    }
+  }
+
+  // Debt capacity analysis
+  if (typeof acquisitionModule.debtCapacityAnalysis === 'function') {
+    try {
+      data.debt_capacity = acquisitionModule.debtCapacityAnalysis();
+    } catch {
+      data.debt_capacity = { status: 'error' };
+    }
+  }
+
+  // Acquisition matrix summary (27 combinations)
+  if (typeof acquisitionModule.runAcquisitionMatrix === 'function') {
+    try {
+      const matrix = acquisitionModule.runAcquisitionMatrix();
+      data.matrix_summary = {
+        total_combinations: matrix.length,
+        viable_count: matrix.filter(r => r.irr_above_floor && r.dscr_above_floor).length,
+        scenarios: matrix.map(r => ({
+          scenario: r.scenario,
+          structure: r.structure,
+          revenue: r.revenue,
+          leveredIRR: r.leveredIRR,
+          minDSCR: r.minDSCR,
+          viable: r.irr_above_floor && r.dscr_above_floor,
+        })),
+      };
+      data.matrix_hash = crypto
+        .createHash('sha256')
+        .update(JSON.stringify(data.matrix_summary))
+        .digest('hex')
+        .slice(0, 16);
+    } catch {
+      data.matrix_summary = { status: 'error' };
+    }
+  }
+
+  // Legal document inventory
+  const legalDir = path.join(__dirname, '..', 'docs', 'legal', 'acquisition-35M');
+  try {
+    const files = fs.readdirSync(legalDir);
+    data.legal_documents = files.map((f) => {
+      const fp = path.join(legalDir, f);
+      const stat = fs.statSync(fp);
+      return {
+        file: f,
+        size_bytes: stat.size,
+        modified: stat.mtime.toISOString(),
+        hash: crypto.createHash('sha256').update(fs.readFileSync(fp)).digest('hex').slice(0, 16),
+      };
+    });
+  } catch {
+    data.legal_documents = [];
+  }
+
+  data.status = 'complete';
+  return data;
+}
+
 // ── BUNDLE GENERATION ─────────────────────────────────────────────
 
 /**
@@ -179,6 +281,9 @@ function generateBundle(options = {}) {
     governance: generateAuditTrail(),
     data_room: collectDataRoomInventory(),
     capital_docs: collectCapitalInventory(),
+
+    // ── ACQUISITION SECTION ──────────────────────────────────────
+    acquisition: collectAcquisitionData(),
   };
 
   // Generate content hash
