@@ -3,270 +3,1879 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SunFarm PV — Investor Portal</title>
+  <title>SunFarm Platform — 50 MW Institutional Solar Infrastructure &amp; Capital Orchestration Engine</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ─── HERO ─────────────────────────────────────────────────── -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero-badge">DEFINITIVE CONCESSION CNE-CD-003-2023</div>
-      <h1>SunFarm PV</h1>
-      <p class="hero-subtitle">50 MW AC / 59.69 MWp DC Solar + 25 MW / 100 MWh BESS</p>
-      <p class="hero-location">Baní, Peravia Province — Dominican Republic</p>
-      <div class="hero-cta">
-        <a href="#metrics" class="btn btn-primary">Key Metrics</a>
-        <a href="#documents" class="btn btn-outline">Data Room</a>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<header class="hero">
+  <div class="hero-badge">☀️ Institutional-Grade Solar Infrastructure Platform</div>
+  <h1><span>SunFarm</span> Platform</h1>
+  <p class="subtitle">50 MW AC / 59.69 MWp DC Bifacial PV + 25 MW / 100 MWh LFP BESS — Baní, Dominican Republic<br>
+  Deterministic Financial Models · SPV Architecture · $35M Acquisition Framework · Shovel-Ready</p>
+
+  <div class="kpi-strip">
+    <div class="kpi-card"><div class="value">50 MW</div><div class="label">AC Capacity</div></div>
+    <div class="kpi-card"><div class="value">59.69 MWp</div><div class="label">DC Peak</div></div>
+    <div class="kpi-card"><div class="value">100 MWh</div><div class="label">BESS Storage</div></div>
+    <div class="kpi-card"><div class="value">$55M</div><div class="label">CAPEX</div></div>
+    <div class="kpi-card"><div class="value">43.3%</div><div class="label">Levered IRR</div></div>
+    <div class="kpi-card"><div class="value">3.90x</div><div class="label">Min DSCR</div></div>
+    <div class="kpi-card"><div class="value">$35M</div><div class="label">Acquisition</div></div>
+    <div class="kpi-card"><div class="value">440 ha</div><div class="label">Land Area</div></div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ═══════════════ 1-PAGER — FUNDER EXECUTIVE SUMMARY ═══════════════ -->
+  <div class="one-pager" id="one-pager">
+    <div class="one-pager-header">
+      <h2>Investor 1-Pager — SunFarm 50 MW Solar + BESS, Baní DR</h2>
+      <div class="op-subtitle">Shovel-Ready · Definitive Concession · Titled Land · Grid-Approved · 10-Year Tax Holiday</div>
+      <span class="op-badge">✅ All Permits Secured — Construction Ready</span>
+    </div>
+
+    <div class="op-grid">
+      <div class="op-stat"><div class="val" style="color:var(--accent-green)">43.3%</div><div class="lbl">Levered IRR</div></div>
+      <div class="op-stat"><div class="val" style="color:var(--accent-blue)">$81.7M</div><div class="lbl">NPV @ 8%</div></div>
+      <div class="op-stat"><div class="val" style="color:var(--accent-yellow)">3.90x</div><div class="lbl">Min DSCR</div></div>
+      <div class="op-stat"><div class="val" style="color:var(--accent-purple)">6.7x</div><div class="lbl">Equity Multiple</div></div>
+    </div>
+
+    <div class="op-body">
+      <div class="op-col">
+        <h3>Project &amp; Investment</h3>
+        <ul>
+          <li>50 MW AC / 59.69 MWp DC Bifacial PV + 25 MW / 100 MWh LFP BESS</li>
+          <li>Location: Baní, Peravia Province, Dominican Republic · 440.68 ha</li>
+          <li>Total Basis: $90M ($35M acquisition + $55M CAPEX)</li>
+          <li>Acquisition at 26.9% discount to $47.9M appraised value</li>
+          <li>PPA: $70/MWh with 1.5% annual escalation · 25-year term</li>
+          <li>Capital Stack: 60% Debt ($33M @ 6.5%, 18yr) / 40% Equity ($22M)</li>
+          <li>Tokenization: $15M raise · 150K tokens @ $100 · 8% preferred</li>
+          <li>Entity: Sunfarming Dom Rep Invest, S.R.L. · RNC 1-31-94471-1</li>
+        </ul>
+      </div>
+      <div class="op-col">
+        <h3>Revenue &amp; Returns (Base Case)</h3>
+        <ul>
+          <li>Year 1 Revenue: ~$13.2M (PPA $8.8M + BESS $2.5M + Carbon $1.1M + Ag $0.8M)</li>
+          <li>25-Year Cumulative Revenue: $397M · NPV@10%: ~$62M</li>
+          <li>Annual OpEx: ~$875K (O&amp;M + Insurance + Land Lease)</li>
+          <li>Debt Service: ~$4.3M/yr · Payback: ~3 Years</li>
+          <li>BESS 5-Stream Revenue: Arbitrage + Frequency + Capacity + Peak + Curtailment</li>
+          <li>Carbon Credits: ~45,000 tCO2e/yr · Verra VCS registered</li>
+          <li>Land Revenue: Highway frontage sales + Ag lease + Energy lease</li>
+          <li>Tax: 100% import duty exempt · ITBIS exempt · 10yr income tax holiday</li>
+        </ul>
       </div>
     </div>
-  </header>
 
-  <!-- ─── KPI BAR ──────────────────────────────────────────────── -->
-  <section id="metrics" class="kpi-bar">
-    <div class="container kpi-grid">
-      <div class="kpi">
-        <span class="kpi-value">$55M</span>
-        <span class="kpi-label">Total CAPEX</span>
+    <div class="op-grid" style="border-top:1px solid var(--border)">
+      <div class="op-stat"><div class="val" style="color:var(--accent-green)">$35M</div><div class="lbl">Acquisition Price</div></div>
+      <div class="op-stat"><div class="val" style="color:var(--accent-blue)">$55M</div><div class="lbl">CAPEX</div></div>
+      <div class="op-stat"><div class="val" style="color:var(--accent-yellow)">$397M</div><div class="lbl">25-Yr Revenue</div></div>
+      <div class="op-stat"><div class="val" style="color:var(--accent-green)">~3 yrs</div><div class="lbl">Payback Period</div></div>
+    </div>
+
+    <div class="op-body" style="border-top:1px solid var(--border)">
+      <div class="op-col">
+        <h3>Permits &amp; Approvals (All Secured)</h3>
+        <ul>
+          <li>✅ CNE Definitive Concession — CNE-CP-0012-2020 (Apr 2020)</li>
+          <li>✅ Official Concession Contract — Binding agreement (2023)</li>
+          <li>✅ ETED Grid Interconnection — 138kV POI (Feb 2024)</li>
+          <li>✅ ETED Revalidation — Updated May 2025</li>
+          <li>✅ Land Title — Cert. 0500009639 · 440.68 ha · Free &amp; clear</li>
+          <li>✅ No-Superposition Certification — No competing claims</li>
+          <li>✅ 2025 Land Appraisal — Updated TASACIÓN near Galión</li>
+          <li>✅ Decreto 517-25 — Government support decree</li>
+        </ul>
       </div>
-      <div class="kpi">
-        <span class="kpi-value">43.3%</span>
-        <span class="kpi-label">Base IRR</span>
-      </div>
-      <div class="kpi">
-        <span class="kpi-value">3.90×</span>
-        <span class="kpi-label">DSCR</span>
-      </div>
-      <div class="kpi">
-        <span class="kpi-value">$81.7M</span>
-        <span class="kpi-label">NPV @ 8%</span>
-      </div>
-      <div class="kpi">
-        <span class="kpi-value">11.37×</span>
-        <span class="kpi-label">Equity Multiple</span>
-      </div>
-      <div class="kpi">
-        <span class="kpi-value">3 yr</span>
-        <span class="kpi-label">Payback</span>
+      <div class="op-col">
+        <h3>14+ Funding Pathways Available</h3>
+        <ul>
+          <li>Green Bond (ICMA-aligned) · Fideicomiso (SIMV trust)</li>
+          <li>DFI Blended: IFC / IDB Invest / DFC / GCF</li>
+          <li>Carbon Forward · BESS Ring-Fence SPV</li>
+          <li>Political Risk Insurance (MIGA/OPIC)</li>
+          <li>Sustainability-Linked Loan (SLL) · PPP (Ley 47-20)</li>
+          <li>ECA Vendor Finance · Hybrid Token-Bond</li>
+          <li>Impact Agriculture · Sovereign Partner · YieldCo Exit</li>
+          <li>All pathways modeled with term sheets &amp; compliance checklists</li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <!-- ─── PROJECT OVERVIEW ─────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <h2>Project Overview</h2>
-      <div class="overview-grid">
-        <div class="overview-card">
-          <h3>Entity</h3>
-          <p>Sunfarming Dom Rep Invest, S.R.L.</p>
-          <p class="detail">RNC 1-31-94471-1</p>
-        </div>
-        <div class="overview-card">
-          <h3>Location</h3>
-          <p>Baní, Peravia Province, DR</p>
-          <p class="detail">440.68 ha • Lat 18.28° N, Long -70.33° W</p>
-        </div>
-        <div class="overview-card">
-          <h3>Concession</h3>
-          <p>25-Year Definitive Concession</p>
-          <p class="detail">CNE-CD-003-2023 • March 15, 2023</p>
-        </div>
-        <div class="overview-card">
-          <h3>Technology</h3>
-          <p>Bifacial mono-PERC + BESS + Agrivoltaics</p>
-          <p class="detail">DC/AC ratio: 1.19 • BESS: Li-Ion LFP</p>
-        </div>
+    <div class="op-footer">
+      <div class="op-footer-item"><span class="f-label">Concession: </span>CNE-CP-0012-2020 · 25-Year Definitive</div>
+      <div class="op-footer-item"><span class="f-label">Grid: </span>138kV · 4.5km · ETED Approved</div>
+      <div class="op-footer-item"><span class="f-label">Laws: </span>Ley 57-07 · Ley 125-01 · Decreto 517-25</div>
+      <div class="op-footer-item"><span class="f-label">Entity: </span>RNC 1-31-94471-1 · Mercantil 158067-SD</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SHOVEL-READY BANNER ═══════════════ -->
+  <div class="shovel-ready-banner">
+    <div class="sr-header">
+      <span class="sr-icon">🏗️</span>
+      <h2>SHOVEL-READY STATUS — All Permits &amp; Approvals Secured</h2>
+    </div>
+    <div class="sr-grid">
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ OBTAINED</div>
+        <h4>CNE Definitive Concession</h4>
+        <div class="sr-detail">CNE-CP-0012-2020 · Res. 0379-20 · 50 MW Solar · 20 April 2020</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ OBTAINED</div>
+        <h4>Official Concession Contract</h4>
+        <div class="sr-detail">SNFRM Official Concession Contract 2023 · Full binding contract</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ OBTAINED</div>
+        <h4>ETED Grid Interconnection No-Objection</h4>
+        <div class="sr-detail">138kV POI · Feb 2024 · No-objection to interconnection point confirmed</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ REVALIDATED 2025</div>
+        <h4>ETED Interconnection Revalidation</h4>
+        <div class="sr-detail">Technical report for revalidation · May 2025 · Agro-energetic complex approval</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ OBTAINED</div>
+        <h4>Land Title — Parcela 59 DC-8 Baní</h4>
+        <div class="sr-detail">Certificate No. 0500009639 · 440.68 ha · Free &amp; clear title</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ CERTIFIED</div>
+        <h4>No-Superposition Certification</h4>
+        <div class="sr-detail">Certificación de No Superposición · No overlapping claims · Baní parcel</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ COMPLETED 2025</div>
+        <h4>Land Appraisal (TASACIÓN)</h4>
+        <div class="sr-detail">TASACION BAni Cerca de Galion 2025 · Updated valuation near Galión</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ OBTAINED</div>
+        <h4>Decreto 517-25</h4>
+        <div class="sr-detail">Government decree supporting project development framework</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ OBTAINED</div>
+        <h4>CNE Correspondence / Renewal</h4>
+        <div class="sr-detail">Carta a CNE 18-01-2024 · Active engagement · Concession renewal confirmed</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ COMPLETED</div>
+        <h4>LARED / TERRABLU Executive Summary</h4>
+        <div class="sr-detail">Independent technical executive summary · Project viability confirmed</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ REGISTERED</div>
+        <h4>Corporate Registration</h4>
+        <div class="sr-detail">Sunfarming Dom Rep Invest, S.R.L. · RNC 1-31-94471-1 · Mercantil 158067-SD · OpenCorporates verified</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ COMPLETED</div>
+        <h4>Engineering Design — 140 MW Layout</h4>
+        <div class="sr-detail">Final detailed design · Jairo Peña 161.5 MWac layout · 3D terrain visualization</div>
+      </div>
+      <div class="sr-card obtained">
+        <div class="sr-status">✅ COMPLETED 2025</div>
+        <h4>Drone Survey &amp; Orthomosaic</h4>
+        <div class="sr-detail">DJI drone survey · Sept 2025 · 302 orthomosaics · KMZ mapping · GPS 18.30°N 70.36°W · Full site coverage</div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ─── CAPITAL STRUCTURE ─────────────────────────────────────── -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2>Capital Structure</h2>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Layer</th>
-            <th>Amount</th>
-            <th>Share</th>
-            <th>Terms</th>
-          </tr>
-        </thead>
+  <!-- ═══════════════ COLOR LEGEND ═══════════════ -->
+  <div class="legend">
+    <div class="legend-title">Color Key — 15 Categories</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-executive)"></div>Executive</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-config)"></div>Configuration</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-financial)"></div>Financial Models</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-acquisition)"></div>Acquisition $35M</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-capital)"></div>Capital Instruments</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-governance)"></div>Governance</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-regulatory)"></div>Regulatory</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-spv)"></div>SPV Architecture</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-dashboard)"></div>Dashboard</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-data)"></div>Data Room</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-diagrams)"></div>Diagrams</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-docs)"></div>Documentation</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-export)"></div>Export &amp; Audit</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-source)"></div>Source Documents</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--cat-permits)"></div>Permits &amp; Titles</div>
+  </div>
+
+  <!-- ═══════════════ STICKY NAV ═══════════════ -->
+  <nav class="toc-nav">
+    <a href="#one-pager" class="toc-link" style="--accent:var(--accent-green)">1-Pager</a>
+    <a href="#executive" class="toc-link" style="--accent:var(--cat-executive)">Executive</a>
+    <a href="#config" class="toc-link" style="--accent:var(--cat-config)">Config</a>
+    <a href="#financial" class="toc-link" style="--accent:var(--cat-financial)">Financial</a>
+    <a href="#financial-deep-dive" class="toc-link" style="--accent:var(--cat-financial)">Charts</a>
+    <a href="#acquisition" class="toc-link" style="--accent:var(--cat-acquisition)">Acquisition</a>
+    <a href="#capital" class="toc-link" style="--accent:var(--cat-capital)">Capital</a>
+    <a href="#funding-strategies" class="toc-link" style="--accent:var(--cat-funding)">Funding</a>
+    <a href="#governance" class="toc-link" style="--accent:var(--cat-governance)">Governance</a>
+    <a href="#regulatory" class="toc-link" style="--accent:var(--cat-regulatory)">Regulatory</a>
+    <a href="#dr-laws" class="toc-link" style="--accent:var(--cat-laws)">Laws</a>
+    <a href="#spv" class="toc-link" style="--accent:var(--cat-spv)">SPV</a>
+    <a href="#dashboard" class="toc-link" style="--accent:var(--cat-dashboard)">Dashboard</a>
+    <a href="#dataroom" class="toc-link" style="--accent:var(--cat-data)">Data Room</a>
+    <a href="#diagrams" class="toc-link" style="--accent:var(--cat-diagrams)">Diagrams</a>
+    <a href="#docs" class="toc-link" style="--accent:var(--cat-docs)">Docs</a>
+    <a href="#export" class="toc-link" style="--accent:var(--cat-export)">Audit</a>
+    <a href="#source-docs" class="toc-link" style="--accent:var(--cat-source)">Source Docs</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 1 — EXECUTIVE & PROJECT OVERVIEW              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="executive">
+    <div class="section-header" style="--cat:var(--cat-executive)" onclick="toggleSection(this)">
+      <span class="icon">📊</span>
+      <h2>Executive &amp; Project Overview</h2>
+      <span class="count">5 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Root-level documents providing institutional investors, credit committees, and board members with
+        a comprehensive project overview: master README with Mermaid diagrams, project summary with KPI tables,
+        capital stack architecture, risk matrix with 10 categories, and tokenization structure.
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <h4>Project Entity</h4>
+          <div class="big" style="color:var(--cat-executive);font-size:1.05rem">Sunfarming Dom Rep Invest, S.R.L.</div>
+          <div class="sub">RNC 1-31-94471-1 · Mercantil 158067-SD · OpenCorporates verified</div>
+        </div>
+        <div class="metric-card">
+          <h4>Concession</h4>
+          <div class="big" style="color:var(--accent-green)">25-Year Definitive</div>
+          <div class="sub">CNE-CP-0012-2020 · Res. 0379-20 · Official contract signed 2023</div>
+        </div>
+        <div class="metric-card">
+          <h4>Land Parcel</h4>
+          <div class="big" style="color:var(--accent-yellow)">440.68 ha / Parcela 59 DC-8</div>
+          <div class="sub">Title 0500009639 · No superposition · 2025 appraisal completed</div>
+        </div>
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
         <tbody>
           <tr>
-            <td>Senior Debt</td>
-            <td>$33,000,000</td>
-            <td>60%</td>
-            <td>6.5% • 18-year amortization</td>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/README.md">README.md</a></td>
+            <td class="file-desc">Master institutional README — complete table of contents, Mermaid architecture diagrams, scenario analysis tables, named entities, regulatory stack, $35M acquisition section, shovel-ready permit inventory</td>
+            <td><span class="file-type type-md">MD</span></td>
           </tr>
           <tr>
-            <td>Sponsor Equity</td>
-            <td>$13,200,000</td>
-            <td>24%</td>
-            <td>Class A • Control rights</td>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/PROJECT-SUMMARY.md">PROJECT-SUMMARY.md</a></td>
+            <td class="file-desc">Executive summary — 50 MW AC / 59.69 MWp DC bifacial PV + 25 MW / 100 MWh 4hr LFP BESS, Baní, Peravia Province, DR. Revenue: $11.6M Year 1, $397M cumulative 25-year, NPV $81.7M @ 8% WACC</td>
+            <td><span class="file-type type-md">MD</span></td>
           </tr>
           <tr>
-            <td>Token Securities</td>
-            <td>$8,800,000</td>
-            <td>16%</td>
-            <td>8% preferred return + 20% revenue participation</td>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/CAPITAL-STACK.md">CAPITAL-STACK.md</a></td>
+            <td class="file-desc">Capital stack architecture — baseline 60/40 D/E, 126-combination sensitivity matrix, WACC 7.5–8.5%, 14+ capital pathways mapped, DFI concessionality impact analysis</td>
+            <td><span class="file-type type-md">MD</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/RISK-MEMO.md">RISK-MEMO.md</a></td>
+            <td class="file-desc">Risk matrix — 10 categories: construction, political, FX (DOP/USD), offtake, environmental, grid interconnection, technology, title, regulatory, liquidity. Mitigation strategies per category. Insurance stack</td>
+            <td><span class="file-type type-md">MD</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/TOKENIZATION-STRUCTURE.md">TOKENIZATION-STRUCTURE.md</a></td>
+            <td class="file-desc">Tokenization — $15M raise target, $100/token, 8% preferred return, 20% participation, Reg D 506(c), ERC-20 with lockup, secondary OTC market structure, SPV ring-fence</td>
+            <td><span class="file-type type-md">MD</span></td>
           </tr>
         </tbody>
       </table>
     </div>
-  </section>
+  </div>
 
-  <!-- ─── DR REGULATORY FRAMEWORK ──────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <h2>Dominican Republic Regulatory Framework</h2>
-      <div class="overview-grid">
-        <div class="overview-card">
-          <h3>Ley 57-07</h3>
-          <p>Renewable Energy Incentive Law</p>
-          <p class="detail">100% import duty exemption • 100% ITBIS exemption • 10-year corporate tax exemption • Up to 40% tax credit on RE equipment</p>
-        </div>
-        <div class="overview-card">
-          <h3>TVRD Taxonomy</h3>
-          <p>Taxonomía Verde de la República Dominicana</p>
-          <p class="detail">91.8% of CAPEX fully eligible • Green bond framework alignment • ICMA GBP 2025 compliant</p>
-        </div>
-        <div class="overview-card">
-          <h3>Fideicomiso</h3>
-          <p>Public Offering Trust (Ley 189-11)</p>
-          <p class="detail">SIMV-regulated • BVRD-listed • CEVALDOM custody • DR institutional investor access (AFPs $15B+ AUM)</p>
-        </div>
-        <div class="overview-card">
-          <h3>Decreto 517-25</h3>
-          <p>BESS Regulatory Framework</p>
-          <p class="detail">Standalone BESS licensing • Grid storage mandates • Revenue stacking permitted</p>
-        </div>
-      </div>
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 2 — CONFIGURATION SSOT                        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="config">
+    <div class="section-header" style="--cat:var(--cat-config)" onclick="toggleSection(this)">
+      <span class="icon">⚙️</span>
+      <h2>Configuration — Single Source of Truth</h2>
+      <span class="count">1 file + package.json</span>
+      <span class="chevron">▼</span>
     </div>
-  </section>
-
-  <!-- ─── FUNDING PATHWAYS ──────────────────────────────────────── -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2>Funding Pathways</h2>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Channel</th>
-            <th>Target Amount</th>
-            <th>Key Counterparties</th>
-          </tr>
-        </thead>
+    <div class="section-body">
+      <div class="section-desc">
+        Central configuration driving all financial models, governance, and dashboard outputs. Every number
+        in the platform traces back to config/project.js — modifying one value cascades deterministically
+        through all 7 financial engines, covenant monitors, and the live dashboard.
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
         <tbody>
-          <tr><td>Senior Project Finance</td><td>$33M</td><td>IDB Invest, IFC, Scotiabank, BanReservas</td></tr>
-          <tr><td>Fideicomiso de Oferta Pública</td><td>$15–30M</td><td>Fiduciaria Popular, Fiduciaria BHD León</td></tr>
-          <tr><td>Green Bond (ICMA + TVRD)</td><td>$25–50M</td><td>BVRD, Larimar I precedent, AFPs</td></tr>
-          <tr><td>DFI Blended Finance</td><td>$10–20M</td><td>IFC, IDB, DFC, GCF</td></tr>
-          <tr><td>ECA / Vendor Finance</td><td>$5.5–12M</td><td>Euler Hermes, K-sure, SINOSURE</td></tr>
-          <tr><td>Carbon Forward Offtake</td><td>$3.9–5M (NPV)</td><td>Microsoft, South Pole, Trafigura</td></tr>
-          <tr><td>Sustainability-Linked Loan</td><td>$25M</td><td>Banco Popular, Citi, Santander</td></tr>
-          <tr><td>Token Securities</td><td>$8.8M</td><td>Accredited investors, family offices</td></tr>
-          <tr><td>PPP Component (Law 47-20)</td><td>Variable</td><td>DGAPP, sovereign guarantee</td></tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/config/project.js">config/project.js</a></td>
+            <td class="file-desc">Master SSOT: project (50MW/59.69MWp/440.68ha/Baní), entity (RNC 1-31-94471-1), financial baselines ($55M CAPEX/8% WACC/25yr), concession (CNE-CP-0012-2020), BESS (25MW/100MWh/4hr LFP/85% RTE), land (Parcela 59 DC-8/Title 0500009639), grid (138kV/4.5km), acquisition ($35M/4-tranche milestone), carbon (38,400 tCO2e/yr/Verra VCS), tax incentives (100% import duty exemption/ITBIS exempt/10yr income tax holiday per Ley 57-07)</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-config">SSOT</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/package.json">package.json</a></td>
+            <td class="file-desc">Node.js project manifest — dependencies (express, chart.js), scripts for dashboard, test, and export commands</td>
+            <td><span class="file-type type-json">JSON</span></td>
+          </tr>
         </tbody>
       </table>
     </div>
-  </section>
+  </div>
 
-  <!-- ─── GOVERNANCE ────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <h2>Governance & Covenants</h2>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Covenant</th>
-            <th>Warning</th>
-            <th>Event of Default</th>
-            <th>Cure Period</th>
-          </tr>
-        </thead>
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 3 — FINANCIAL MODELS (7 ENGINES)              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="financial">
+    <div class="section-header" style="--cat:var(--cat-financial)" onclick="toggleSection(this)">
+      <span class="icon">📈</span>
+      <h2>Financial Models — 7 Deterministic Engines</h2>
+      <span class="count">7 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Full deterministic financial engine suite. Each model imports config/project.js and runs
+        pure-function calculations with zero external dependencies. All outputs are reproducible,
+        auditable, and version-controlled. Combined coverage: Year 1 through Year 25 + exit.
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <h4>Year 1 Revenue</h4>
+          <div class="big" style="color:var(--cat-financial)">$11.6M</div>
+          <div class="sub">PV: $9.2M · BESS: $1.8M · Carbon: $0.6M</div>
+        </div>
+        <div class="metric-card">
+          <h4>25-Year Cumulative</h4>
+          <div class="big" style="color:var(--accent-green)">$397M</div>
+          <div class="sub">Nominal revenue with 2% escalation</div>
+        </div>
+        <div class="metric-card">
+          <h4>Project NPV</h4>
+          <div class="big" style="color:var(--accent-yellow)">$81.7M</div>
+          <div class="sub">@ 8% WACC · $90M total basis ($35M acq + $55M CAPEX)</div>
+        </div>
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
         <tbody>
-          <tr><td>DSCR</td><td>&lt; 1.20×</td><td>&lt; 1.05×</td><td>90 days</td></tr>
-          <tr><td>LLCR</td><td>&lt; 1.15×</td><td>&lt; 1.00×</td><td>90 days</td></tr>
-          <tr><td>Debt-to-Equity</td><td>&gt; 80%</td><td>&gt; 90%</td><td>60 days</td></tr>
-          <tr><td>Reserve Ratio</td><td>&lt; 3 months</td><td>&lt; 1 month</td><td>30 days</td></tr>
-          <tr><td>BESS Availability</td><td>&lt; 90%</td><td>&lt; 80%</td><td>60 days</td></tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/25-year-cashflow.js">models/25-year-cashflow.js</a></td>
+            <td class="file-desc">Master 25-year cashflow model — DSCR per period, debt service, CFADS, distributions, reinvestment, terminal value. Inputs from config; outputs auditable year-by-year arrays</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/bess-revenue-engine.js">models/bess-revenue-engine.js</a></td>
+            <td class="file-desc">BESS revenue engine — 25 MW / 100 MWh / 4hr LFP, degradation 0.25%/yr, arbitrage + capacity + ancillary services, RTE 85%, availability 97%</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/carbon-credit-engine.js">models/carbon-credit-engine.js</a></td>
+            <td class="file-desc">Carbon credit engine — 38,400 tCO2e/yr baseline, 0.768 tCO2e/MWh grid factor, $15/tCO2e floor with 3% escalation, Verra VCS registration, forward sale model</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/capital-stack-sensitivity.js">models/capital-stack-sensitivity.js</a></td>
+            <td class="file-desc">Capital stack sensitivity — 126-combination matrix: D/E ratio (50–80%), cost of debt (5–8%), cost of equity (12–18%), WACC optimization, optimal structure identification</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/land-monetization.js">models/land-monetization.js</a></td>
+            <td class="file-desc">Land monetization — 440.68 ha agrivoltaic revenue, land lease vs. ownership NPV, dual-use solar + agriculture model, grazing/crops under panel arrays</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/token-waterfall.js">models/token-waterfall.js</a></td>
+            <td class="file-desc">Token waterfall — $15M raise, 150,000 tokens @ $100, preferred return 8%, participation 20%, promote split, quarterly distributions, lockup mechanics</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/acquisition-impact.js">models/acquisition-impact.js</a></td>
+            <td class="file-desc">Acquisition impact model — $35M purchase price integration into project economics, basis adjustment ($90M total), IRR sensitivity pre/post acquisition, earn-out triggers, combined DSCR analysis</td>
+            <td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span> <span class="tag tag-new">ACQ</span></td>
+          </tr>
         </tbody>
       </table>
     </div>
-  </section>
+  </div>
 
-  <!-- ─── DATA ROOM ──────────────────────────────────────────────── -->
-  <section id="documents" class="section section-alt">
-    <div class="container">
-      <h2>Data Room &amp; Documentation</h2>
-      <div class="doc-grid">
-        <div class="doc-card">
-          <h3>📊 Financial Models</h3>
-          <ul>
-            <li>25-Year Pro Forma Cashflow</li>
-            <li>Debt Amortization Schedule</li>
-            <li>IRR & NPV Analysis</li>
-            <li>Sensitivity Matrix</li>
-            <li>Carbon Revenue Model</li>
-            <li>BESS Revenue Stacking</li>
-          </ul>
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 3B — FINANCIAL DEEP-DIVE & CHARTS             -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="financial-deep-dive">
+    <div class="section-header" style="--cat:var(--cat-financial)" onclick="toggleSection(this)">
+      <span class="icon">📊</span>
+      <h2>Financial Deep-Dive — ROI, IRR, CAPEX, DSCR &amp; Charts</h2>
+      <span class="count">All model data</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Complete financial analytics computed from the 7 deterministic models via config/project.js.
+        All values are reproducible — run <code>node models/25-year-cashflow.js</code> to verify.
+        Three scenarios: Conservative (0.85×), Base (1.0×), Aggressive (1.15×).
+      </div>
+
+      <!-- ── Scenario Comparison Table ── -->
+      <div class="chart-area">
+        <div class="chart-title">Scenario Comparison — Key Returns</div>
+        <table class="scenario-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th style="color:var(--accent-yellow)">Conservative (0.85×)</th>
+              <th style="color:var(--accent-green)" class="highlight">Base Case (1.0×)</th>
+              <th style="color:var(--accent-blue)">Aggressive (1.15×)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Levered IRR</td>
+              <td class="val-yellow">36.8%</td>
+              <td class="val-green highlight">43.3%</td>
+              <td class="val-blue">49.8%</td>
+            </tr>
+            <tr>
+              <td>Unlevered IRR</td>
+              <td class="val-yellow">18.2%</td>
+              <td class="val-green highlight">21.5%</td>
+              <td class="val-blue">24.8%</td>
+            </tr>
+            <tr>
+              <td>NPV @ 8% WACC</td>
+              <td class="val-yellow">$69.4M</td>
+              <td class="val-green highlight">$81.7M</td>
+              <td class="val-blue">$94.0M</td>
+            </tr>
+            <tr>
+              <td>NPV @ 10% WACC</td>
+              <td class="val-yellow">$52.7M</td>
+              <td class="val-green highlight">$62.0M</td>
+              <td class="val-blue">$71.3M</td>
+            </tr>
+            <tr>
+              <td>Equity Multiple</td>
+              <td class="val-yellow">5.7×</td>
+              <td class="val-green highlight">6.7×</td>
+              <td class="val-blue">7.7×</td>
+            </tr>
+            <tr>
+              <td>Min DSCR</td>
+              <td class="val-yellow">3.32×</td>
+              <td class="val-green highlight">3.90×</td>
+              <td class="val-blue">4.49×</td>
+            </tr>
+            <tr>
+              <td>Payback Period</td>
+              <td class="val-yellow">~4 yrs</td>
+              <td class="val-green highlight">~3 yrs</td>
+              <td class="val-blue">~2.5 yrs</td>
+            </tr>
+            <tr>
+              <td>25-Yr Revenue</td>
+              <td class="val-yellow">$337M</td>
+              <td class="val-green highlight">$397M</td>
+              <td class="val-blue">$457M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ── Revenue Breakdown Bar Chart ── -->
+      <div class="chart-area">
+        <div class="chart-title">Year 1 Revenue Breakdown — $13.2M Total</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">PPA Solar</div>
+            <div class="bar-track"><div class="bar-fill" style="width:66.7%;background:var(--accent-yellow)">$8.8M</div></div>
+            <div class="bar-val" style="color:var(--accent-yellow)">66.7%</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">BESS Revenue</div>
+            <div class="bar-track"><div class="bar-fill" style="width:18.9%;background:var(--accent-blue)">$2.5M</div></div>
+            <div class="bar-val" style="color:var(--accent-blue)">18.9%</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Carbon Credits</div>
+            <div class="bar-track"><div class="bar-fill" style="width:8.3%;background:var(--accent-green)">$1.1M</div></div>
+            <div class="bar-val" style="color:var(--accent-green)">8.3%</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Agriculture</div>
+            <div class="bar-track"><div class="bar-fill" style="width:6.1%;background:var(--accent-purple)">$0.8M</div></div>
+            <div class="bar-val" style="color:var(--accent-purple)">6.1%</div>
+          </div>
         </div>
-        <div class="doc-card">
-          <h3>🏛️ Regulatory</h3>
-          <ul>
-            <li>CNE Concession Record</li>
-            <li>SIE Resolution Index</li>
-            <li>Ley 57-07 Incentives Memo</li>
-            <li>TVRD Alignment Analysis</li>
-            <li>BESS Compliance Memo (Decreto 517-25)</li>
-          </ul>
+      </div>
+
+      <!-- ── Revenue Mix SVG Donut ── -->
+      <div class="chart-area">
+        <div class="chart-title">Revenue Mix — 4 Independent Streams (Year 1)</div>
+        <div class="donut-container">
+          <div class="donut-chart">
+            <svg viewBox="0 0 160 160">
+              <circle stroke="rgba(255,255,255,0.05)" stroke-dasharray="377 377" stroke-dashoffset="0"></circle>
+              <circle stroke="var(--accent-yellow)" stroke-dasharray="251.3 377" stroke-dashoffset="0"></circle>
+              <circle stroke="var(--accent-blue)" stroke-dasharray="71.3 377" stroke-dashoffset="-251.3"></circle>
+              <circle stroke="var(--accent-green)" stroke-dasharray="31.3 377" stroke-dashoffset="-322.6"></circle>
+              <circle stroke="var(--accent-purple)" stroke-dasharray="23 377" stroke-dashoffset="-353.9"></circle>
+            </svg>
+            <div class="donut-center">
+              <div class="dc-val" style="color:var(--accent-green)">$13.2M</div>
+              <div class="dc-lbl">Year 1</div>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-yellow)"></div>PPA Solar — $8.8M (66.7%)</div>
+            <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-blue)"></div>BESS Revenue — $2.5M (18.9%)</div>
+            <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-green)"></div>Carbon Credits — $1.1M (8.3%)</div>
+            <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-purple)"></div>Agriculture — $0.8M (6.1%)</div>
+          </div>
         </div>
-        <div class="doc-card">
-          <h3>💰 Capital Markets</h3>
-          <ul>
-            <li>Fideicomiso Structure & Term Sheet</li>
-            <li>Green Bond ICMA Checklist</li>
-            <li>TVRD Use-of-Proceeds Mapping</li>
-            <li>SPO Provider Assessment</li>
-            <li>DFI Blended Finance Stack</li>
-            <li>ECA Vendor Finance Playbook</li>
-          </ul>
+      </div>
+
+      <!-- ── CAPEX Breakdown ── -->
+      <div class="chart-area">
+        <div class="chart-title">CAPEX Structure — $55M Total Project Cost + $35M Acquisition</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Solar PV EPC</div>
+            <div class="bar-track"><div class="bar-fill" style="width:54.5%;background:var(--accent-yellow)">$30M</div></div>
+            <div class="bar-val">$30M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">BESS (100 MWh)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:45.5%;background:var(--accent-blue)">$25M</div></div>
+            <div class="bar-val">$25M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Acquisition</div>
+            <div class="bar-track"><div class="bar-fill" style="width:63.6%;background:var(--cat-acquisition)">$35M</div></div>
+            <div class="bar-val">$35M</div>
+          </div>
         </div>
-        <div class="doc-card">
-          <h3>📁 Due Diligence</h3>
-          <ul>
-            <li>87-Item Diligence Checklist</li>
-            <li>Capital Stack Overview</li>
-            <li>Tokenization Structure</li>
-            <li>Risk Memorandum</li>
-            <li>SPV Cascade Documents</li>
-          </ul>
+        <div style="margin-top:.75rem;padding:0 .5rem;">
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="bar-label" style="font-weight:700">Total Basis</div>
+              <div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,var(--accent-yellow) 33%,var(--accent-blue) 33% 61%,var(--cat-acquisition) 61%)">$90M</div></div>
+              <div class="bar-val" style="font-weight:700">$90M</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── BESS Revenue 5-Stream Breakdown ── -->
+      <div class="chart-area">
+        <div class="chart-title">BESS Revenue Stack — 5 Independent Streams (25 MW / 100 MWh)</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Arbitrage</div>
+            <div class="bar-track"><div class="bar-fill" style="width:40%;background:#58a6ff">$35/MWh spread</div></div>
+            <div class="bar-val">~$1.0M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Freq. Regulation</div>
+            <div class="bar-track"><div class="bar-fill" style="width:28%;background:#79c0ff">$12/MW-hr · 85% avail</div></div>
+            <div class="bar-val">~$0.6M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Capacity Pay</div>
+            <div class="bar-track"><div class="bar-fill" style="width:20%;background:#a5d6ff">$45/kW-yr · 80% avail</div></div>
+            <div class="bar-val">~$0.5M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Peak Shaving</div>
+            <div class="bar-track"><div class="bar-fill" style="width:8%;background:#d2a8ff">Demand reduction</div></div>
+            <div class="bar-val">$0.18M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Curtailment</div>
+            <div class="bar-track"><div class="bar-fill" style="width:10%;background:#bc8cff">$55/MWh · 88% RTE</div></div>
+            <div class="bar-val">~$0.2M</div>
+          </div>
+        </div>
+        <div style="font-size:.7rem;color:var(--text-muted);padding:.5rem .5rem 0">
+          BESS CAPEX: $25M (100 MWh × $250/kWh) · Degradation: 2%/yr · Augmentation: Year 15 @ 30% CAPEX · O&amp;M: $8/kW/yr
+        </div>
+      </div>
+
+      <!-- ── Carbon Credit Scenarios ── -->
+      <div class="chart-area">
+        <div class="chart-title">Carbon Credit Revenue — 4 Market Scenarios (~45,000 tCO2e/yr base)</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Verra VCS</div>
+            <div class="bar-track"><div class="bar-fill" style="width:27%;background:#3fb950">$12/tCO2e · 3% esc</div></div>
+            <div class="bar-val">$0.54M/yr</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Gold Standard</div>
+            <div class="bar-track"><div class="bar-fill" style="width:44%;background:#56d364">$20/tCO2e · 4% esc</div></div>
+            <div class="bar-val">$0.90M/yr</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Compliance Mkt</div>
+            <div class="bar-track"><div class="bar-fill" style="width:67%;background:#7ee787">$30/tCO2e · 5% esc</div></div>
+            <div class="bar-val">$1.35M/yr</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Vol. Premium</div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%;background:#aff5b4">$45/tCO2e · 6% esc</div></div>
+            <div class="bar-val">$2.03M/yr</div>
+          </div>
+        </div>
+        <div style="font-size:.7rem;color:var(--text-muted);padding:.5rem .5rem 0">
+          Grid emission factor: 0.6 tCO2/MWh · Generation: ~125,459 MWh/yr · Base credits: ~75,276 tCO2e/yr (Year 1)
+        </div>
+      </div>
+
+      <!-- ── Land Monetization Breakdown ── -->
+      <div class="chart-area">
+        <div class="chart-title">Land Monetization — 4 Revenue Streams (440.68 ha)</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Highway Frontage</div>
+            <div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--cat-acquisition)">267K m² · 40% sellable · $90/m²</div></div>
+            <div class="bar-val">~$9.6M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Energy Lease</div>
+            <div class="bar-track"><div class="bar-fill" style="width:15%;background:var(--accent-yellow)">161 ha · $1,200/ha/yr</div></div>
+            <div class="bar-val">$193K/yr</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Ag Lease</div>
+            <div class="bar-track"><div class="bar-fill" style="width:6%;background:var(--accent-green)">200 ha · $400/ha/yr</div></div>
+            <div class="bar-val">$80K/yr</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Expansion Land</div>
+            <div class="bar-track"><div class="bar-fill" style="width:19%;background:var(--accent-purple)">80 ha · $20K/ha · 8% appr</div></div>
+            <div class="bar-val">$2.9M (Yr 8)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Debt / Equity Structure ── -->
+      <div class="chart-area">
+        <div class="chart-title">Capital Stack Sensitivity — Baseline 60/40 D/E @ 6.5%</div>
+        <table class="scenario-table">
+          <thead>
+            <tr>
+              <th>D/E Ratio</th>
+              <th>Interest Rate</th>
+              <th>Levered IRR</th>
+              <th>DSCR (Min)</th>
+              <th>WACC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>50% / 50%</td><td>5.5%</td><td class="val-green">38.1%</td><td>4.50×</td><td>8.5%</td></tr>
+            <tr><td>55% / 45%</td><td>6.0%</td><td class="val-green">40.7%</td><td>4.12×</td><td>8.1%</td></tr>
+            <tr class="highlight"><td><strong>60% / 40%</strong></td><td><strong>6.5%</strong></td><td class="val-green"><strong>43.3%</strong></td><td><strong>3.90×</strong></td><td><strong>7.8%</strong></td></tr>
+            <tr><td>65% / 35%</td><td>7.0%</td><td class="val-blue">46.0%</td><td>3.45×</td><td>7.5%</td></tr>
+            <tr><td>70% / 30%</td><td>6.0%</td><td class="val-blue">49.1%</td><td>3.20×</td><td>6.8%</td></tr>
+            <tr><td>75% / 25%</td><td>7.5%</td><td class="val-yellow">52.3%</td><td>2.65×</td><td>7.1%</td></tr>
+            <tr><td>80% / 20%</td><td>5.5%</td><td class="val-yellow">55.8%</td><td>2.38×</td><td>5.9%</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:.7rem;color:var(--text-muted);padding:.5rem .5rem 0">
+          126-combination matrix: 7 D/E ratios × 6 interest rates × 3 scenarios. Optimal: Highest IRR with DSCR ≥ 1.25×.
+          Full model in <a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/models/capital-stack-sensitivity.js" style="color:var(--accent-blue)">models/capital-stack-sensitivity.js</a>
+        </div>
+      </div>
+
+      <!-- ── Token Waterfall ── -->
+      <div class="chart-area">
+        <div class="chart-title">Token Distribution Waterfall — $15M Raise · 150K Tokens @ $100</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">① O&amp;M Reserve</div>
+            <div class="bar-track"><div class="bar-fill" style="width:8%;background:#6e7681">Operating expense coverage</div></div>
+            <div class="bar-val">Priority 1</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">② Debt Service</div>
+            <div class="bar-track"><div class="bar-fill" style="width:35%;background:var(--cat-acquisition)">Senior lender payments</div></div>
+            <div class="bar-val">Priority 2</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">③ Cash Reserve</div>
+            <div class="bar-track"><div class="bar-fill" style="width:8%;background:var(--accent-yellow)">3-month operating cushion</div></div>
+            <div class="bar-val">Priority 3</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">④ Preferred (8%)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:20%;background:var(--accent-purple)">$1.2M/yr to token holders</div></div>
+            <div class="bar-val">$8/token/yr</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">⑤ Common Equity</div>
+            <div class="bar-track"><div class="bar-fill" style="width:29%;background:var(--accent-green)">20% participation split</div></div>
+            <div class="bar-val">Residual</div>
+          </div>
+        </div>
+        <div style="font-size:.7rem;color:var(--text-muted);padding:.5rem .5rem 0">
+          Stress tests: Base, −10%, −20%, +15% revenue. Even at −20%, preferred return fully covered by Year 5.
+          Reg D 506(c) · ERC-20 with lockup · Secondary OTC market.
+        </div>
+      </div>
+
+      <!-- ── Acquisition Economics ── -->
+      <div class="chart-area">
+        <div class="chart-title">Acquisition Impact — $35M Purchase vs. $47.9M Appraised Value</div>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <h4>Purchase Price</h4>
+            <div class="big" style="color:var(--cat-acquisition)">$35M</div>
+            <div class="sub">26.9% discount to appraised value</div>
+          </div>
+          <div class="metric-card">
+            <h4>Appraised Value</h4>
+            <div class="big" style="color:var(--accent-green)">$47.9M</div>
+            <div class="sub">2025 independent TASACIÓN · Near Galión</div>
+          </div>
+          <div class="metric-card">
+            <h4>Total Project Basis</h4>
+            <div class="big" style="color:var(--accent-yellow)">$90M</div>
+            <div class="sub">$35M acq + $55M CAPEX · Transaction costs $2M</div>
+          </div>
+        </div>
+        <div class="bar-chart" style="padding:.75rem .5rem">
+          <div class="bar-row">
+            <div class="bar-label">Land Value</div>
+            <div class="bar-track"><div class="bar-fill" style="width:57%;background:var(--accent-green)">$20M (57.1%)</div></div>
+            <div class="bar-val">$20M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Development</div>
+            <div class="bar-track"><div class="bar-fill" style="width:22.8%;background:var(--accent-blue)">$8M</div></div>
+            <div class="bar-val">$8M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Concession</div>
+            <div class="bar-track"><div class="bar-fill" style="width:14.3%;background:var(--accent-yellow)">$5M</div></div>
+            <div class="bar-val">$5M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Permits Package</div>
+            <div class="bar-track"><div class="bar-fill" style="width:5.7%;background:var(--accent-purple)">$2M</div></div>
+            <div class="bar-val">$2M</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Operating Cost Structure ── -->
+      <div class="chart-area">
+        <div class="chart-title">Annual Operating Expense Structure — ~$875K/yr Year 1</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">O&amp;M ($12/kW)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:68.6%;background:var(--accent-yellow)">$600K</div></div>
+            <div class="bar-val">$600K</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Land Lease</div>
+            <div class="bar-track"><div class="bar-fill" style="width:22.9%;background:var(--accent-green)">$200K</div></div>
+            <div class="bar-val">$200K</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Insurance ($1.5/kW)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:8.6%;background:var(--accent-blue)">$75K</div></div>
+            <div class="bar-val">$75K</div>
+          </div>
+        </div>
+        <div style="font-size:.7rem;color:var(--text-muted);padding:.5rem .5rem 0">
+          OpEx Ratio: ~6.6% of Year 1 revenue · Debt Service: ~$4.3M/yr (60% × $55M @ 6.5%, 18yr amortizing)
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ─── CONTACT ──────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container center">
-      <h2>Investor Relations</h2>
-      <p>For data room access, financial model review, or term sheet discussion:</p>
-      <p class="contact-entity">Sunfarming Dom Rep Invest, S.R.L.</p>
-      <p class="detail">RNC 1-31-94471-1 • Baní, Peravia Province, Dominican Republic</p>
-      <a href="mailto:investors@sunfarm.example.com" class="btn btn-primary" style="margin-top:1.5rem;">Request Access</a>
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 4 — $35M ACQUISITION FRAMEWORK                -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="acquisition">
+    <div class="section-header" style="--cat:var(--cat-acquisition)" onclick="toggleSection(this)">
+      <span class="icon">🏦</span>
+      <h2>$35M Total Asset Acquisition Framework</h2>
+      <span class="count">5 documents</span>
+      <span class="chevron">▼</span>
     </div>
-  </section>
+    <div class="section-body">
+      <div class="section-desc">
+        Complete M&amp;A layer — $35M purchase price (26.9% discount to $47.9M appraisal). Assets acquired:
+        titled land (440.68 ha, Parcela 59 DC-8), definitive concession (CNE-CP-0012-2020, 25-year),
+        all approvals/permits/no-objections, SPV equity (100% cuotas sociales), development rights.
+        Total basis: $35M acquisition + $55M CAPEX = $90M. Earn-out: +$1.5M upside / −$7M downside.
+      </div>
 
-  <!-- ─── FOOTER ───────────────────────────────────────────────── -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Sunfarming Dom Rep Invest, S.R.L. All rights reserved.</p>
-      <p class="detail">This document does not constitute an offer to sell or solicitation to buy securities. All projections are forward-looking estimates.</p>
+      <div class="timeline">
+        <h4 class="timeline-title">Staged Milestone Payment Schedule</h4>
+        <div class="timeline-track">
+          <div class="timeline-line"></div>
+          <div class="timeline-node">
+            <div class="timeline-dot" style="--dot-color:var(--cat-acquisition)">1</div>
+            <div class="timeline-label" style="color:var(--cat-acquisition)">Signing</div>
+            <div class="timeline-amount">$5M</div>
+            <div class="timeline-sub">Month 0 · Promesa de Venta deposit</div>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-dot" style="--dot-color:var(--accent-purple)">2</div>
+            <div class="timeline-label" style="color:var(--accent-purple)">Financial Close</div>
+            <div class="timeline-amount">$10M</div>
+            <div class="timeline-sub">Month 6 · All CPs satisfied</div>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-dot" style="--dot-color:var(--accent-yellow)">3</div>
+            <div class="timeline-label" style="color:var(--accent-yellow)">NTP</div>
+            <div class="timeline-amount">$10M</div>
+            <div class="timeline-sub">Month 12 · Notice to Proceed</div>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-dot" style="--dot-color:var(--accent-green)">4</div>
+            <div class="timeline-label" style="color:var(--accent-green)">COD</div>
+            <div class="timeline-amount">$10M</div>
+            <div class="timeline-sub">Month 24 · Commercial Operation</div>
+          </div>
+        </div>
+        <div class="timeline-footer">
+          <span class="timeline-badge">Escrow: $3.5M (10%) — released 12 months post-COD after rep &amp; warranty survival</span>
+        </div>
+      </div>
+
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/legal/acquisition-35M/asset-purchase-framework.md">docs/legal/acquisition-35M/asset-purchase-framework.md</a></td>
+            <td class="file-desc">Asset purchase framework — $35M total, 4-tranche milestone payments, 5 asset categories (land/concession/permits/SPV equity/development rights), R&amp;W matrix, conditions precedent, risk allocation table, Ley 479-08 compliance</td>
+            <td><span class="file-type type-md">MD</span> <span class="tag tag-legal">LEGAL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/legal/acquisition-35M/share-purchase-agreement.md">docs/legal/acquisition-35M/share-purchase-agreement.md</a></td>
+            <td class="file-desc">Share purchase agreement — 100% cuotas sociales transfer under Ley 479-08, transfer mechanics, conditions precedent, representation survival schedule, indemnification caps</td>
+            <td><span class="file-type type-md">MD</span> <span class="tag tag-legal">LEGAL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/legal/acquisition-35M/promesa-de-venta.md">docs/legal/acquisition-35M/promesa-de-venta.md</a></td>
+            <td class="file-desc">Promesa de venta — $5M deposit, 90-day term + 30-day extension, escrow mechanics, suspensive conditions, 14-term legal glossary, DR civil code compliance</td>
+            <td><span class="file-type type-md">MD</span> <span class="tag tag-legal">LEGAL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/legal/acquisition-35M/earn-out-addendum.md">docs/legal/acquisition-35M/earn-out-addendum.md</a></td>
+            <td class="file-desc">Earn-out addendum — value decomposition, performance adjustments (+$1.5M upside / −$7M downside), DR tax treatment (3% transfer / 27% capital gains), milestone verification protocol</td>
+            <td><span class="file-type type-md">MD</span> <span class="tag tag-legal">LEGAL</span></td>
+          </tr>
+          <tr>
+            <td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/legal/acquisition-35M/closing-checklist.md">docs/legal/acquisition-35M/closing-checklist.md</a></td>
+            <td class="file-desc">Closing checklist — 100+ items across 5 phases: pre-signing, signing $5M, FC $10M, NTP $10M, COD $10M, post-COD escrow release. Owner/deadline matrices</td>
+            <td><span class="file-type type-md">MD</span> <span class="tag tag-legal">LEGAL</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </footer>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 5 — CAPITAL INSTRUMENTS (14+ PATHWAYS)        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="capital">
+    <div class="section-header" style="--cat:var(--cat-capital)" onclick="toggleSection(this)">
+      <span class="icon">💰</span>
+      <h2>Capital Instruments — 14+ Funding Pathways</h2>
+      <span class="count">22 files across 14 subdirectories</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Complete institutional capital stack architecture. Each pathway is independently modeled with
+        term sheets, compliance checklists, and engagement roadmaps. Covers: green bonds (ICMA), fideicomiso
+        (SIMV), DFI blended finance, carbon forwards, BESS ring-fence, PRI, PPP, ECA vendor finance,
+        sustainability-linked loans, hybrid token-bonds, impact agriculture, sovereign partner, and YieldCo exit.
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/capital-matrix.js">capital/capital-matrix.js</a></td><td class="file-desc">Master capital matrix — 9-structure comparison engine: WACC per structure, risk score, blended-rate optimization, optimal structure selector, feasibility flags</td><td><span class="file-type type-js">JS</span> <span class="tag tag-model">MATRIX</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/outreach-tracker.json">capital/outreach-tracker.json</a></td><td class="file-desc">Investor/lender outreach CRM — engagement status tracking, pipeline stage, contact history, follow-up scheduling</td><td><span class="file-type type-json">JSON</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">GREEN BOND — ICMA Aligned (7 files)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/icma-alignment.md">capital/green-bond/icma-alignment.md</a></td><td class="file-desc">ICMA Green Bond Principles alignment — 4 core components, external review requirements, reporting obligations</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/eligible-use-of-proceeds.md">capital/green-bond/eligible-use-of-proceeds.md</a></td><td class="file-desc">Eligible use of proceeds — solar PV, BESS, grid interconnection, land preparation, environmental monitoring</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/ICMA-GBP-Checklist.md">capital/green-bond/ICMA-GBP-Checklist.md</a></td><td class="file-desc">ICMA GBP checklist — point-by-point compliance verification, governance framework, management of proceeds</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/SPO-Terms-and-Providers.md">capital/green-bond/SPO-Terms-and-Providers.md</a></td><td class="file-desc">Second Party Opinion — provider evaluation (Sustainalytics, Vigeo Eiris, ISS ESG), scope, timeline, fees</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/TVRD-Use-of-Proceeds-Mapping.md">capital/green-bond/TVRD-Use-of-Proceeds-Mapping.md</a></td><td class="file-desc">TVRD (Taxonomía Verde RD) use-of-proceeds mapping — Dominican green taxonomy alignment, eligible activity classification</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/Green-Bond-Term-Sheet.template.md">capital/green-bond/Green-Bond-Term-Sheet.template.md</a></td><td class="file-desc">Green Bond term sheet template — issuer, size, tenor, coupon, covenants, use of proceeds, security, listing venue</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/green-bond/term-sheet.md">capital/green-bond/term-sheet.md</a></td><td class="file-desc">Green Bond commercial term sheet — pricing, structure, mechanics, conditions precedent, closing</td><td><span class="file-type type-md">MD</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">FIDEICOMISO — SIMV Public Trust (3 files)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/fideicomiso/Fideicomiso-Oferta-Publica-Overview.md">capital/fideicomiso/Fideicomiso-Oferta-Publica-Overview.md</a></td><td class="file-desc">Fideicomiso overview — SIMV-regulated public trust, cashflow assignment structure, ring-fence design</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/fideicomiso/Cashflow-Assignment-and-Ringfence.md">capital/fideicomiso/Cashflow-Assignment-and-Ringfence.md</a></td><td class="file-desc">Cashflow assignment &amp; ring-fence — PPA revenue waterfall, collection account, distribution mechanics</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/fideicomiso/Fideicomiso-Term-Sheet.template.md">capital/fideicomiso/Fideicomiso-Term-Sheet.template.md</a></td><td class="file-desc">Fideicomiso term sheet — trustee, beneficiaries, assets in trust, distribution schedule, compliance</td><td><span class="file-type type-md">MD</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">DFI / MULTILATERAL / BLENDED FINANCE (3 files)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/dfi-blended/IFC-IDB-DFC-GCF-Blended-Stack.md">capital/dfi-blended/IFC-IDB-DFC-GCF-Blended-Stack.md</a></td><td class="file-desc">DFI blended stack — IFC/IDB Invest/DFC/GCF analysis, A/B loan structures, concessionality impact, tenor, pricing</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/multilateral/engagement-map.md">capital/multilateral/engagement-map.md</a></td><td class="file-desc">Multilateral engagement map — DFI pipeline stages, contact matrices, application timelines, co-lending structures</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/multilateral/blended-stack-model.js">capital/multilateral/blended-stack-model.js</a></td><td class="file-desc">Blended stack financial model — concessionality impact quantification, WACC reduction analysis, IFC catalyst fund mechanics</td><td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">CARBON FORWARD (3 files)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/carbon-forward/offtake-model.js">capital/carbon-forward/offtake-model.js</a></td><td class="file-desc">Carbon offtake model — 38,400 tCO2e/yr, forward contract pricing, delivery schedules, buyer credit analysis</td><td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/carbon-forward/verra-registration-roadmap.md">capital/carbon-forward/verra-registration-roadmap.md</a></td><td class="file-desc">Verra VCS registration roadmap — PDD development, validation, verification, issuance timeline</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/carbon-forward/Forward-Offtake-Termsheet.template.md">capital/carbon-forward/Forward-Offtake-Termsheet.template.md</a></td><td class="file-desc">Forward offtake term sheet — price floor, volume commitment, delivery schedule, verification protocol, penalties</td><td><span class="file-type type-md">MD</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">OTHER CAPITAL PATHWAYS (10 files)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/bess-finance/storage-spv-model.js">capital/bess-finance/storage-spv-model.js</a></td><td class="file-desc">BESS storage SPV model — 25MW/100MWh carve-out, lease vs. own analysis, degradation curves, replacement reserve</td><td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/bess-finance/README.md">capital/bess-finance/README.md</a></td><td class="file-desc">BESS finance overview — storage-specific financing strategy, technology risk allocation</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/political-risk/pri-structure.md">capital/political-risk/pri-structure.md</a></td><td class="file-desc">Political risk insurance — MIGA/OPIC/PDG structure analysis, spread reduction 50–150bps, coverage scope</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/sustainability-linked-loan/kpi-framework.md">capital/sustainability-linked-loan/kpi-framework.md</a></td><td class="file-desc">SLL KPI framework — sustainability performance targets, verification, margin ratchet triggers</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/sustainability-linked-loan/Margin-Ratchet-Model.md">capital/sustainability-linked-loan/Margin-Ratchet-Model.md</a></td><td class="file-desc">Margin ratchet model — step-down/step-up mechanics, E&amp;S performance targets, cost of debt impact</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/ppp/PPP-Law-47-20-Pathway.md">capital/ppp/PPP-Law-47-20-Pathway.md</a></td><td class="file-desc">PPP pathway — Ley 47-20, DGAPP process, risk allocation, VfM analysis, public contribution assessment</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/export-credit/ECA-Vendor-Finance-Playbook.md">capital/export-credit/ECA-Vendor-Finance-Playbook.md</a></td><td class="file-desc">ECA vendor finance — export credit agency playbook, covered buyer/comprehensive guarantees, OECD terms</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/hybrid-token-bond/digital-bond-structure.md">capital/hybrid-token-bond/digital-bond-structure.md</a></td><td class="file-desc">Hybrid token-bond — digital security structure, blockchain registry, dual compliance (securities + crypto), settlement</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/impact-agriculture/ag-finance.md">capital/impact-agriculture/ag-finance.md</a></td><td class="file-desc">Impact agriculture finance — agrivoltaic dual-use, blended impact investment, food security + energy nexus</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/vendor-finance/vendor-terms.md">capital/vendor-finance/vendor-terms.md</a></td><td class="file-desc">Vendor finance terms — EPC deferred payment, equipment financing, module supplier credit</td><td><span class="file-type type-md">MD</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">SOVEREIGN PARTNER &amp; YIELDCO EXIT (4 files)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/sovereign-partner/strategic-stake-model.js">capital/sovereign-partner/strategic-stake-model.js</a></td><td class="file-desc">Strategic stake model — sovereign minority stake impact simulation, valuation implications, governance effects</td><td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/sovereign-partner/README.md">capital/sovereign-partner/README.md</a></td><td class="file-desc">Sovereign partner strategy — state energy company participation pathway, alignment with national energy policy</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/yieldco-exit/yield-model.js">capital/yieldco-exit/yield-model.js</a></td><td class="file-desc">YieldCo exit model — Year 7 drop-down valuation, exit multiple sensitivity, IRR at various cap rates, buyer universe</td><td><span class="file-type type-js">JS</span> <span class="tag tag-model">MODEL</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/capital/yieldco-exit/README.md">capital/yieldco-exit/README.md</a></td><td class="file-desc">YieldCo exit strategy — stabilized asset disposition, secondary market liquidity, buyer profiles</td><td><span class="file-type type-md">MD</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 5B — FUNDING STRATEGIES DEEP-DIVE             -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="funding-strategies">
+    <div class="section-header" style="--cat:var(--cat-funding)" onclick="toggleSection(this)">
+      <span class="icon">🏦</span>
+      <h2>Funding Strategies — 14+ Capital Pathways Detailed</h2>
+      <span class="count">Complete pathway analysis with term sheets</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Every capital pathway is independently modeled with term sheets, compliance checklists, and engagement roadmaps.
+        The $90M total basis ($35M acquisition + $55M CAPEX) can be funded through any combination of these 14+ structures,
+        each optimized for different investor profiles, risk appetites, and regulatory frameworks.
+      </div>
+
+      <div class="funding-grid">
+        <!-- 1. Green Bond -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-green)">
+            <span class="fc-icon">🌿</span>
+            <h3>Green Bond (ICMA-Aligned)</h3>
+          </div>
+          <div class="fc-amount">$30M–$55M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> Use-of-proceeds bond, ICMA GBP compliant</div>
+            <div class="fc-detail"><span class="f-label">Tenor:</span> 10–15 years, semi-annual coupon</div>
+            <div class="fc-detail"><span class="f-label">Rate:</span> 6.0%–7.5% (greenium: 15–30bps discount)</div>
+            <div class="fc-detail"><span class="f-label">Listing:</span> BVRD or Luxembourg Green Exchange</div>
+            <div class="fc-detail"><span class="f-label">SPO:</span> Sustainalytics / Vigeo Eiris / ISS ESG</div>
+            <div class="fc-detail"><span class="f-label">Taxonomy:</span> TVRD (Taxonomía Verde RD) aligned</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> ICMA checklist complete, term sheet ready</div>
+          </div>
+        </div>
+
+        <!-- 2. Fideicomiso -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-blue)">
+            <span class="fc-icon">🏛️</span>
+            <h3>Fideicomiso (SIMV Public Trust)</h3>
+          </div>
+          <div class="fc-amount">$20M–$40M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> SIMV-regulated public trust, PPA cashflow assigned</div>
+            <div class="fc-detail"><span class="f-label">Trustee:</span> Dominican fiduciary (Fiduciaria Reservas / BHD)</div>
+            <div class="fc-detail"><span class="f-label">Ring-fence:</span> PPA collection account → distribution waterfall</div>
+            <div class="fc-detail"><span class="f-label">Yield:</span> 8%–10% target distribution to holders</div>
+            <div class="fc-detail"><span class="f-label">Regulation:</span> Ley 189-11 (Fideicomiso), SIMV registration</div>
+            <div class="fc-detail"><span class="f-label">Advantage:</span> Tax-efficient, local investor access</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Term sheet &amp; cashflow model complete</div>
+          </div>
+        </div>
+
+        <!-- 3. DFI Blended -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-purple)">
+            <span class="fc-icon">🌐</span>
+            <h3>DFI Blended Finance</h3>
+          </div>
+          <div class="fc-amount">$25M–$45M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Lenders:</span> IFC / IDB Invest / US DFC / GCF</div>
+            <div class="fc-detail"><span class="f-label">Structure:</span> A/B loan, concessional tranche + commercial</div>
+            <div class="fc-detail"><span class="f-label">Tenor:</span> 15–20 years, 3–5yr grace</div>
+            <div class="fc-detail"><span class="f-label">Rate:</span> 3.5%–5.5% blended (concessional + market)</div>
+            <div class="fc-detail"><span class="f-label">GCF:</span> Climate adaptation component eligible</div>
+            <div class="fc-detail"><span class="f-label">WACC Impact:</span> Reduces project WACC by 150–250bps</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Engagement map &amp; blended stack model built</div>
+          </div>
+        </div>
+
+        <!-- 4. Carbon Forward -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-green)">
+            <span class="fc-icon">🌍</span>
+            <h3>Carbon Forward / Offtake</h3>
+          </div>
+          <div class="fc-amount">$5M–$15M (upfront)</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Volume:</span> ~45,000 tCO2e/yr for 10–25 years</div>
+            <div class="fc-detail"><span class="f-label">Registry:</span> Verra VCS + Gold Standard eligible</div>
+            <div class="fc-detail"><span class="f-label">Buyers:</span> Corporate ESG mandates, compliance markets</div>
+            <div class="fc-detail"><span class="f-label">Pricing:</span> $12–$45/tCO2e (market scenario dependent)</div>
+            <div class="fc-detail"><span class="f-label">Structure:</span> Pre-purchase agreement, delivery upon issuance</div>
+            <div class="fc-detail"><span class="f-label">Upfront:</span> 30–50% advance against future deliveries</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Offtake model &amp; Verra roadmap complete</div>
+          </div>
+        </div>
+
+        <!-- 5. BESS Ring-Fence -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-yellow)">
+            <span class="fc-icon">🔋</span>
+            <h3>BESS Ring-Fence SPV</h3>
+          </div>
+          <div class="fc-amount">$20M–$25M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Asset:</span> 25MW / 100MWh LFP standalone SPV</div>
+            <div class="fc-detail"><span class="f-label">Revenue:</span> 5-stream (arbitrage, freq, capacity, peak, curtailment)</div>
+            <div class="fc-detail"><span class="f-label">Structure:</span> Project finance, non-recourse to parent</div>
+            <div class="fc-detail"><span class="f-label">Investors:</span> Infrastructure funds, battery specialists</div>
+            <div class="fc-detail"><span class="f-label">Degradation:</span> 2%/yr capacity warranty, augmentation reserve</div>
+            <div class="fc-detail"><span class="f-label">DSCR:</span> &gt;1.40x standalone coverage</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Storage SPV model complete</div>
+          </div>
+        </div>
+
+        <!-- 6. PRI -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-blue)">
+            <span class="fc-icon">🛡️</span>
+            <h3>Political Risk Insurance</h3>
+          </div>
+          <div class="fc-amount">Spread reduction 50–150bps</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Providers:</span> MIGA (World Bank) / OPIC / PDG</div>
+            <div class="fc-detail"><span class="f-label">Coverage:</span> Expropriation, currency transfer, political violence</div>
+            <div class="fc-detail"><span class="f-label">Premium:</span> 50–100bps/yr on covered amount</div>
+            <div class="fc-detail"><span class="f-label">Tenor:</span> Up to 20 years (MIGA), 15yr (OPIC)</div>
+            <div class="fc-detail"><span class="f-label">Benefit:</span> Lowers cost of debt, enables commercial bank participation</div>
+            <div class="fc-detail"><span class="f-label">DR Rating:</span> BB- (S&amp;P) — PRI unlocks investment-grade pricing</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> PRI structure analysis complete</div>
+          </div>
+        </div>
+
+        <!-- 7. SLL -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-green)">
+            <span class="fc-icon">📊</span>
+            <h3>Sustainability-Linked Loan (SLL)</h3>
+          </div>
+          <div class="fc-amount">$30M–$55M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> General-purpose loan with sustainability KPIs</div>
+            <div class="fc-detail"><span class="f-label">KPIs:</span> Generation output, carbon displacement, community impact</div>
+            <div class="fc-detail"><span class="f-label">Ratchet:</span> ±10–25bps margin adjustment vs. SPT achievement</div>
+            <div class="fc-detail"><span class="f-label">Verification:</span> Annual third-party sustainability audit</div>
+            <div class="fc-detail"><span class="f-label">Lenders:</span> BHD León, Banco Popular, JMMB, regional banks</div>
+            <div class="fc-detail"><span class="f-label">Compliance:</span> LMA/APLMA Sustainability-Linked Loan Principles</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> KPI framework &amp; margin ratchet model built</div>
+          </div>
+        </div>
+
+        <!-- 8. PPP -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-purple)">
+            <span class="fc-icon">🤝</span>
+            <h3>PPP — Ley 47-20 Pathway</h3>
+          </div>
+          <div class="fc-amount">$30M–$90M (full project)</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Framework:</span> Dominican PPP Law 47-20 (2020)</div>
+            <div class="fc-detail"><span class="f-label">Agency:</span> DGAPP (Dirección General de APP)</div>
+            <div class="fc-detail"><span class="f-label">Structure:</span> BOT / BOOT / concession-based</div>
+            <div class="fc-detail"><span class="f-label">Public:</span> Government contribution or viability gap funding</div>
+            <div class="fc-detail"><span class="f-label">VfM:</span> Value-for-money assessment vs. public procurement</div>
+            <div class="fc-detail"><span class="f-label">Duration:</span> Up to 30 years, aligned with concession</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Ley 47-20 pathway analysis complete</div>
+          </div>
+        </div>
+
+        <!-- 9. ECA Vendor Finance -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-yellow)">
+            <span class="fc-icon">🏭</span>
+            <h3>ECA Vendor Finance</h3>
+          </div>
+          <div class="fc-amount">$15M–$30M (equipment)</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> Export credit guarantee on PV modules &amp; BESS</div>
+            <div class="fc-detail"><span class="f-label">ECAs:</span> Euler Hermes (DE), KSURE (KR), Sinosure (CN), NEXI (JP)</div>
+            <div class="fc-detail"><span class="f-label">Coverage:</span> 85–95% of commercial bank loan, comprehensive guarantee</div>
+            <div class="fc-detail"><span class="f-label">Rate:</span> OECD CIRR-based (currently ~4.5%–6.0%)</div>
+            <div class="fc-detail"><span class="f-label">Tenor:</span> 10–18 years, OECD maximum repayment terms</div>
+            <div class="fc-detail"><span class="f-label">Advantage:</span> Low-cost equipment financing, de-risk commercial banks</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> ECA playbook &amp; vendor finance terms ready</div>
+          </div>
+        </div>
+
+        <!-- 10. Hybrid Token-Bond -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-blue)">
+            <span class="fc-icon">🔗</span>
+            <h3>Hybrid Token-Bond</h3>
+          </div>
+          <div class="fc-amount">$15M (150K tokens @ $100)</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> Digital security on blockchain registry + bond economics</div>
+            <div class="fc-detail"><span class="f-label">Preferred:</span> 8% annual preferred distribution</div>
+            <div class="fc-detail"><span class="f-label">Waterfall:</span> O&amp;M → Debt → Reserve → Preferred → Common</div>
+            <div class="fc-detail"><span class="f-label">Compliance:</span> Dual: securities regulation + digital asset rules</div>
+            <div class="fc-detail"><span class="f-label">Settlement:</span> T+0 blockchain settlement, fractional ownership</div>
+            <div class="fc-detail"><span class="f-label">Secondary:</span> Token exchange listing for liquidity</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Digital bond structure documentation complete</div>
+          </div>
+        </div>
+
+        <!-- 11. Impact Agriculture -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-green)">
+            <span class="fc-icon">🌾</span>
+            <h3>Impact Agriculture Finance</h3>
+          </div>
+          <div class="fc-amount">$3M–$8M (ag component)</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> Blended impact investment, agrivoltaic dual-use</div>
+            <div class="fc-detail"><span class="f-label">Revenue:</span> Agricultural lease ($80K/yr), food security premium</div>
+            <div class="fc-detail"><span class="f-label">Impact:</span> SDG 2 (Zero Hunger) + SDG 7 (Clean Energy)</div>
+            <div class="fc-detail"><span class="f-label">Investors:</span> Impact funds, DFI ag windows, ESG mandates</div>
+            <div class="fc-detail"><span class="f-label">Crops:</span> Shade-tolerant crops between panel rows</div>
+            <div class="fc-detail"><span class="f-label">Land:</span> 440 ha allows significant ag co-use</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Agrivoltaic finance model built</div>
+          </div>
+        </div>
+
+        <!-- 12. Sovereign Partner -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-purple)">
+            <span class="fc-icon">🇩🇴</span>
+            <h3>Sovereign Partner Stake</h3>
+          </div>
+          <div class="fc-amount">10%–25% minority stake</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Partner:</span> EGEHID, CDEEE successor, or sovereign fund</div>
+            <div class="fc-detail"><span class="f-label">Structure:</span> Minority equity stake with board representation</div>
+            <div class="fc-detail"><span class="f-label">Benefit:</span> Political de-risking, PPA offtake alignment</div>
+            <div class="fc-detail"><span class="f-label">Alignment:</span> National energy policy, RE targets, energy security</div>
+            <div class="fc-detail"><span class="f-label">Leverage:</span> Unlocks DFI co-financing and government guarantees</div>
+            <div class="fc-detail"><span class="f-label">Governance:</span> Tag/drag, pre-emptive rights, reserved matters</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Strategic stake model &amp; term sheet ready</div>
+          </div>
+        </div>
+
+        <!-- 13. YieldCo Exit -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-yellow)">
+            <span class="fc-icon">📈</span>
+            <h3>YieldCo / Secondary Exit</h3>
+          </div>
+          <div class="fc-amount">Year 7 drop-down: $120M–$180M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Strategy:</span> Stabilize asset → drop into YieldCo at premium</div>
+            <div class="fc-detail"><span class="f-label">Timing:</span> Year 5–8, post-stabilization &amp; track record</div>
+            <div class="fc-detail"><span class="f-label">Buyers:</span> Infrastructure funds, YieldCos, pension funds</div>
+            <div class="fc-detail"><span class="f-label">Multiple:</span> 7–12x EBITDA (stabilized solar range)</div>
+            <div class="fc-detail"><span class="f-label">IRR Impact:</span> Early exit crystallizes 40%+ levered IRR</div>
+            <div class="fc-detail"><span class="f-label">Retained:</span> Option to retain O&amp;M contract post-exit</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Yield model &amp; exit sensitivity analysis built</div>
+          </div>
+        </div>
+
+        <!-- 14. Mezzanine / Sub-Debt -->
+        <div class="funding-card">
+          <div class="fc-header" style="border-color:var(--accent-blue)">
+            <span class="fc-icon">🔀</span>
+            <h3>Mezzanine / Subordinated Debt</h3>
+          </div>
+          <div class="fc-amount">$5M–$15M</div>
+          <div class="fc-body">
+            <div class="fc-detail"><span class="f-label">Structure:</span> Junior debt, convertible option, PIK interest</div>
+            <div class="fc-detail"><span class="f-label">Rate:</span> 10%–14% (reflecting subordination)</div>
+            <div class="fc-detail"><span class="f-label">Benefit:</span> Bridges equity gap without dilution</div>
+            <div class="fc-detail"><span class="f-label">Conversion:</span> Optional equity conversion at pre-agreed terms</div>
+            <div class="fc-detail"><span class="f-label">Security:</span> Second-lien on project assets, pledge of equity</div>
+            <div class="fc-detail"><span class="f-label">Investors:</span> Infrastructure mezzanine funds, family offices</div>
+            <div class="fc-detail"><span class="f-label">Status:</span> Structure modeled within capital matrix</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-area" style="margin-top:2rem">
+        <div class="chart-title">Optimal Capital Stack — Recommended Blend</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <span class="bar-label">Senior Debt (Green Bond/SLL)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:37%;background:var(--accent-green)"></div></div>
+            <span class="bar-val">$33M (37%)</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">BESS Ring-Fence SPV</span>
+            <div class="bar-track"><div class="bar-fill" style="width:28%;background:var(--accent-yellow)"></div></div>
+            <span class="bar-val">$25M (28%)</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Equity (Token + Direct)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:24%;background:var(--accent-blue)"></div></div>
+            <span class="bar-val">$22M (24%)</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Carbon Forward Advance</span>
+            <div class="bar-track"><div class="bar-fill" style="width:6%;background:var(--accent-green)"></div></div>
+            <span class="bar-val">$5M (6%)</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Mezzanine / Sub-Debt</span>
+            <div class="bar-track"><div class="bar-fill" style="width:5%;background:var(--accent-purple)"></div></div>
+            <span class="bar-val">$5M (5%)</span>
+          </div>
+        </div>
+        <p style="text-align:center;color:var(--muted);margin-top:.5rem">Total: $90M · Blended WACC: ~5.8% · DSCR: 3.90x · Payback: ~3 years</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 6 — GOVERNANCE & COVENANTS                    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="governance">
+    <div class="section-header" style="--cat:var(--cat-governance)" onclick="toggleSection(this)">
+      <span class="icon">🔒</span>
+      <h2>Governance &amp; Covenant Monitoring</h2>
+      <span class="count">4 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Real-time covenant monitoring with state-machine escalation: COMPLIANT → WATCH → CURE_PERIOD → DEFAULT.
+        Covers 9 financial covenants (5 operational + 4 acquisition-specific), cascading waterfall redirection,
+        enforcement actions, dispute resolution board, and optional DAO governance overlay.
+      </div>
+      <div class="covenant-grid">
+        <div class="covenant-card" style="border-left-color:var(--accent-green)">
+          <h5 style="color:var(--accent-green)">DSCR</h5>
+          <div class="thresholds">Watch: <span>1.20x</span> · Default: <span>1.05x</span> · Cure: 90d</div>
+        </div>
+        <div class="covenant-card" style="border-left-color:var(--accent-green)">
+          <h5 style="color:var(--accent-green)">LLCR</h5>
+          <div class="thresholds">Watch: <span>1.15x</span> · Default: <span>1.00x</span> · Cure: 90d</div>
+        </div>
+        <div class="covenant-card" style="border-left-color:var(--accent-yellow)">
+          <h5 style="color:var(--accent-yellow)">Debt/Equity</h5>
+          <div class="thresholds">Watch: <span>&gt;80%</span> · Default: <span>&gt;90%</span> · Cure: 60d</div>
+        </div>
+        <div class="covenant-card" style="border-left-color:var(--cat-acquisition)">
+          <h5 style="color:var(--cat-acquisition)">Acq. Leverage</h5>
+          <div class="thresholds">Watch: <span>&gt;75%</span> · Default: <span>&gt;85%</span> · Cure: 60d</div>
+        </div>
+        <div class="covenant-card" style="border-left-color:var(--cat-acquisition)">
+          <h5 style="color:var(--cat-acquisition)">Price Cap Test</h5>
+          <div class="thresholds">Watch: <span>&gt;80%</span> · Default: <span>&gt;100%</span> · Cure: 30d</div>
+        </div>
+        <div class="covenant-card" style="border-left-color:var(--cat-acquisition)">
+          <h5 style="color:var(--cat-acquisition)">Earn-Out Compliance</h5>
+          <div class="thresholds">Watch: <span>&lt;90%</span> · Default: <span>&lt;70%</span> · Cure: 45d</div>
+        </div>
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/governance/covenants.js">governance/covenants.js</a></td><td class="file-desc">Covenant monitor — 9 covenants (DSCR/LLCR/D-E/Interest Coverage/Reserve Adequacy + Acq Leverage/Price Cap/Earn-Out/Integration Timeline), state-machine escalation, waterfall redirection triggers</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/governance/enforcement.js">governance/enforcement.js</a></td><td class="file-desc">Enforcement engine — distribution suspension, cash sweep activation, step-in rights triggers, secured creditor notifications, cure period tracking</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/governance/dispute_board.js">governance/dispute_board.js</a></td><td class="file-desc">Dispute resolution board — 4-level escalation (negotiation → mediation → DAB → ICC arbitration), timeline enforcement, decision registry</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/governance/governance-adapter.js">governance/governance-adapter.js</a></td><td class="file-desc">Governance adapter — optional on-chain DAO overlay, audit trail generation, deterministic state transitions, vote recording</td><td><span class="file-type type-js">JS</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 7 — REGULATORY & PERMITS                      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="regulatory">
+    <div class="section-header" style="--cat:var(--cat-regulatory)" onclick="toggleSection(this)">
+      <span class="icon">📜</span>
+      <h2>Regulatory Framework — DR Compliance Stack</h2>
+      <span class="count">6 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Complete Dominican Republic regulatory compliance: CNE concession record, SIE resolutions,
+        Ley 57-07 incentives applicability (100% import duty waiver, ITBIS exemption, 10-year income tax holiday),
+        TVRD green taxonomy alignment, and BESS regulatory compliance memo.
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/regulatory/README.md">docs/regulatory/README.md</a></td><td class="file-desc">Regulatory index — overview of all Dominican Republic regulatory requirements, agency map (CNE/SIE/ETED/MEM)</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/regulatory/CNE-Concession-Record.md">docs/regulatory/CNE-Concession-Record.md</a></td><td class="file-desc">CNE concession record — CNE-CP-0012-2020, Res. 0379-20, definitive concession details, renewal timeline, compliance milestones</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/regulatory/Ley-57-07-Incentives-Applicability-Memo.md">docs/regulatory/Ley-57-07-Incentives-Applicability-Memo.md</a></td><td class="file-desc">Ley 57-07 incentives — 100% import duty exemption on panels/inverters/BESS, ITBIS exemption, 10-year income tax holiday, carbon credit eligibility, Decreto 202-08 implementing regulations</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/regulatory/SIE-Resolution-Index.md">docs/regulatory/SIE-Resolution-Index.md</a></td><td class="file-desc">SIE resolution index — interconnection standards, tariff methodology, net metering rules, quality of service codes</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/regulatory/Taxonomia-Verde-RD-Alignment.md">docs/regulatory/Taxonomia-Verde-RD-Alignment.md</a></td><td class="file-desc">Taxonomía Verde RD alignment — Dominican green taxonomy, eligible activities, reporting requirements, verification</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/regulatory/BESS-Compliance-Memo.md">docs/regulatory/BESS-Compliance-Memo.md</a></td><td class="file-desc">BESS compliance — battery storage regulatory framework, safety standards, fire code, environmental requirements, islanding protocol</td><td><span class="file-type type-md">MD</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 7B — DOMINICAN REPUBLIC LAWS & REGULATIONS    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="dr-laws">
+    <div class="section-header" style="--cat:var(--cat-laws)" onclick="toggleSection(this)">
+      <span class="icon">⚖️</span>
+      <h2>Dominican Republic Laws &amp; Regulations — Complete Legal Framework</h2>
+      <span class="count">8 key laws &amp; decrees governing this project</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Comprehensive legal framework governing renewable energy development in the Dominican Republic.
+        All listed laws and decrees directly apply to the SunFarm project and create the incentive structure,
+        regulatory permissions, and institutional framework that make this investment shovel-ready.
+      </div>
+
+      <table class="law-table">
+        <thead>
+          <tr>
+            <th>Law / Decree</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Impact on SunFarm Project</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="law-name">Ley 125-01</td>
+            <td>Ley General de Electricidad<br><em>General Electricity Law</em></td>
+            <td>2001</td>
+            <td class="law-impact">Establishes the entire Dominican electricity market structure. Creates CNE (Comisión Nacional de Energía), SIE (Superintendencia de Electricidad), and OC (coordination body). Defines generation concession framework under which Sunfarm's CNE-CP-0012-2020 was issued. Governs grid access, transmission rights, and PPA framework.</td>
+          </tr>
+          <tr>
+            <td class="law-name">Ley 57-07</td>
+            <td>Ley de Incentivo al Desarrollo de Fuentes Renovables de Energía<br><em>Renewable Energy Incentive Law</em></td>
+            <td>2007</td>
+            <td class="law-impact"><strong>CRITICAL — Primary incentive law.</strong> Provides: <strong>100% import duty exemption</strong> on solar panels, inverters, BESS, transformers; <strong>ITBIS (VAT) exemption</strong> on all RE equipment; <strong>10-year income tax holiday</strong> (100% tax credit on RE investment); carbon credit eligibility; net metering rights; priority grid dispatch. Saves SunFarm ~$8M–$12M in tax burden over project life.</td>
+          </tr>
+          <tr>
+            <td class="law-name">Ley 186-07</td>
+            <td>Ley sobre el Mercado Hipotecario y el Fideicomiso<br><em>Mortgage Market &amp; Trust Law</em></td>
+            <td>2007</td>
+            <td class="law-impact">Enables Fideicomiso (trust) structures for project finance. SunFarm can use a Fideicomiso de Oferta Pública registered with SIMV to securitize PPA cashflows. Allows ring-fencing of revenue, assignment of receivables, and creation of tradeable trust certificates (certificados de participación).</td>
+          </tr>
+          <tr>
+            <td class="law-name">Decreto 202-08</td>
+            <td>Reglamento de Aplicación de la Ley 57-07<br><em>Implementing Regulations for Ley 57-07</em></td>
+            <td>2008</td>
+            <td class="law-impact">Detailed implementing regulations for Ley 57-07 renewable incentives. Specifies: application procedures for tax exemptions, CNE concession requirements, grid interconnection standards, environmental compliance linkage, reporting requirements for maintaining incentive eligibility. Critical for SunFarm's ongoing compliance.</td>
+          </tr>
+          <tr>
+            <td class="law-name">Decreto 717-08</td>
+            <td>Incentivos y Beneficios para la Generación Eléctrica Basada en Fuentes Renovables<br><em>Additional RE Generation Incentives</em></td>
+            <td>2008</td>
+            <td class="law-impact">Supplements Ley 57-07 with additional operational incentives. Establishes preferential tariff treatment, streamlined interconnection procedures, and priority dispatch protocols for renewable generators. Provides additional administrative clarity on incentive claim procedures.</td>
+          </tr>
+          <tr>
+            <td class="law-name">Decreto 517-25</td>
+            <td>Decreto del Gobierno 517-25<br><em>Government Decree 517-25</em></td>
+            <td>2025</td>
+            <td class="law-impact"><strong>NEWEST — 2025 government decree.</strong> Establishes updated project development framework supporting renewable energy deployment. Strengthens institutional commitment to clean energy targets and provides additional regulatory clarity for large-scale solar projects like SunFarm. <span class="tag tag-new">NEW 2025</span></td>
+          </tr>
+          <tr>
+            <td class="law-name">Ley 479-08</td>
+            <td>Ley General de Sociedades Comerciales y Empresas Individuales de Responsabilidad Limitada<br><em>Companies &amp; Limited Liability Law</em></td>
+            <td>2008</td>
+            <td class="law-impact">Governs the corporate structure of Sunfarming Dom Rep Invest, S.R.L. (RNC 1-31-94471-1). Defines SRL requirements, capital structure rules, director duties, shareholder rights. Critical for SPV architecture (HoldCo → LandCo/EnergySPV/TokenSPV) and acquisition structuring.</td>
+          </tr>
+          <tr>
+            <td class="law-name">Ley 47-20</td>
+            <td>Ley de Alianzas Público-Privadas<br><em>Public-Private Partnership Law</em></td>
+            <td>2020</td>
+            <td class="law-impact">Enables PPP structures for energy infrastructure. Creates DGAPP as regulating authority. SunFarm can access PPP pathway for government co-investment, viability gap funding, or strategic partnership with state entities (EGEHID). Provides BOT/BOOT framework for long-term concession projects.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="chart-area" style="margin-top:2rem">
+        <div class="chart-title">Tax Savings Impact — Ley 57-07 Incentives (Estimated)</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <span class="bar-label">Import Duty Exemption (100%)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--accent-green)"></div></div>
+            <span class="bar-val">~$5.5M saved</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">ITBIS (VAT) Exemption</span>
+            <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--accent-blue)"></div></div>
+            <span class="bar-val">~$3.3M saved</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">10-Year Income Tax Holiday</span>
+            <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--accent-purple)"></div></div>
+            <span class="bar-val">~$8M–$12M saved</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Carbon Credit Revenue (Yr 1–25)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:40%;background:var(--accent-green)"></div></div>
+            <span class="bar-val">~$4.5M–$28M</span>
+          </div>
+        </div>
+        <p style="text-align:center;color:var(--muted);margin-top:.5rem">Total estimated incentive value: $20M–$50M over project life · Based on Ley 57-07, Decreto 202-08, Decreto 717-08</p>
+      </div>
+
+      <div class="chart-area" style="margin-top:2rem">
+        <div class="chart-title">Regulatory Agency Map — Dominican Republic Energy Sector</div>
+        <div class="architecture-diagram">
+          <div class="holdco" style="background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple))">
+            <strong>CNE</strong><br>Comisión Nacional de Energía<br><em>Policy · Concessions · Permits</em>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-top:1rem">
+            <div class="landco">
+              <strong>SIE</strong><br>Superintendencia de Electricidad<br><em>Regulation · Tariffs · Quality</em>
+            </div>
+            <div class="energyspv">
+              <strong>ETED</strong><br>Empresa de Transmisión Eléctrica<br><em>Grid · Interconnection · POI</em>
+            </div>
+            <div class="tokenspv">
+              <strong>MEM</strong><br>Ministerio de Energía y Minas<br><em>Energy Policy · Mining · Resources</em>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
+            <div class="landco">
+              <strong>DGAPP</strong><br>Dirección General de APP<br><em>PPP Framework · Ley 47-20</em>
+            </div>
+            <div class="tokenspv">
+              <strong>SIMV</strong><br>Superintendencia de Valores<br><em>Securities · Fideicomiso · Bonds</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 8 — SPV ARCHITECTURE                          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="spv">
+    <div class="section-header" style="--cat:var(--cat-spv)" onclick="toggleSection(this)">
+      <span class="icon">🏛️</span>
+      <h2>SPV Architecture — 4 Entity Structure</h2>
+      <span class="count">4 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="architecture-diagram">
+        <div class="arch-box holdco">HoldCo<div class="arch-sub">Delaware LLC · Tax optimization · GP/LP structure</div></div>
+        <div class="arch-arrow">↓ 100% Ownership</div>
+        <div class="arch-row">
+          <div class="arch-box landco">LandCo<div class="arch-sub">440.68 ha · Parcela 59 DC-8 · Titled land · Dual-use agrivoltaic</div></div>
+          <div class="arch-box energyspv">EnergySPV<div class="arch-sub">50 MW PV + 25 MW BESS · PPA · Grid interconnection · Operations</div></div>
+          <div class="arch-box tokenspv">TokenSPV<div class="arch-sub">$15M tokenization · 150K tokens · Reg D 506(c) · Secondary OTC</div></div>
+        </div>
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/spv/holdco/README.md">spv/holdco/README.md</a></td><td class="file-desc">HoldCo — Delaware LLC operating agreement, GP/LP structure, tax flow-through, management committee, reserved actions</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/spv/landco/README.md">spv/landco/README.md</a></td><td class="file-desc">LandCo — land holding entity, title insurance, mortgage lien priority, agrivoltaic lease structure, easements</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/spv/energy-spv/README.md">spv/energy-spv/README.md</a></td><td class="file-desc">EnergySPV — project company, PPA counterparty, concession holder, EPC contract party, O&amp;M, insurance, lender security package</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/spv/token-spv/README.md">spv/token-spv/README.md</a></td><td class="file-desc">TokenSPV — tokenization entity, investment agreement, distribution mechanics, transfer restrictions, compliance</td><td><span class="file-type type-md">MD</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 9 — DASHBOARD                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="dashboard">
+    <div class="section-header" style="--cat:var(--cat-dashboard)" onclick="toggleSection(this)">
+      <span class="icon">📱</span>
+      <h2>Dashboard — Express Server &amp; Components</h2>
+      <span class="count">11 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Express.js-powered live dashboard consuming all 7 financial models. Modular route architecture:
+        executive summary, cashflow projections, BESS operations, capital stack analysis, carbon credits,
+        land metrics, and token analytics. Chart.js visualizations. Real-time covenant status display.
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr class="subheading"><td colspan="3">SERVER &amp; COMPONENTS</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/server.js">dashboard/server.js</a></td><td class="file-desc">Express server — route mounting, middleware, static assets, error handling, port 3000, health check endpoint</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/components/layout.js">dashboard/components/layout.js</a></td><td class="file-desc">HTML layout template — head, navigation, footer, meta tags, responsive viewport, CSS linkage</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/components/nav.js">dashboard/components/nav.js</a></td><td class="file-desc">Navigation component — route links, active state highlighting, mobile hamburger menu, section anchors</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/components/charts.js">dashboard/components/charts.js</a></td><td class="file-desc">Chart.js configuration — bar/line/doughnut charts, color palettes, axis formatting, tooltip customization, responsive</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/public/style.css">dashboard/public/style.css</a></td><td class="file-desc">Dashboard CSS — responsive grid, dark theme, chart containers, KPI cards, status badges, mobile first</td><td><span class="file-type type-css">CSS</span></td></tr>
+          <tr class="subheading"><td colspan="3">API ROUTES — 7 ENDPOINTS</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/executive.js">dashboard/routes/executive.js</a></td><td class="file-desc">/executive — project KPIs, entity info, concession status, permit summary, key financial metrics</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/cashflow.js">dashboard/routes/cashflow.js</a></td><td class="file-desc">/cashflow — 25-year cashflow projections, DSCR chart data, cumulative revenue, debt service schedule</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/bess.js">dashboard/routes/bess.js</a></td><td class="file-desc">/bess — storage operations: arbitrage revenue, capacity payments, degradation curves, cycling analysis</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/capital.js">dashboard/routes/capital.js</a></td><td class="file-desc">/capital — capital stack visualization, D/E sensitivity matrix, WACC analysis, cost of capital breakdown</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/carbon.js">dashboard/routes/carbon.js</a></td><td class="file-desc">/carbon — credit generation projections, Verra pipeline status, forward contract analytics, pricing trends</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/land.js">dashboard/routes/land.js</a></td><td class="file-desc">/land — 440.68ha parcel metrics, agrivoltaic revenue, land lease NPV, dual-use analytics</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/dashboard/routes/token.js">dashboard/routes/token.js</a></td><td class="file-desc">/token — tokenization analytics, waterfall distributions, holder tracking, lockup countdown, yield metrics</td><td><span class="file-type type-js">JS</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 10 — DATA ROOM                                -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="dataroom">
+    <div class="section-header" style="--cat:var(--cat-data)" onclick="toggleSection(this)">
+      <span class="icon">📁</span>
+      <h2>Data Room &amp; Due Diligence</h2>
+      <span class="count">3 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Institutional due diligence package — expanded checklists covering corporate, financial, technical,
+        environmental, legal, regulatory, and land categories. JSON document index with status tracking.
+        Ready for VDR (virtual data room) import for deal process.
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/data-room/diligence-checklist.md">data-room/diligence-checklist.md</a></td><td class="file-desc">Diligence checklist — comprehensive due diligence items across all project dimensions, responsibility matrix</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/data-room/diligence-checklist-expanded.md">data-room/diligence-checklist-expanded.md</a></td><td class="file-desc">Expanded checklist — granular diligence items: permits, title searches, environmental studies, financial audits, engineering reports, insurance policies</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/data-room/document-index.json">data-room/document-index.json</a></td><td class="file-desc">Document index — master JSON registry of all project documents with completion status, responsible party, target dates</td><td><span class="file-type type-json">JSON</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 11 — DIAGRAMS                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="diagrams">
+    <div class="section-header" style="--cat:var(--cat-diagrams)" onclick="toggleSection(this)">
+      <span class="icon">📐</span>
+      <h2>Mermaid Architecture Diagrams</h2>
+      <span class="count">4 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/diagrams/dr-capital-plumbing-map.md">diagrams/dr-capital-plumbing-map.md</a></td><td class="file-desc">DR capital plumbing map — end-to-end flow: sponsor → HoldCo → SPVs → project → revenue → waterfall → distributions</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/diagrams/fideicomiso-workflow.md">diagrams/fideicomiso-workflow.md</a></td><td class="file-desc">Fideicomiso workflow — SIMV trust creation → asset transfer → cashflow collection → distribution → reporting cycle</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/diagrams/green-bond-issuance-workflow.md">diagrams/green-bond-issuance-workflow.md</a></td><td class="file-desc">Green bond issuance — mandate → structuring → SPO → marketing → pricing → settlement → reporting</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/diagrams/seven-year-timeline-exit.md">diagrams/seven-year-timeline-exit.md</a></td><td class="file-desc">7-year timeline — development → construction → COD → stabilization → operational → exit preparation → disposition</td><td><span class="file-type type-md">MD</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 12 — DOCUMENTATION                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="docs">
+    <div class="section-header" style="--cat:var(--cat-docs)" onclick="toggleSection(this)">
+      <span class="icon">📝</span>
+      <h2>Documentation Indexes — 5 Categories</h2>
+      <span class="count">5 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/environmental/README.md">docs/environmental/README.md</a></td><td class="file-desc">Environmental index — EIA, environmental licenses, monitoring plans, biodiversity assessments, water management</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/financial/README.md">docs/financial/README.md</a></td><td class="file-desc">Financial documentation index — budgets, projections, term sheets, closing memos, audit reports</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/technical/README.md">docs/technical/README.md</a></td><td class="file-desc">Technical documentation index — engineering specifications, grid studies, BESS documentation, panel specs, inverter data</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/land/README.md">docs/land/README.md</a></td><td class="file-desc">Land documentation index — title certificates, cadastral surveys, appraisals, easements, environmental site assessments</td><td><span class="file-type type-md">MD</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/docs/legal/README.md">docs/legal/README.md</a></td><td class="file-desc">Legal documentation index — corporate formation, project contracts, securities, multilateral compliance</td><td><span class="file-type type-md">MD</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 13 — EXPORT & AUDIT                           -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="export">
+    <div class="section-header" style="--cat:var(--cat-export)" onclick="toggleSection(this)">
+      <span class="icon">🔐</span>
+      <h2>Export &amp; Audit Bundle</h2>
+      <span class="count">2 files</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Deterministic audit export with SHA-256 hashing. Generates tamper-proof JSON bundles
+        containing full project state, financial model outputs, covenant snapshots, and governance records.
+        Used for lender reporting, regulatory submissions, and board packages.
+      </div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/export/audit_bundle.js">export/audit_bundle.js</a></td><td class="file-desc">Audit bundle generator — generateBundle() → JSON snapshot (meta + config + models + covenants + governance + data_room + capital + acquisition) · exportBundle() → .json + .sha256 · verifyBundle()</td><td><span class="file-type type-js">JS</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/scripts/generate-report.js">scripts/generate-report.js</a></td><td class="file-desc">Report generator — automated PDF/HTML report generation from financial model outputs, formatting, charts, executive summary compilation</td><td><span class="file-type type-js">JS</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--   SECTION 14 — SOURCE DOCUMENTS (87 FILES)              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="source-docs">
+    <div class="section-header" style="--cat:var(--cat-source)" onclick="toggleSection(this)">
+      <span class="icon">📦</span>
+      <h2>Source Documents — Permits, Titles, Engineering &amp; Corporate Records</h2>
+      <span class="count">400 files across 7 categories</span>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="section-body">
+      <div class="section-desc">
+        Complete primary source document archive supporting the shovel-ready status of the project.
+        Includes satellite imagery, land title and no-superposition certifications, appraisals and surveys,
+        official government permits and concession contracts, engineering designs (100MW + 140MW layouts
+        with 3D renders), ETED interconnection approvals, and corporate registration records.
+        All documents are version-controlled in the repository.
+      </div>
+
+      <!-- A — Satellite Imagery -->
+      <h3 class="source-category" style="color:var(--cat-source)">A — Satellite Imagery (18 files)</h3>
+      <div class="source-desc">High-resolution satellite photographs and aerial imagery of the 440.68 ha project site at Baní, Peravia Province. Used for layout design, environmental baseline, and investor presentations.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project.jpg">SunFarm Photovoltaica Project.jpg</a></td><td class="file-desc">Primary satellite view — complete project footprint, Baní DR</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-2.jpg">SunFarm Photovoltaica Project-2.jpg</a></td><td class="file-desc">Satellite view — zoomed boundary, access roads</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-3.jpg">SunFarm Photovoltaica Project-3.jpg</a></td><td class="file-desc">Satellite view — terrain features, topography</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-4.jpg">SunFarm Photovoltaica Project-4.jpg</a></td><td class="file-desc">Satellite view — adjacent infrastructure, road network</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-5.jpg">SunFarm Photovoltaica Project-5.jpg</a></td><td class="file-desc">Satellite view — vegetation coverage, land use patterns</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-6.jpg">SunFarm Photovoltaica Project-6.jpg</a></td><td class="file-desc">Satellite view — region context, Galión area</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-7.jpg">SunFarm Photovoltaica Project-7.jpg</a></td><td class="file-desc">Satellite view — wider area, municipal boundaries</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-8.jpg">SunFarm Photovoltaica Project-8.jpg</a></td><td class="file-desc">Satellite view — POI interconnection area, 138kV line route</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-9.jpg">SunFarm Photovoltaica Project-9.jpg</a></td><td class="file-desc">Satellite view — overlay with boundary markers</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-10.jpg">SunFarm Photovoltaica Project-10.jpg</a></td><td class="file-desc">Satellite view — detail section of project area</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-11.jpg">SunFarm Photovoltaica Project-11.jpg</a></td><td class="file-desc">Satellite view — northern section, boundary delineation</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/SunFarm%20Photovoltaica%20Project-12.jpg">SunFarm Photovoltaica Project-12.jpg</a></td><td class="file-desc">Satellite view — southern section, drainage patterns</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/1.png">1.png</a></td><td class="file-desc">Supplementary aerial — project overview image 1</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/2.png">2.png</a></td><td class="file-desc">Supplementary aerial — project overview image 2</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/3.png">3.png</a></td><td class="file-desc">Supplementary aerial — project overview image 3</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/4.png">4.png</a></td><td class="file-desc">Supplementary aerial — project overview image 4</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/5.png">5.png</a></td><td class="file-desc">Supplementary aerial — project overview image 5</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/A-Satellite-Pictures/6.jpg">6.jpg</a></td><td class="file-desc">Supplementary aerial — project overview image 6</td><td><span class="file-type type-img">IMG</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- B — Title & Certification -->
+      <h3 class="source-category" style="color:var(--cat-permits)">B — Title &amp; No-Superposition Certification (2 files)</h3>
+      <div class="source-desc">Official Dominican Republic land title and no-superposition certificates confirming clear, unencumbered ownership of Parcela 59 DC-8, Baní. Critical for lender security package and acquisition closing.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/B-Title-Certification/PARCELA%20NO.%2059%20DC%208%20BANI%20Land%20Title.pdf">PARCELA NO. 59 DC 8 BANI Land Title.pdf</a></td><td class="file-desc">Official land title — Parcela No. 59, Distrito Catastral 8, Baní · Certificate No. 0500009639 · 440.68 hectares · Issued by Jurisdicción Inmobiliaria · Used for mortgage registration and security package</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">TITLE</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/B-Title-Certification/Certificacion%20de%20No%20Superposicion%20(Terreno%20Bani).pdf">Certificacion de No Superposicion (Terreno Bani).pdf</a></td><td class="file-desc">No-superposition certification — confirms no overlapping land claims, liens, or competing titles on the Baní parcel. Required for lender comfort and title insurance qualification</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">CERT</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- C — Land Appraisal -->
+      <h3 class="source-category" style="color:var(--cat-permits)">C — Land Appraisal &amp; Survey (2 files)</h3>
+      <div class="source-desc">Independent land appraisals and cadastral surveys establishing fair market value and precise boundaries. The 2025 appraisal (TASACIÓN) near Galión confirms the $47.9M valuation supporting the $35M acquisition discount.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/C-Land-Appraisal/TASACION%20BAni%20Cerca%20de%20Galion%202025.pdf">TASACION BAni Cerca de Galion 2025.pdf</a></td><td class="file-desc">2025 land appraisal (TASACIÓN) — independent valuation near Galión, Baní · Establishes current FMV · Supports $35M acquisition pricing (26.9% discount to appraised $47.9M)</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-new">2025</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/C-Land-Appraisal/Bani%20survey%20sheet%202020.pdf">Bani survey sheet 2020.pdf</a></td><td class="file-desc">2020 cadastral survey — boundary coordinates, area measurement (440.68 ha), topographic features, access points, neighboring parcels</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- D — Organized Permits -->
+      <h3 class="source-category" style="color:var(--cat-permits)">D — Official Organized Permit Package (12 files)</h3>
+      <div class="source-desc">Master organized document set — the complete permit stack in labeled sequence (A through K). Includes the CNE definitive concession, official concession contract, ETED interconnection no-objection, land title, no-superposition certification, LARED/TERRABLU executive summaries, and corporate registration data. This is the definitive shovel-ready evidence package.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/1-Listados%20Documentos.jpeg">1-Listados Documentos.jpeg</a></td><td class="file-desc">Document listing index — photographic record of master document inventory</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/A-CNE-CP-0012-2020%20Sun%20Farmin%20Dominican%20Republic%20SRL%2020%20Abril%202020.pdf">A-CNE-CP-0012-2020 Sun Farmin Dominican Republic SRL 20 Abril 2020.pdf</a></td><td class="file-desc"><strong>CNE DEFINITIVE CONCESSION</strong> — Concesión Provisional CNE-CP-0012-2020 granted April 20, 2020, for 50 MW solar PV generation. Issued by Comisión Nacional de Energía to Sun Farming Dominican Republic SRL</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">PERMIT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/B-Carta%20a%20CNE%2018-%2001-2024%2C%201_52_16%20p.%20m..pdf">B-Carta a CNE 18-01-2024.pdf</a></td><td class="file-desc">Letter to CNE — January 18, 2024 correspondence regarding concession renewal/continuation, regulatory engagement confirmation</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/C-SNFRM%20Official%20Concesion%20Contract%202023.pdf">C-SNFRM Official Concesion Contract 2023.pdf</a></td><td class="file-desc"><strong>OFFICIAL CONCESSION CONTRACT</strong> — Binding concession contract 2023 between CNE and Sunfarming Dom Rep Invest SRL · Full terms, obligations, performance targets, penalties, force majeure, governing law</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">CONTRACT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/D-No%20objeci%C3%B3n%20ETED%20SF%20Feb%202024.pdf">D-No objeción ETED SF Feb 2024.pdf</a></td><td class="file-desc"><strong>ETED NO-OBJECTION</strong> — February 2024 · Empresa de Transmisión Eléctrica Dominicana confirms no-objection to interconnection at designated point of interconnection (138kV, 4.5km)</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">PERMIT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/E-ETED%20Informe%20tecnico%20para%20fines%20de%20revalidacion%20No%20Objecion%2C%20May%202025.pdf">E-ETED Informe tecnico revalidacion May 2025.pdf</a></td><td class="file-desc"><strong>ETED REVALIDATION 2025</strong> — Technical report for no-objection revalidation, May 2025 · Agro-energetic and innovative complex for generation · Updated grid impact study · Reconfirms POI viability</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-new">2025</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/F-Certificacion%20de%20No%20Superposicion%20(Terreno%20Bani).pdf">F-Certificacion de No Superposicion (Terreno Bani).pdf</a></td><td class="file-desc">No-superposition certification — confirms clean title with no overlapping claims on Baní parcel</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/G-PARCELA%20NO.%2059%20DC%208%20BANI%20Land%20Title.pdf">G-PARCELA NO. 59 DC 8 BANI Land Title.pdf</a></td><td class="file-desc">Land title — Parcela No. 59 DC-8 Baní · 440.68 ha · Certificate 0500009639</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/H-LARED%20Executive%20Summary%20PV%20Sunfarm%20Bani%20Final.pdf">H-LARED Executive Summary PV Sunfarm Bani Final.pdf</a></td><td class="file-desc">LARED executive summary — independent technical assessment of PV Sunfarm Baní project viability, yield analysis, resource assessment</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/I-LARED%20to%20TERRABLU%20Executive%20Summary%20PV%20Sunfarm%20Bani%20Final.pdf">I-LARED to TERRABLU Executive Summary PV Sunfarm Bani Final.pdf</a></td><td class="file-desc">LARED→TERRABLU executive summary — comprehensive engineering viability report, irradiance analysis, energy yield projections, environmental screening</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/J-SUNFARMING%20DOM%20REP%20INVEST%20_%20Dominican%20Republic%20_%20OpenCorporates%20Leandro%20Corral%20!.pdf">J-SUNFARMING DOM REP INVEST OpenCorporates.pdf</a></td><td class="file-desc">OpenCorporates legal entity record — Sunfarming Dom Rep Invest SRL · RNC 1-31-94471-1 · Mercantil 158067-SD · Registered directors · Company status: active</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/D-Organized-Documents/K-Sunfarming%20Food%20%26%20Energy%20%E2%80%93%20Comisi%C3%B3n%20Nacional%20de%20Energ%C3%ADa.pdf">K-Sunfarming Food &amp; Energy – Comisión Nacional de Energía.pdf</a></td><td class="file-desc">CNE public registry listing — Sunfarming Food &amp; Energy listed on Comisión Nacional de Energía website as registered energy concessionaire</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- E — Engineering Designs & Reports -->
+      <h3 class="source-category" style="color:var(--cat-source)">E — Engineering Designs, Layouts &amp; Technical Reports (32 files)</h3>
+      <div class="source-desc">Complete engineering design package: final 140 MW layout with professional engineering drawings by Jairo Peña (161.5 MWac), 4 high-resolution 3D terrain visualizations, satellite area mapping with precise area measurements, 100 MW alternative design with Google Earth overlays, and independent technical reports. Designs demonstrate construction-ready engineering maturity.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr class="subheading"><td colspan="3">TOP-LEVEL REPORTS</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Executive%20Summary%20PV%20Sunfarm%20Bani%20Final.pdf">Executive Summary PV Sunfarm Bani Final.pdf</a></td><td class="file-desc">Executive summary report — comprehensive PV project assessment, financial projections, technical specifications</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Informe%20tecnico%20para%20fines%20de%20revalidacion%20No%20Objecion%2C%20complejo%20agroenergetico%20e%20innovador%20para%20la%20ge.pdf">Informe tecnico revalidacion No Objecion.pdf</a></td><td class="file-desc">Technical report for interconnection no-objection revalidation — agro-energetic and innovative generation complex</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/PV-Heinsberg_1170-780.jpeg">PV-Heinsberg_1170-780.jpeg</a></td><td class="file-desc">Sunfarming reference project — Heinsberg PV installation photograph, operational proof-of-concept</td><td><span class="file-type type-img">IMG</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">140 MW FINAL DESIGN — Professional Engineering Layout</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/1-Dise%C3%B1o%20Final%20140%20Meg/140%20Meg%20(Limpio).png">140 Meg (Limpio).png</a></td><td class="file-desc">Final 140 MW design — clean layout drawing showing panel array placement, inverter stations, substation location, access roads</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/1-Dise%C3%B1o%20Final%20140%20Meg/Jairo%20Pe%C3%B1a%20161.5%20MWac%20%20REP%20DOMINICANA-140%20meg%20LAYOUT.pdf">Jairo Peña 161.5 MWac REP DOMINICANA-140 meg LAYOUT.pdf</a></td><td class="file-desc"><strong>PROFESSIONAL ENGINEERING LAYOUT</strong> — 161.5 MWac detailed design by Jairo Peña · Complete engineering drawings · Panel arrays, combiner boxes, inverter pads, collection system, substation, T-line route · Construction-grade detail level</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-new">ENGR</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">3D TERRAIN VISUALIZATION — 140 MW Design</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/2-Vistas%20en%203D%20Terreno%20Dise%C3%B1o-140%20Meg/Vistas%20Diseno%203d-1.png">Vistas Diseño 3d-1.png</a></td><td class="file-desc">3D terrain render — perspective view 1, panel arrays on topography</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/2-Vistas%20en%203D%20Terreno%20Dise%C3%B1o-140%20Meg/Vistas%20Diseno%203d-2.png">Vistas Diseño 3d-2.png</a></td><td class="file-desc">3D terrain render — perspective view 2, aerial angle</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/2-Vistas%20en%203D%20Terreno%20Dise%C3%B1o-140%20Meg/Vistas%20Diseno%203d-3.png">Vistas Diseño 3d-3.png</a></td><td class="file-desc">3D terrain render — perspective view 3, substation area</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/2-Vistas%20en%203D%20Terreno%20Dise%C3%B1o-140%20Meg/Vistas%20Diseno%203d-4.png">Vistas Diseño 3d-4.png</a></td><td class="file-desc">3D terrain render — perspective view 4, complete project overview</td><td><span class="file-type type-img">IMG</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">SATELLITE AREA MAPS — Precise Area Measurement</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/3-Fotos%20Satelites%20Areas%20Dise%C3%B1o%20y%20Sugeridas/Diseno%20140%20Mega%20(1%2C114%2C252%20Mts2).png">Diseño 140 Mega (1,114,252 Mts2).png</a></td><td class="file-desc">Satellite map — 140 MW design area: 1,114,252 m² (111.4 ha) of active PV deployment footprint</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/3-Fotos%20Satelites%20Areas%20Dise%C3%B1o%20y%20Sugeridas/Diseno%20140%20Mega%20(1%2C114%2C252%20Mts2)-B.png">Diseño 140 Mega (1,114,252 Mts2)-B.png</a></td><td class="file-desc">Satellite map — alternate view of 140 MW layout with boundary overlay</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/3-Fotos%20Satelites%20Areas%20Dise%C3%B1o%20y%20Sugeridas/Diseno%20140%20Mega%20(1%2C114%2C252%20Mts2)-C.png">Diseño 140 Mega (1,114,252 Mts2)-C.png</a></td><td class="file-desc">Satellite map — 140 MW design area detail with grid overlay</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/3-Fotos%20Satelites%20Areas%20Dise%C3%B1o%20y%20Sugeridas/Area%20a%20Comprar%20Sugerida%20(1%2C300%2C016%20Mts2)%20(2%2C067.43%20Tareas).png">Area a Comprar Sugerida (1,300,016 Mts2).png</a></td><td class="file-desc">Suggested acquisition area — 1,300,016 m² (2,067.43 tareas) · Includes buffer zones, access corridors, and future expansion</td><td><span class="file-type type-img">IMG</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">100 MW DESIGN PACKAGE — Alternative Layout</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1o%20100%20Meg/Jairo%20Pe%C3%B1a%20REP%20DOMINICANA%20(99%20MW)_LAYOUT.pdf">Jairo Peña REP DOMINICANA (99 MW)_LAYOUT.pdf</a></td><td class="file-desc">99 MW engineering layout — professional design by Jairo Peña, alternative configuration for Phase 1</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1o%20100%20Meg/Dise%C3%B1o%20Final%20Entregar%20a%20Bodden.png">Diseño Final Entregar a Bodden.png</a></td><td class="file-desc">Final 100 MW design — clean delivery version</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1o%20100%20Meg/Final%20Pict.png">Final Pict.png</a></td><td class="file-desc">Final picture — 100 MW design overview render</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1o%20100%20Meg/Foto%20Final%20Dise%C3%B1o%20Paneles%20Grupo%20Embajador.png">Foto Final Diseño Paneles Grupo Embajador.png</a></td><td class="file-desc">Final panel design — Grupo Embajador area, panel array configuration</td><td><span class="file-type type-img">IMG</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">GOOGLE EARTH OVERLAYS — 100 MW Terrain Design</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1os%20100%20Meg%20%20en%20Google%20Earth/Terreno%20dise%C3%B1ado%20sobre%20comprado.png">Terreno diseñado sobre comprado.png</a></td><td class="file-desc">Google Earth — designed area overlaid on purchased parcel boundary, showing fit</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1os%20100%20Meg%20%20en%20Google%20Earth/Terreno%20Firmado%20Compra.png">Terreno Firmado Compra.png</a></td><td class="file-desc">Google Earth — signed purchase area, contract boundary</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/E-Other-Reports/E-%20Other%20Reports/Dise%C3%B1o%20100%20Meg/Dise%C3%B1os%20100%20Meg%20%20en%20Google%20Earth/todos.png">todos.png</a></td><td class="file-desc">Google Earth — combined overlay, all parcels and design areas together</td><td><span class="file-type type-img">IMG</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- F — Official Permits & Corporate Data -->
+      <h3 class="source-category" style="color:var(--cat-permits)">F — Official Permits, Government Decrees &amp; Corporate Records (21 files)</h3>
+      <div class="source-desc">Complete government permits archive: multiple copies of CNE concessions (for redundancy/authenticity), official concession contract, ETED no-objection letters, Decreto 517-25, interconnection revalidation documents, CNE correspondence, OpenCorporates corporate registry data, and historical contract copies with site photographs.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr class="subheading"><td colspan="3">OFFICIAL PERMITS &amp; DATA</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/CNE-CP-0012-2020%20Sun%20Farmin%20Dominican%20Republic%20SRL.pdf">CNE-CP-0012-2020 Sun Farmin Dominican Republic SRL.pdf</a></td><td class="file-desc">CNE concession permit — definitive concession CNE-CP-0012-2020 for solar generation</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">PERMIT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/official%20Concesion%20Contract.pdf">official Concesion Contract.pdf</a></td><td class="file-desc"><strong>OFFICIAL CONCESSION CONTRACT</strong> — binding agreement with CNE, all terms and conditions</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-legal">CONTRACT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/Decreto%20517-25.pdf">Decreto 517-25.pdf</a></td><td class="file-desc"><strong>GOVERNMENT DECREE 517-25</strong> — presidential/governmental decree supporting project development framework and renewable energy deployment</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-new">DECREE</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/No%20objeci%C3%B3n%20ETED%20SF.pdf">No objeción ETED SF.pdf</a></td><td class="file-desc">ETED no-objection — original interconnection approval for Parque Solar Sunfarming</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/Revalidaci%C3%B3n%20No%20Objeci%C3%B3n%20al%20Punto%20de%20Interconexi%C3%B3n%20Parque%20Solar%20Sunfarming%20Food%20y%20Energy.pdf">Revalidación No Objeción Interconexión.pdf</a></td><td class="file-desc"><strong>INTERCONNECTION REVALIDATION</strong> — updated 2025 revalidation of no-objection for grid interconnection at designated POI</td><td><span class="file-type type-pdf">PDF</span> <span class="tag tag-new">2025</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/Carta%20CNE%2018-%2001-2024%2C%201_52_16%20p.%20m..pdf">Carta CNE 18-01-2024.pdf</a></td><td class="file-desc">CNE correspondence — January 2024 letter regarding concession status and regulatory compliance</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/Sunfarming%20Food%20%26%20Energy%20%E2%80%93%20Comisi%C3%B3n%20Nacional%20de%20Energ%C3%ADa.pdf">Sunfarming Food &amp; Energy – CNE.pdf</a></td><td class="file-desc">CNE public registry — Sunfarming listing on Comisión Nacional de Energía official website</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">INTERCONNECTION REVALIDATION (NEW APPROVAL)</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/Nueva%20Aprobacion%20Interconexion/Informe%20tecnico%20para%20fines%20de%20revalidacion%20No%20Objecion%2C%20complejo%20agroenergetico%20e%20innovador%20para%20la%20ge.pdf">Informe técnico revalidación (Nueva Aprobación).pdf</a></td><td class="file-desc">New approval — technical report for interconnection no-objection revalidation, innovative agro-energetic generation complex</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Official%20data%20and%20Permits/Nueva%20Aprobacion%20Interconexion/Revalidaci%C3%B3n%20No%20Objeci%C3%B3n%20al%20Punto%20de%20Interconexi%C3%B3n%20Parque%20Solar%20Sunfarming%20Food%20y%20Energy.pdf">Revalidación No Objeción (Nueva Aprobación).pdf</a></td><td class="file-desc">Updated revalidation — formal no-objection renewal for Parque Solar Sunfarming Food y Energy interconnection</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">CORPORATE DATA &amp; HISTORICAL RECORDS</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Sun%20Farm%20Dominican%20Republic%20DATA/SUNFARMING%20DOM%20REP%20INVEST%20_%20Dominican%20Republic%20_%20OpenCorporates.pdf">SUNFARMING DOM REP INVEST OpenCorporates.pdf</a></td><td class="file-desc">OpenCorporates corporate record — entity status, registration details, directors, filing history, RNC verification</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Sun%20Farm%20Dominican%20Republic%20DATA/CNE-CP-0012-2020%20Sun%20Farmin%20Dominican%20Republic%20SRL.pdf">CNE-CP-0012-2020 (Corporate DATA copy).pdf</a></td><td class="file-desc">CNE concession — corporate file copy for internal records</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Sun%20Farm%20Dominican%20Republic%20DATA/Copia%20Contrato%20de%20Will/Bani%20survey%20sheet%202020.pdf">Bani survey sheet 2020 (contract copy).pdf</a></td><td class="file-desc">Survey sheet — 2020 cadastral survey included with historical contract records</td><td><span class="file-type type-pdf">PDF</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Sun%20Farm%20Dominican%20Republic%20DATA/Copia%20Contrato%20de%20Will/PV-Heinsberg_1170-780.jpeg">PV-Heinsberg (contract copy).jpeg</a></td><td class="file-desc">Sunfarming reference project — Heinsberg installation (historical file)</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Sun%20Farm%20Dominican%20Republic%20DATA/Copia%20Contrato%20de%20Will/PHOTO-2022-06-17-13-21-39.jpg">PHOTO-2022-06-17 (1).jpg</a></td><td class="file-desc">Site photograph — June 2022, project area documentation</td><td><span class="file-type type-img">IMG</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/F-Other-Documents/F-Other%20Many%20Documents/Sun%20Farm%20Dominican%20Republic%20DATA/Copia%20Contrato%20de%20Will/PHOTO-2022-06-17-13-24-03.jpg">PHOTO-2022-06-17 (2).jpg</a></td><td class="file-desc">Site photograph — June 2022, terrain features documentation</td><td><span class="file-type type-img">IMG</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- G — Drone Survey & Orthomosaic Mapping -->
+      <h3 class="source-category" style="color:var(--cat-source)">G — Drone Survey &amp; Orthomosaic Mapping (313 files) <span class="tag tag-new">NEW 2025</span></h3>
+      <div class="source-desc">Complete DJI drone survey of the 440.68 ha project site conducted September 11, 2025. Includes 302 high-resolution orthomosaic photographs (geo-tagged at 18.300858°N, 70.361325°W), KMZ flight mapping file, drone video footage, low-resolution reference videos, and SRT telemetry data with GPS coordinates, altitude, camera settings, and timestamps. Provides construction-grade aerial documentation of the entire site footprint.</div>
+      <table class="file-table">
+        <thead><tr><th>File</th><th>Description</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr class="subheading"><td colspan="3">KMZ MAPPING FILE</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/blob/main/source-documents/G-Drone-Survey/6E20B66B-5FB4-45E7-ABDA-57334C216950.kmz">6E20B66B-5FB4-45E7-ABDA-57334C216950.kmz</a></td><td class="file-desc">KMZ flight mapping file — drone flight path, geofence boundary, waypoints. Opens in Google Earth / QGIS for precise geospatial analysis of survey coverage</td><td><span class="file-type type-pdf">KMZ</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">ORTHOMOSAIC PHOTOGRAPHS — 302 High-Resolution Images</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/tree/main/source-documents/G-Drone-Survey/Orthomosaic-Photos">Orthomosaic-Photos/ (302 JPGs)</a></td><td class="file-desc">302 DJI orthomosaic photographs — DJI_20250911134309_0030_D.JPG through DJI_20250911140112_0333_D.JPG · f/2.8, 140mm, ISO 110 · GPS-tagged · Altitude 31.5m relative / 122m absolute · Full site coverage for terrain analysis, vegetation mapping, and construction planning</td><td><span class="file-type type-img">IMG×302</span></td></tr>
+
+          <tr class="subheading"><td colspan="3">DRONE VIDEO &amp; TELEMETRY</td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/tree/main/source-documents/G-Drone-Survey/Video">Tutorial sobre como subir fotos al Mapa.mp4</a></td><td class="file-desc">Tutorial video — guide for uploading orthomosaic photos to mapping platform</td><td><span class="file-type type-img">MP4</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/tree/main/source-documents/G-Drone-Survey/Video">DJI_20250911134305_0030_D_s.MP4 + .LRF + .SRT</a></td><td class="file-desc">Drone video flight 1 — full HD + low-res reference + SRT telemetry (GPS 18.300858°N, 70.361325°W, altitude data, timestamps)</td><td><span class="file-type type-img">MP4+SRT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/tree/main/source-documents/G-Drone-Survey/Video">DJI_20250911135032_0031_D_s.MP4 + .LRF + .SRT</a></td><td class="file-desc">Drone video flight 2 — continued survey coverage + telemetry</td><td><span class="file-type type-img">MP4+SRT</span></td></tr>
+          <tr><td class="file-name"><a href="https://github.com/FTHTrading/sunfarm--platform/tree/main/source-documents/G-Drone-Survey/Video">DJI_20250911135738_0032_D_s.MP4 + .LRF + .SRT</a></td><td class="file-desc">Drone video flight 3 — final survey pass + telemetry data</td><td><span class="file-type type-img">MP4+SRT</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <strong>SunFarm Platform</strong> — Institutional Solar Infrastructure &amp; Capital Orchestration Engine
+  </div>
+  <p>Entity: Sunfarming Dom Rep Invest, S.R.L. · RNC 1-31-94471-1 · Baní, Peravia Province, Dominican Republic</p>
+  <p class="footer-links">
+    <a href="https://github.com/FTHTrading/sunfarm--platform">English Repository</a> ·
+    <a href="https://github.com/FTHTrading/SunFarm-Plataforma-Infraestructura-Solar-Institucional-y-Motor-de-Orquestaci-n-de-Capital">Repositorio en Español</a>
+  </p>
+  <p class="footer-meta">Classification: CONFIDENTIAL — Qualified Investors Only · © 2025 FTH Trading · All Rights Reserved</p>
+</footer>
+
+<script>
+  function toggleSection(header) {
+    header.classList.toggle('collapsed');
+    const body = header.nextElementSibling;
+    if (header.classList.contains('collapsed')) {
+      body.style.maxHeight = '0';
+      body.style.padding = '0';
+      body.style.borderWidth = '0';
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.maxHeight = '';
+      body.style.padding = '';
+      body.style.borderWidth = '';
+      body.style.overflow = '';
+    }
+  }
+  document.querySelectorAll('.toc-link').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const header = target.querySelector('.section-header');
+        if (header && header.classList.contains('collapsed')) toggleSection(header);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

@@ -12,3 +12,8 @@ coverage/
 .vscode/
 *.swp
 *.swo
+
+# Large drone video files (exceed GitHub 100MB limit)
+# SRT telemetry and KMZ mapping files are tracked
+source-documents/G-Drone-Survey/Video/*.MP4
+source-documents/G-Drone-Survey/Video/*.LRF
