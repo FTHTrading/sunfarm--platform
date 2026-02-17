@@ -1,0 +1,89 @@
+/* dashboard/public/style.css — Dashboard styles */
+
+:root {
+  --primary: #1a5276;
+  --primary-light: #2980b9;
+  --accent: #f39c12;
+  --success: #27ae60;
+  --danger: #e74c3c;
+  --bg: #f5f6fa;
+  --card-bg: #ffffff;
+  --text: #2c3e50;
+  --text-light: #7f8c8d;
+  --border: #dcdde1;
+  --sidebar-width: 220px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+/* Header */
+header { background: var(--primary); color: white; padding: 14px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.header-inner { display: flex; align-items: center; gap: 20px; }
+.logo { font-size: 1.3em; font-weight: 700; }
+.subtitle { font-size: 0.85em; opacity: 0.8; }
+
+/* Layout */
+.container { display: flex; min-height: calc(100vh - 120px); }
+.sidebar { width: var(--sidebar-width); background: var(--card-bg); border-right: 1px solid var(--border); padding: 16px 0; flex-shrink: 0; }
+.content { flex: 1; padding: 24px 32px; max-width: 1200px; }
+
+/* Navigation */
+nav a { display: flex; align-items: center; gap: 8px; padding: 10px 20px; color: var(--text); text-decoration: none; font-size: 0.9em; transition: background 0.15s, border-left 0.15s; border-left: 3px solid transparent; }
+nav a:hover { background: var(--bg); border-left-color: var(--primary-light); }
+nav a.active { background: #eaf2f8; border-left-color: var(--primary); font-weight: 600; color: var(--primary); }
+.nav-icon { font-size: 1.1em; }
+
+/* Page title */
+.page-title { font-size: 1.5em; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+
+/* KPI Cards */
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.kpi-card { background: var(--card-bg); border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-top: 3px solid var(--primary); }
+.kpi-value { font-size: 1.8em; font-weight: 700; color: var(--primary); }
+.kpi-label { font-size: 0.85em; color: var(--text-light); margin-top: 4px; }
+.kpi-sub { font-size: 0.75em; color: var(--text-light); margin-top: 2px; }
+
+/* Cards */
+.card { background: var(--card-bg); border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.card h3 { font-size: 1.1em; color: var(--primary); margin-bottom: 12px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; font-size: 0.88em; margin: 8px 0; }
+thead { background: var(--primary); color: white; }
+th { padding: 10px 12px; text-align: left; font-weight: 600; }
+td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+tr:hover { background: #f8f9fa; }
+tr:nth-child(even) { background: #fafbfc; }
+tr:nth-child(even):hover { background: #f0f1f3; }
+
+/* Charts */
+canvas { max-width: 100%; margin-bottom: 16px; }
+
+/* Section */
+.section { margin-bottom: 28px; }
+.section-title { font-size: 1.15em; color: var(--primary); margin-bottom: 12px; font-weight: 600; }
+
+/* Grid layout */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+
+/* Status badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78em; font-weight: 600; }
+.badge-success { background: #d5f5e3; color: #1e8449; }
+.badge-warning { background: #fdebd0; color: #b7950b; }
+.badge-danger { background: #fadbd8; color: #b03a2e; }
+
+/* Footer */
+footer { background: var(--primary); color: white; text-align: center; padding: 12px; font-size: 0.8em; opacity: 0.9; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container { flex-direction: column; }
+  .sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--border); }
+  nav { display: flex; overflow-x: auto; }
+  nav a { white-space: nowrap; border-left: none; border-bottom: 3px solid transparent; }
+  nav a.active { border-bottom-color: var(--primary); border-left: none; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .content { padding: 16px; }
+}

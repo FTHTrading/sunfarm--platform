@@ -1,0 +1,22 @@
+{
+  "name": "sunfarm-platform",
+  "version": "1.0.0",
+  "description": "SunFarm PV 50MW — Institutional-Grade Infrastructure Platform",
+  "main": "dashboard/server.js",
+  "scripts": {
+    "start": "node dashboard/server.js",
+    "cashflow": "node models/25-year-cashflow.js",
+    "sensitivity": "node models/capital-stack-sensitivity.js",
+    "waterfall": "node models/token-waterfall.js",
+    "bess": "node models/bess-revenue-engine.js",
+    "carbon": "node models/carbon-credit-engine.js",
+    "land": "node models/land-monetization.js",
+    "report": "node scripts/generate-report.js",
+    "all-models": "node models/25-year-cashflow.js && node models/capital-stack-sensitivity.js && node models/token-waterfall.js && node models/bess-revenue-engine.js && node models/carbon-credit-engine.js && node models/land-monetization.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

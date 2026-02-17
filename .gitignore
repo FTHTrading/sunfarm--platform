@@ -1,0 +1,14 @@
+node_modules/
+.env
+*.log
+npm-debug.log*
+INVESTOR-REPORT.txt
+.DS_Store
+Thumbs.db
+dist/
+build/
+coverage/
+.idea/
+.vscode/
+*.swp
+*.swo

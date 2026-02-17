@@ -1,0 +1,273 @@
+{
+  "project": "SunFarm PV — 50 MW Solar Platform",
+  "entity": "Sunfarming Dom Rep Invest, S.R.L.",
+  "rnc": "1-31-94471-1",
+  "lastUpdated": "2025-06-01",
+  "categories": [
+    {
+      "id": "A",
+      "name": "Entidad Jurídica (Legal Entity)",
+      "folder": "source-documents/A - Entidad Jurídica",
+      "documents": [
+        {
+          "id": "A-001",
+          "name": "Registro Mercantil — Sunfarming Dom Rep Invest S.R.L.",
+          "type": "Corporate Registration",
+          "status": "Complete",
+          "critical": true,
+          "notes": "RNC 1-31-94471-1. Active status confirmed."
+        },
+        {
+          "id": "A-002",
+          "name": "Acta Constitutiva",
+          "type": "Articles of Incorporation",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Formation documents for operating entity."
+        },
+        {
+          "id": "A-003",
+          "name": "RNC Certificate",
+          "type": "Tax Registration",
+          "status": "Complete",
+          "critical": true,
+          "notes": "National taxpayer registry."
+        },
+        {
+          "id": "A-004",
+          "name": "Board Resolutions",
+          "type": "Corporate Governance",
+          "status": "Pending",
+          "critical": false,
+          "notes": "Resolutions for SPV creation and capital raise authorization."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Titulación del Terreno (Land Title)",
+      "folder": "source-documents/B - Titulación del Terreno",
+      "documents": [
+        {
+          "id": "B-001",
+          "name": "Certificación de No Superposición",
+          "type": "Land Title Certification",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Confirms clean title with no overlapping claims on 440 ha."
+        },
+        {
+          "id": "B-002",
+          "name": "Deslinde y Mensura",
+          "type": "Land Survey",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Official land survey and boundary demarcation."
+        },
+        {
+          "id": "B-003",
+          "name": "Catastro Registration",
+          "type": "Cadastral Record",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Registered with national land registry."
+        },
+        {
+          "id": "B-004",
+          "name": "Land Use Zoning Confirmation",
+          "type": "Zoning",
+          "status": "Complete",
+          "critical": false,
+          "notes": "Agricultural/energy zoning confirmed for solar use."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Concesión y Permisos (Concession & Permits)",
+      "folder": "source-documents/C - Concesión y Permisos",
+      "documents": [
+        {
+          "id": "C-001",
+          "name": "CNE Definitive Concession — CNE-CP-0012-2020",
+          "type": "Generation Concession",
+          "status": "Complete",
+          "critical": true,
+          "notes": "25-year definitive concession for 50 MW AC solar generation."
+        },
+        {
+          "id": "C-002",
+          "name": "SIE Registration — SIE-EP-0045",
+          "type": "Market Registration",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Registration with energy market regulator."
+        },
+        {
+          "id": "C-003",
+          "name": "Ley 57-07 Tax Exemption Application",
+          "type": "Tax Incentive",
+          "status": "Complete",
+          "critical": true,
+          "notes": "10-year income tax exemption under renewable energy law."
+        },
+        {
+          "id": "C-004",
+          "name": "Construction Permit",
+          "type": "Municipal Permit",
+          "status": "Pending",
+          "critical": true,
+          "notes": "Required before construction start. Depends on EPC contract."
+        },
+        {
+          "id": "C-005",
+          "name": "Decreto 517-25 BESS Compliance Filing",
+          "type": "Regulatory Filing",
+          "status": "Requires Update",
+          "critical": true,
+          "notes": "BESS mandate compliance documentation. Must include 25MW/100MWh specs."
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Grid Access & Interconnection",
+      "folder": "source-documents/D - Grid Access",
+      "documents": [
+        {
+          "id": "D-001",
+          "name": "ETED No-Objection Letter",
+          "type": "Grid Access Approval",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Approved Feb 2024, revalidated May 2025. 138kV POI."
+        },
+        {
+          "id": "D-002",
+          "name": "Interconnection Study",
+          "type": "Grid Study",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Technical study for 138kV connection at Peravia Solar I & II."
+        },
+        {
+          "id": "D-003",
+          "name": "Transmission Line Design (4.5 km)",
+          "type": "Engineering",
+          "status": "Complete",
+          "critical": false,
+          "notes": "Double-circuit 138kV line from project to substation."
+        },
+        {
+          "id": "D-004",
+          "name": "PPA Term Sheet",
+          "type": "Off-take Agreement",
+          "status": "Pending",
+          "critical": true,
+          "notes": "Draft PPA at $70/MWh with 1.5% annual escalation."
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Financial & Planning",
+      "folder": "source-documents/E - Financial & Planning",
+      "documents": [
+        {
+          "id": "E-001",
+          "name": "Project Budget & CAPEX Breakdown",
+          "type": "Financial Plan",
+          "status": "Complete",
+          "critical": true,
+          "notes": "$55M total CAPEX with detailed line items."
+        },
+        {
+          "id": "E-002",
+          "name": "25-Year Pro Forma Model",
+          "type": "Financial Model",
+          "status": "Complete",
+          "critical": true,
+          "notes": "See models/25-year-cashflow.js — 3 scenarios."
+        },
+        {
+          "id": "E-003",
+          "name": "Capital Stack Analysis",
+          "type": "Financial Structure",
+          "status": "Complete",
+          "critical": true,
+          "notes": "See CAPITAL-STACK.md and models/capital-stack-sensitivity.js"
+        },
+        {
+          "id": "E-004",
+          "name": "Token Economics & Waterfall",
+          "type": "Tokenization",
+          "status": "Complete",
+          "critical": true,
+          "notes": "See TOKENIZATION-STRUCTURE.md and models/token-waterfall.js"
+        },
+        {
+          "id": "E-005",
+          "name": "DFI Term Sheet (Draft)",
+          "type": "Debt Financing",
+          "status": "Pending",
+          "critical": true,
+          "notes": "Target: IFC, DFC, or OPIC-successor. $33M senior debt."
+        },
+        {
+          "id": "E-006",
+          "name": "Insurance Proposal",
+          "type": "Risk Transfer",
+          "status": "Pending",
+          "critical": false,
+          "notes": "Builder's all-risk, delay in start-up, operational all-risk."
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "name": "Environmental",
+      "folder": "source-documents/F - Environmental",
+      "documents": [
+        {
+          "id": "F-001",
+          "name": "Environmental Impact Assessment (EIA)",
+          "type": "Environmental Study",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Full EIA submitted and approved."
+        },
+        {
+          "id": "F-002",
+          "name": "Environmental License 0379-20",
+          "type": "Environmental Permit",
+          "status": "Complete",
+          "critical": true,
+          "notes": "Active environmental license for construction and operation."
+        },
+        {
+          "id": "F-003",
+          "name": "Environmental Monitoring Plan",
+          "type": "Compliance",
+          "status": "Complete",
+          "critical": false,
+          "notes": "Annual monitoring requirements as condition of license."
+        },
+        {
+          "id": "F-004",
+          "name": "Carbon Credit Methodology",
+          "type": "Carbon",
+          "status": "Pending",
+          "critical": false,
+          "notes": "Verra VCS or Gold Standard project registration pending."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 23,
+    "complete": 16,
+    "pending": 5,
+    "requiresUpdate": 1,
+    "criticalPending": 3
+  }
+}
