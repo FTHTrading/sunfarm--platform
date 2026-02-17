@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "description": "SunFarm PV — Institutional Capital Outreach Tracker",
+    "project": "SunFarm PV 50MW AC / 59.69 MWp DC + 25MW/100MWh BESS",
+    "entity": "Sunfarming Dom Rep Invest, S.R.L.",
+    "rnc": "1-31-94471-1",
+    "last_updated": "2025-01-01T00:00:00Z"
+  },
+  "channels": [
+    {
+      "channel": "Senior Project Finance",
+      "target_amount_usd": 33000000,
+      "counterparties": [
+        {
+          "name": "IDB Invest",
+          "type": "DFI",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit Expression of Interest",
+          "notes": "A/B-loan structure. Can mobilize commercial banks via B-loan."
+        },
+        {
+          "name": "IFC",
+          "type": "DFI",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit project brief via IFC Portal",
+          "notes": "InfraVentures may co-invest equity. MCPP for blended mobilization."
+        },
+        {
+          "name": "Scotiabank DR",
+          "type": "Commercial Bank",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Initial meeting with energy finance desk",
+          "notes": "Active in DR energy lending."
+        },
+        {
+          "name": "BanReservas",
+          "type": "State Bank",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit loan application",
+          "notes": "Largest DR bank. Government relationship."
+        }
+      ]
+    },
+    {
+      "channel": "Fideicomiso de Oferta Pública",
+      "target_amount_usd": 25000000,
+      "counterparties": [
+        {
+          "name": "Fiduciaria Popular",
+          "type": "Fiduciary",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Initial structuring consultation",
+          "notes": "Largest fiduciary in DR. Larimar I precedent."
+        },
+        {
+          "name": "Fiduciaria BHD León",
+          "type": "Fiduciary",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "RFP for fiduciary services",
+          "notes": "BHD León banking relationship."
+        },
+        {
+          "name": "SIMV",
+          "type": "Regulator",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Pre-filing consultation",
+          "notes": "Securities regulator. Must approve public offering."
+        }
+      ]
+    },
+    {
+      "channel": "Green Bond (ICMA + TVRD)",
+      "target_amount_usd": 35000000,
+      "counterparties": [
+        {
+          "name": "Sustainalytics (Morningstar)",
+          "type": "SPO Provider",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Request SPO engagement proposal",
+          "notes": "Tier 1 SPO provider. $40-55K for assessment."
+        },
+        {
+          "name": "AFP Popular",
+          "type": "Institutional Investor",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Non-deal roadshow meeting",
+          "notes": "Largest DR pension fund. Target anchor investor."
+        },
+        {
+          "name": "AFP Siembra",
+          "type": "Institutional Investor",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Non-deal roadshow meeting",
+          "notes": "Second largest AFP."
+        }
+      ]
+    },
+    {
+      "channel": "DFI Blended Finance",
+      "target_amount_usd": 15000000,
+      "counterparties": [
+        {
+          "name": "DFC (US)",
+          "type": "DFI",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit pre-application screening form",
+          "notes": "Direct loan up to $600M. PRI available. 15-25yr tenor."
+        },
+        {
+          "name": "Green Climate Fund",
+          "type": "Climate Fund",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Engage accredited entity (IDB or UNDP)",
+          "notes": "Requires accredited entity. Concessional debt + grant components."
+        }
+      ]
+    },
+    {
+      "channel": "ECA / Vendor Finance",
+      "target_amount_usd": 8000000,
+      "counterparties": [
+        {
+          "name": "Euler Hermes (Germany)",
+          "type": "ECA",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Identify German-origin equipment for cover",
+          "notes": "Covers German exports (SMA inverters, etc.)."
+        },
+        {
+          "name": "K-sure (Korea)",
+          "type": "ECA",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Confirm Korean module supplier participation",
+          "notes": "Covers Korean exports (Hanwha Q Cells, etc.)."
+        },
+        {
+          "name": "LONGi Green Energy",
+          "type": "Module Vendor",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Request vendor financing terms with supply agreement",
+          "notes": "5-15% deferred payment common. 12-36 month terms."
+        }
+      ]
+    },
+    {
+      "channel": "Carbon Forward Offtake",
+      "target_amount_usd": 4000000,
+      "counterparties": [
+        {
+          "name": "South Pole",
+          "type": "Carbon Developer",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit project for VCS eligibility assessment",
+          "notes": "End-to-end VCS/Gold Standard development + forward offtake."
+        },
+        {
+          "name": "Microsoft Climate",
+          "type": "Corporate Buyer",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit via Microsoft carbon removal RFP",
+          "notes": "$1B+ removal commitment. Premium pricing for high-integrity credits."
+        }
+      ]
+    },
+    {
+      "channel": "Political Risk Insurance",
+      "target_amount_usd": 0,
+      "counterparties": [
+        {
+          "name": "MIGA (World Bank)",
+          "type": "Multilateral Insurer",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Submit preliminary application",
+          "notes": "Covers expropriation, currency transfer, breach of contract, war. Essential for DFI stack."
+        }
+      ]
+    },
+    {
+      "channel": "Token Securities",
+      "target_amount_usd": 8800000,
+      "counterparties": [
+        {
+          "name": "Target: Accredited Investors",
+          "type": "Investor Class",
+          "contact": "",
+          "status": "not_started",
+          "last_contact": null,
+          "next_action": "Finalize token offering memorandum",
+          "notes": "8% preferred return + 20% revenue participation. Reg D / Reg S."
+        }
+      ]
+    }
+  ],
+  "status_legend": {
+    "not_started": "No engagement initiated",
+    "initial_contact": "First outreach made",
+    "in_discussion": "Active dialogue / NDA signed",
+    "term_sheet": "Term sheet under negotiation",
+    "due_diligence": "DD process underway",
+    "committed": "Commitment letter received",
+    "closed": "Funding disbursed"
+  }
+}

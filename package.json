@@ -12,6 +12,11 @@
     "carbon": "node models/carbon-credit-engine.js",
     "land": "node models/land-monetization.js",
     "report": "node scripts/generate-report.js",
+    "covenants": "node governance/covenants.js",
+    "enforcement": "node governance/enforcement.js",
+    "dispute-board": "node governance/dispute_board.js",
+    "governance": "node governance/governance-adapter.js",
+    "audit-bundle": "node export/audit_bundle.js",
     "all-models": "node models/25-year-cashflow.js && node models/capital-stack-sensitivity.js && node models/token-waterfall.js && node models/bess-revenue-engine.js && node models/carbon-credit-engine.js && node models/land-monetization.js"
   },
   "dependencies": {
