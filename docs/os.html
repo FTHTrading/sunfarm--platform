@@ -13,13 +13,25 @@
 <!--   SOLAR INFRASTRUCTURE OS — HERO                           -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 <div class="os-hero">
-  <div class="os-hero-badge">SOLAR INFRASTRUCTURE OPERATING SYSTEM v2.0</div>
+  <div class="os-hero-badge">SOLAR INFRASTRUCTURE OPERATING SYSTEM v2.2</div>
   <h1>SunFarm <span class="os-thin">| Genesis Deployment</span></h1>
   <p class="os-subtitle">50 MW AC · 59.69 MWp DC Bifacial PV + 25 MW / 100 MWh LFP BESS · Baní, DR</p>
   <div class="os-system-bar">
     <div class="os-sys-item">
       <span class="os-sys-label">System Status</span>
       <span class="os-sys-val os-status-active">● ACTIVE</span>
+    </div>
+    <div class="os-sys-item">
+      <span class="os-sys-label">Core Entitlements</span>
+      <span class="os-sys-val" style="color:var(--accent-green)">15 SECURED</span>
+    </div>
+    <div class="os-sys-item">
+      <span class="os-sys-label">Financial Close</span>
+      <span class="os-sys-val" style="color:var(--accent-yellow)">ACTIVATION IN PROGRESS</span>
+    </div>
+    <div class="os-sys-item">
+      <span class="os-sys-label">Counterparty Sprint</span>
+      <span class="os-sys-val" style="color:var(--accent-blue)">EPC · PPA · IE</span>
     </div>
     <div class="os-sys-item">
       <span class="os-sys-label">De-Risk Cycle</span>
@@ -1898,6 +1910,52 @@
           <div class="os-at-par-icon" style="color:var(--accent-yellow)">●</div>
           <div class="os-at-par-name">O&M Engagement</div>
           <div class="os-at-par-note">Can run alongside EPC selection process</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ 72-HOUR COUNTERPARTY CAPTURE SPRINT ═══ -->
+    <div class="os-at-critical-path" style="border-color:var(--accent-blue)">
+      <h3>⚡ 72-Hour Counterparty Capture Sprint</h3>
+      <p class="os-at-cp-desc">Stop searching for missing docs. Start generating them via counterparties. Three simultaneous mandates launched to collapse 6–8 missing items in parallel.</p>
+      <div class="os-at-cp-chain">
+        <div class="os-at-cp-node" style="border-color:var(--cat-acquisition);background:rgba(248,81,73,0.1)">
+          <div class="os-at-cp-num">A</div>
+          <div class="os-at-cp-name">PPA LOI</div>
+          <div class="os-at-cp-why">Indicative tariff letter → #5</div>
+        </div>
+        <div class="os-at-cp-arrow">+</div>
+        <div class="os-at-cp-node" style="border-color:var(--accent-yellow);background:rgba(210,153,34,0.1)">
+          <div class="os-at-cp-num">B</div>
+          <div class="os-at-cp-name">EPC RFQ</div>
+          <div class="os-at-cp-why">Budget quotes → #8 #14 #15 #16</div>
+        </div>
+        <div class="os-at-cp-arrow">+</div>
+        <div class="os-at-cp-node" style="border-color:var(--accent-green);background:rgba(63,185,80,0.1)">
+          <div class="os-at-cp-num">C</div>
+          <div class="os-at-cp-name">IE Mandate</div>
+          <div class="os-at-cp-why">Interim bankability → #6 triggers #7</div>
+        </div>
+        <div class="os-at-cp-arrow">→</div>
+        <div class="os-at-cp-node os-at-cp-green">
+          <div class="os-at-cp-num">✓</div>
+          <div class="os-at-cp-name">6–8 Items Collapse</div>
+          <div class="os-at-cp-why">3 actions → half the gap closed</div>
+        </div>
+      </div>
+
+      <div style="margin-top:1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem">
+        <div style="background:rgba(248,81,73,0.08);border:1px solid rgba(248,81,73,0.3);border-radius:8px;padding:1rem">
+          <div style="font-weight:700;color:#f85149;margin-bottom:.5rem">A — PPA: Indicative LOI</div>
+          <div style="font-size:.85rem;color:var(--muted)">Target: EDESUR (service area) or CDEEE (backstop)<br>Ask: Tariff range · escalation · tenor · credit support<br>Timeline: 10–20 business days for LOI<br>Artifact: <code>/counterparty-pack/outbound/PPA-LOI-Request.md</code></div>
+        </div>
+        <div style="background:rgba(210,153,34,0.08);border:1px solid rgba(210,153,34,0.3);border-radius:8px;padding:1rem">
+          <div style="font-weight:700;color:var(--accent-yellow);margin-bottom:.5rem">B — EPC: Budget Quotes</div>
+          <div style="font-size:.85rem;color:var(--muted)">Target: Grupo Embajador · Bodden · 1 international backup<br>Ask: Budget price (PV + BESS) · schedule · exclusions · commercial terms<br>Timeline: 10 business days for budget response<br>Artifact: <code>/counterparty-pack/outbound/EPC-RFQ-Lite.md</code></div>
+        </div>
+        <div style="background:rgba(63,185,80,0.08);border:1px solid rgba(63,185,80,0.3);border-radius:8px;padding:1rem">
+          <div style="font-weight:700;color:var(--accent-green);margin-bottom:.5rem">C — IE: Interim Bankability</div>
+          <div style="font-size:.85rem;color:var(--muted)">Target: DNV / Black & Veatch / Mott MacDonald / WSP<br>Ask: Interim letter (2–3 weeks) + gap list + irradiation plan<br>Timeline: 7 days for proposal, 2–3 weeks for interim letter<br>Artifact: <code>/counterparty-pack/outbound/IE-RFP-Scope.md</code></div>
         </div>
       </div>
     </div>

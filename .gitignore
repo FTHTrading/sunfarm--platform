@@ -17,3 +17,6 @@ coverage/
 # SRT telemetry and KMZ mapping files are tracked
 source-documents/G-Drone-Survey/Video/*.MP4
 source-documents/G-Drone-Survey/Video/*.LRF
+
+# Large drone orthomosaic photos (1.8 GB, exceed GitHub limits)
+source-documents/G-Drone-Survey/Orthomosaic-Photos/*.JPG
