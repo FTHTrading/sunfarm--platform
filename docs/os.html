@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunFarm · Solar Infrastructure Operating System</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/os.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   SOLAR INFRASTRUCTURE OS — HERO                           -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-hero">
+  <div class="os-hero-badge">SOLAR INFRASTRUCTURE OPERATING SYSTEM v1.0</div>
+  <h1>SunFarm <span class="os-thin">| Genesis Deployment</span></h1>
+  <p class="os-subtitle">50 MW AC · 59.69 MWp DC Bifacial PV + 25 MW / 100 MWh LFP BESS · Baní, DR</p>
+  <div class="os-system-bar">
+    <div class="os-sys-item">
+      <span class="os-sys-label">System Status</span>
+      <span class="os-sys-val os-status-active">● ACTIVE</span>
+    </div>
+    <div class="os-sys-item">
+      <span class="os-sys-label">De-Risk Cycle</span>
+      <span class="os-sys-val" style="color:var(--accent-yellow)">65% Complete</span>
+    </div>
+    <div class="os-sys-item">
+      <span class="os-sys-label">Documents</span>
+      <span class="os-sys-val">12 Secured · 16 Required</span>
+    </div>
+    <div class="os-sys-item">
+      <span class="os-sys-label">Layers Online</span>
+      <span class="os-sys-val" style="color:var(--accent-green)">4 / 6</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB NAVIGATION                                           -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<nav class="os-tabs" id="os-tabs">
+  <button class="os-tab active" data-tab="overview">Executive Overview</button>
+  <button class="os-tab" data-tab="tracker">Document Tracker</button>
+  <button class="os-tab" data-tab="layers">6-Layer Architecture</button>
+  <button class="os-tab" data-tab="capital">Capital Engine</button>
+  <button class="os-tab" data-tab="timeline">De-Risk Timeline</button>
+  <button class="os-tab" data-tab="financials">Financial Deep-Dive</button>
+  <a href="index.html" class="os-tab os-tab-link">← Full Platform Catalog</a>
+</nav>
+
+<div class="container">
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB 1 — EXECUTIVE OVERVIEW                              -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-panel active" id="panel-overview">
+
+  <!-- Master Progress -->
+  <div class="os-section">
+    <div class="os-section-head">
+      <h2>⚡ Shovel-Ready Progress — De-Risking Cycle Position</h2>
+    </div>
+    <div class="os-progress-master">
+      <div class="os-progress-ring-container">
+        <svg class="os-ring" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="16"/>
+          <circle cx="100" cy="100" r="85" fill="none" stroke="url(#grad1)" stroke-width="16"
+                  stroke-dasharray="347 534" stroke-dashoffset="0" stroke-linecap="round"
+                  style="transform:rotate(-90deg);transform-origin:center"/>
+          <defs><linearGradient id="grad1"><stop offset="0%" stop-color="var(--accent-green)"/><stop offset="100%" stop-color="var(--accent-blue)"/></linearGradient></defs>
+        </svg>
+        <div class="os-ring-center">
+          <div class="os-ring-val">65%</div>
+          <div class="os-ring-lbl">DE-RISKED</div>
+        </div>
+      </div>
+      <div class="os-progress-breakdown">
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--accent-green)">■ Land & Title</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:100%;background:var(--accent-green)"></div></div>
+          <span class="os-pb-pct">100%</span>
+        </div>
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--accent-green)">■ Environmental</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:85%;background:var(--accent-green)"></div></div>
+          <span class="os-pb-pct">85%</span>
+        </div>
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--accent-green)">■ Corporate</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:100%;background:var(--accent-green)"></div></div>
+          <span class="os-pb-pct">100%</span>
+        </div>
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--accent-yellow)">■ Regulatory</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:70%;background:var(--accent-yellow)"></div></div>
+          <span class="os-pb-pct">70%</span>
+        </div>
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--accent-yellow)">■ Engineering</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:75%;background:var(--accent-yellow)"></div></div>
+          <span class="os-pb-pct">75%</span>
+        </div>
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--cat-acquisition)">■ Financial Close</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:30%;background:var(--cat-acquisition)"></div></div>
+          <span class="os-pb-pct">30%</span>
+        </div>
+        <div class="os-pb-row">
+          <span class="os-pb-cat" style="color:var(--cat-acquisition)">■ Construction</span>
+          <div class="os-pb-bar"><div class="os-pb-fill" style="width:20%;background:var(--cat-acquisition)"></div></div>
+          <span class="os-pb-pct">20%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI Grid -->
+  <div class="os-kpi-grid">
+    <div class="os-kpi">
+      <div class="os-kpi-icon">☀️</div>
+      <div class="os-kpi-val">50 MW<sub>AC</sub></div>
+      <div class="os-kpi-label">Solar Capacity</div>
+      <div class="os-kpi-sub">59.69 MWp DC · Bifacial</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">🔋</div>
+      <div class="os-kpi-val">100 MWh</div>
+      <div class="os-kpi-label">BESS Storage</div>
+      <div class="os-kpi-sub">25 MW · 4hr LFP</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">💰</div>
+      <div class="os-kpi-val">$55M</div>
+      <div class="os-kpi-label">Project CAPEX</div>
+      <div class="os-kpi-sub">$90M total basis</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">📈</div>
+      <div class="os-kpi-val">43.3%</div>
+      <div class="os-kpi-label">Levered IRR</div>
+      <div class="os-kpi-sub">Base case · 3yr payback</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">🛡️</div>
+      <div class="os-kpi-val">3.90×</div>
+      <div class="os-kpi-label">DSCR</div>
+      <div class="os-kpi-sub">Min coverage ratio</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">🌍</div>
+      <div class="os-kpi-val">440.68 ha</div>
+      <div class="os-kpi-label">Land Area</div>
+      <div class="os-kpi-sub">Titled · No superposition</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">📜</div>
+      <div class="os-kpi-val">25 yr</div>
+      <div class="os-kpi-label">Concession</div>
+      <div class="os-kpi-sub">CNE-CP-0012-2020</div>
+    </div>
+    <div class="os-kpi">
+      <div class="os-kpi-icon">🏢</div>
+      <div class="os-kpi-val">$35M</div>
+      <div class="os-kpi-label">Acquisition</div>
+      <div class="os-kpi-sub">26.9% below appraisal</div>
+    </div>
+  </div>
+
+  <!-- Have vs Missing Summary -->
+  <div class="os-dual-grid">
+    <div class="os-card os-card-have">
+      <div class="os-card-head" style="border-color:var(--accent-green)">
+        <span class="os-card-icon">✅</span>
+        <h3>SECURED — 12 Documents Obtained</h3>
+      </div>
+      <div class="os-card-body">
+        <div class="os-check-list">
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Land Title</span>
+            <span class="os-check-ref">Matrícula 0500009639</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">No Superposición Certification</span>
+            <span class="os-check-ref">CODIA 2667</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Cadastral Survey</span>
+            <span class="os-check-ref">CODIA 16788 · 318+ vertices</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Full Land Appraisal</span>
+            <span class="os-check-ref">RD$2.97B / ~US$47.9M · 2025</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Provisional Concession</span>
+            <span class="os-check-ref">CNE-CP-0012-2020 · Apr 2020</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Definitive Concession</span>
+            <span class="os-check-ref">Contract signed Mar 2023</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Environmental License</span>
+            <span class="os-check-ref">License 0379-20</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">ETED No-Objection</span>
+            <span class="os-check-ref">Feb 2024 + May 2025 revalidation</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Engineering Layouts</span>
+            <span class="os-check-ref">50 / 100 / 140 MW · Jairo Peña</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">BESS Mandate Context</span>
+            <span class="os-check-ref">≥20 MW required · 25 MW/100 MWh designed</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Corporate Registry</span>
+            <span class="os-check-ref">RNC 1-31-94471-1 · #549489</span>
+          </div>
+          <div class="os-check-item obtained">
+            <span class="os-check-dot green"></span>
+            <span class="os-check-name">Parent Entity Transparency</span>
+            <span class="os-check-ref">Alensys AG · OpenCorporates verified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="os-card os-card-missing">
+      <div class="os-card-head" style="border-color:var(--cat-acquisition)">
+        <span class="os-card-icon">🔻</span>
+        <h3>REQUIRED — 16 Items for True Shovel-Ready</h3>
+      </div>
+      <div class="os-card-body">
+        <div class="os-check-list">
+          <div class="os-check-group-label" style="color:var(--accent-yellow)">REGULATORY FINALIZATION (4)</div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Concession Transfer Confirmation</span><span class="os-check-ref">If ownership changes</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Environmental Modification</span><span class="os-check-ref">If 760W layout differs from 0379-20</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">BESS Compliance Certificate</span><span class="os-check-ref">Post-Decreto 517-25</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Updated Interconnection Agreement</span><span class="os-check-ref">Beyond no-objection</span></div>
+
+          <div class="os-check-group-label" style="color:var(--accent-blue)">FINANCIAL CLOSE LAYER (6)</div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">PPA Term Sheet</span><span class="os-check-ref">Negotiated tariff framework</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Bankability Study</span><span class="os-check-ref">Independent engineer report</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Updated Irradiation Campaign</span><span class="os-check-ref">On-site measurement data</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">EPC Term Sheet</span><span class="os-check-ref">Construction contractor</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">O&M Term Sheet</span><span class="os-check-ref">Operations & maintenance</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Grid Impact Study Finalization</span><span class="os-check-ref">Full interconnection study</span></div>
+
+          <div class="os-check-group-label" style="color:var(--accent-purple)">CONSTRUCTION READINESS (6)</div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Geotechnical Report</span><span class="os-check-ref">Soil analysis & foundation design</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Hydrology / Drainage Study</span><span class="os-check-ref">Water management plan</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Final Layout Stamped</span><span class="os-check-ref">PE-stamped construction drawings</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Bill of Quantities</span><span class="os-check-ref">Full material takeoff</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">EPC Pricing Lock</span><span class="os-check-ref">Fixed-price EPC contract</span></div>
+          <div class="os-check-item missing"><span class="os-check-dot red"></span><span class="os-check-name">Construction Timeline</span><span class="os-check-ref">Confirmed schedule to COD</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entity & Concession Quick Ref -->
+  <div class="os-section">
+    <div class="os-section-head"><h2>🏛️ Entity & Concession Registry</h2></div>
+    <div class="os-entity-grid">
+      <div class="os-entity-card">
+        <div class="os-ent-label">Project SPV</div>
+        <div class="os-ent-val">Sunfarming Dom Rep Invest, S.R.L.</div>
+        <div class="os-ent-sub">RNC 1-31-94471-1 · Mercantil 158067-SD · Company #549489</div>
+      </div>
+      <div class="os-entity-card">
+        <div class="os-ent-label">Parent Company</div>
+        <div class="os-ent-val">Alensys Alternative Energiesysteme AG</div>
+        <div class="os-ent-sub">Zum Wasserwerk 12, Germany · OpenCorporates verified</div>
+      </div>
+      <div class="os-entity-card">
+        <div class="os-ent-label">Concession</div>
+        <div class="os-ent-val">CNE-CP-0012-2020</div>
+        <div class="os-ent-sub">25-year definitive · Contract signed March 2023 · CNE Director: Lic. Angel S. Cano S.</div>
+      </div>
+      <div class="os-entity-card">
+        <div class="os-ent-label">Land Parcel</div>
+        <div class="os-ent-val">Parcela 59, DC-8, Baní</div>
+        <div class="os-ent-sub">Title 0500009639 · 440.68 ha · Owners: W.M. Driver & J. Morales Paulino</div>
+      </div>
+      <div class="os-entity-card">
+        <div class="os-ent-label">Environmental License</div>
+        <div class="os-ent-val">0379-20</div>
+        <div class="os-ent-sub">Issued for 50 MW PV generation · Active</div>
+      </div>
+      <div class="os-entity-card">
+        <div class="os-ent-label">Grid Interconnection</div>
+        <div class="os-ent-val">138kV · 4.5km to POI</div>
+        <div class="os-ent-sub">ETED no-objection Feb 2024 · Revalidated May 2025</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /panel-overview -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB 2 — DOCUMENT TRACKER (FULL INVENTORY)               -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-panel" id="panel-tracker">
+
+  <div class="os-section">
+    <div class="os-section-head"><h2>📋 Complete Document Inventory — HAVE vs. REQUIRED</h2></div>
+    <p class="os-section-desc">Every document in the SunFarm project classified by status and category. Green items are secured and on file. Red items are required for true shovel-ready status and financial close.</p>
+
+    <!-- Category: Land & Title -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--accent-green)">
+        <span class="os-tracker-cat-icon">🏞️</span>
+        <h3>Land & Title</h3>
+        <span class="os-tracker-cat-score">4 / 4 · 100%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:100%;background:var(--accent-green)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Land Title Certificate</td><td>Matrícula 0500009639 · Parcela 59 DC-8 · 440.68 ha</td><td>B-Title / G-Land Title.pdf</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>No Superposición Certification</td><td>Eng. Juan Ramón Castellanos Taveras · CODIA 2667</td><td>B-Title / F-Certificacion.pdf</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Cadastral Survey (2020)</td><td>Eng. Moisés García García · CODIA 16788 · 4,364,305 m² · 318+ vertices</td><td>C-Appraisal / Bani survey 2020.pdf</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Full Land Appraisal (2025)</td><td>RD$2,970,000,000 (~US$47.9M) · 3-zone valuation · ISO 13528 methodology</td><td>C-Appraisal / TASACION 2025.pdf</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Category: Concession & Regulatory -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--accent-yellow)">
+        <span class="os-tracker-cat-icon">📜</span>
+        <h3>Concession & Regulatory</h3>
+        <span class="os-tracker-cat-score">3 / 7 · 43%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:43%;background:var(--accent-yellow)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Provisional Concession</td><td>CNE-CP-0012-2020 · 50 MW · April 20, 2020</td><td>D-Organized / A-CNE-CP-0012-2020.pdf</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Definitive Concession Contract</td><td>25-year term · Signed March 2023 · Director: Lic. Angel S. Cano S.</td><td>D-Organized / C-SNFRM Contract 2023.pdf</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>ETED No-Objection</td><td>Feb 2024 original · May 2025 revalidation · 138kV / 4.5km</td><td>D-Organized / D-No objeción ETED.pdf</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Concession Transfer Confirmation</td><td>Needed if project ownership changes during acquisition</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>BESS Compliance Certificate</td><td>Post-Decreto 517-25 · Storage-specific regulatory approval</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Updated Interconnection Agreement</td><td>Full agreement beyond no-objection letter · Binding IA terms</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Grid Impact Study (Final)</td><td>Complete system impact assessment for 50 MW injection</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Category: Environmental -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--accent-green)">
+        <span class="os-tracker-cat-icon">🌿</span>
+        <h3>Environmental</h3>
+        <span class="os-tracker-cat-score">1 / 2 · 50%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:50%;background:var(--accent-yellow)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Environmental License</td><td>License 0379-20 · Issued for 50 MW solar PV</td><td>Referenced in LARED Summary</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Environmental Modification</td><td>If 760W bifacial layout materially differs from original EIA basis</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Category: Engineering -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--accent-blue)">
+        <span class="os-tracker-cat-icon">🔧</span>
+        <h3>Engineering & Technical</h3>
+        <span class="os-tracker-cat-score">2 / 7 · 29%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:29%;background:var(--accent-yellow)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Engineering Layouts (3 configs)</td><td>50 MW / 100 MW / 140 MW · Jairo Peña · Professional engineering drawings</td><td>E-Engineering / 140 & 100 MW Layouts</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>BESS Design Mandate</td><td>≥20 MW required per regulations · 25 MW / 100 MWh / 4hr LFP designed</td><td>LARED Executive Summary</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Bankability Study</td><td>Independent engineer report · Lender-grade technical due diligence</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Updated Irradiation Campaign</td><td>On-site pyranometry / satellite-reconciled GHI/DNI measurement</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Geotechnical Report</td><td>Soil borings, bearing capacity, foundation design parameters</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Hydrology / Drainage Study</td><td>Flood risk, stormwater management plan, erosion control</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Final Layout (PE-Stamped)</td><td>Construction-grade drawings with professional engineer stamp</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Category: Financial Close -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--cat-acquisition)">
+        <span class="os-tracker-cat-icon">💰</span>
+        <h3>Financial Close</h3>
+        <span class="os-tracker-cat-score">0 / 5 · 0%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:0%;background:var(--cat-acquisition)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>PPA Term Sheet</td><td>Negotiated tariff framework · Offtaker identified and engaged</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>EPC Term Sheet</td><td>Construction contractor selection · Fixed-price or GMP structure</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>O&M Term Sheet</td><td>Operations & maintenance contractor · Performance guarantees</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Bill of Quantities</td><td>Complete material takeoff from final design · Procurement schedule</td><td>—</td></tr>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>EPC Pricing Lock</td><td>Fixed-price EPC contract execution · Performance bonds</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Category: Corporate -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--accent-green)">
+        <span class="os-tracker-cat-icon">🏢</span>
+        <h3>Corporate & Entity</h3>
+        <span class="os-tracker-cat-score">2 / 2 · 100%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:100%;background:var(--accent-green)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Corporate Registry</td><td>RNC 1-31-94471-1 · Mercantil 158067-SD · Company #549489 · Active</td><td>D-Organized / J-OpenCorporates.pdf</td></tr>
+          <tr class="tr-have"><td><span class="os-status-badge have">✅ OBTAINED</span></td><td>Parent Entity Transparency</td><td>Alensys AG · Titular on OpenCorporates · Zum Wasserwerk 12, DE</td><td>OpenCorporates public record</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Category: Construction -->
+    <div class="os-tracker-cat">
+      <div class="os-tracker-cat-head" style="--tcat:var(--cat-acquisition)">
+        <span class="os-tracker-cat-icon">🏗️</span>
+        <h3>Construction Readiness</h3>
+        <span class="os-tracker-cat-score">0 / 1 · 0%</span>
+      </div>
+      <div class="os-tracker-bar"><div class="os-tracker-fill" style="width:0%;background:var(--cat-acquisition)"></div></div>
+      <table class="os-tracker-table">
+        <thead><tr><th>Status</th><th>Document</th><th>Reference / Detail</th><th>Source File</th></tr></thead>
+        <tbody>
+          <tr class="tr-missing"><td><span class="os-status-badge missing">❌ REQUIRED</span></td><td>Construction Timeline Confirmation</td><td>Confirmed schedule: NTP → Mobilization → Foundation → Rack → Module → Commissioning → COD</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Stats -->
+    <div class="os-tracker-summary">
+      <div class="os-ts-item" style="border-color:var(--accent-green)">
+        <div class="os-ts-val" style="color:var(--accent-green)">12</div>
+        <div class="os-ts-label">Documents Secured</div>
+      </div>
+      <div class="os-ts-item" style="border-color:var(--cat-acquisition)">
+        <div class="os-ts-val" style="color:var(--cat-acquisition)">16</div>
+        <div class="os-ts-label">Documents Required</div>
+      </div>
+      <div class="os-ts-item" style="border-color:var(--accent-yellow)">
+        <div class="os-ts-val" style="color:var(--accent-yellow)">28</div>
+        <div class="os-ts-label">Total Inventory</div>
+      </div>
+      <div class="os-ts-item" style="border-color:var(--accent-blue)">
+        <div class="os-ts-val" style="color:var(--accent-blue)">~65%</div>
+        <div class="os-ts-label">De-Risk Weighted</div>
+      </div>
+    </div>
+  </div>
+</div><!-- /panel-tracker -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB 3 — 6-LAYER ARCHITECTURE                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-panel" id="panel-layers">
+
+  <div class="os-section">
+    <div class="os-section-head"><h2>🏗️ Solar Infrastructure OS — 6-Layer System Architecture</h2></div>
+    <p class="os-section-desc">Not a pitch deck. Not a dashboard. A shovel-ready infrastructure system. Each layer operates independently with deterministic inputs/outputs, SHA-256 audit trails, and programmatic enforcement. SunFarm is the Genesis deployment.</p>
+
+    <div class="os-layers">
+
+      <!-- Layer 1 -->
+      <div class="os-layer os-layer-online">
+        <div class="os-layer-head">
+          <div class="os-layer-num">01</div>
+          <div class="os-layer-info">
+            <h3>Asset Layer <span class="os-layer-status online">● ONLINE</span></h3>
+            <p>SHA-256 hashed source documents with immutable provenance chain</p>
+          </div>
+        </div>
+        <div class="os-layer-body">
+          <div class="os-layer-grid">
+            <div class="os-lf">
+              <div class="os-lf-label">Documents Hashed</div>
+              <div class="os-lf-val">400+</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Source Categories</div>
+              <div class="os-lf-val">7 (A–G)</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Audit Bundle</div>
+              <div class="os-lf-val">export/audit_bundle.js</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Integrity</div>
+              <div class="os-lf-val" style="color:var(--accent-green)">Verified</div>
+            </div>
+          </div>
+          <div class="os-layer-desc">
+            Land title, cadastral survey, concession contracts, environmental licenses, engineering layouts,
+            corporate registry, drone survey (302 orthomosaic photos), and ETED interconnection — all version-controlled
+            in git with deterministic export bundles. Every document traceable to source PDF/image.
+          </div>
+        </div>
+      </div>
+
+      <!-- Layer 2 -->
+      <div class="os-layer os-layer-online">
+        <div class="os-layer-head">
+          <div class="os-layer-num">02</div>
+          <div class="os-layer-info">
+            <h3>Regulatory Intelligence Layer <span class="os-layer-status online">● ONLINE</span></h3>
+            <p>Auto-flagging compliance engine across 8 DR laws & decrees</p>
+          </div>
+        </div>
+        <div class="os-layer-body">
+          <div class="os-layer-grid">
+            <div class="os-lf">
+              <div class="os-lf-label">Laws Mapped</div>
+              <div class="os-lf-val">8</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Agencies</div>
+              <div class="os-lf-val">6 (CNE/SIE/ETED/MEM/DGAPP/SIMV)</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Tax Incentives</div>
+              <div class="os-lf-val">$20M–$50M (Ley 57-07)</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Compliance Files</div>
+              <div class="os-lf-val">6 regulatory + BESS memo</div>
+            </div>
+          </div>
+          <div class="os-layer-desc">
+            Complete Dominican Republic regulatory stack: Ley 125-01 (electricity market), Ley 57-07 (RE incentives
+            — 100% import duty, ITBIS, 10-yr tax holiday), Ley 186-07 (fideicomiso), Decreto 202-08/717-08 (implementing),
+            Decreto 517-25 (2025 decree), Ley 479-08 (companies), Ley 47-20 (PPP).
+            Flags compliance gaps when project parameters change.
+          </div>
+        </div>
+      </div>
+
+      <!-- Layer 3 -->
+      <div class="os-layer os-layer-partial">
+        <div class="os-layer-head">
+          <div class="os-layer-num">03</div>
+          <div class="os-layer-info">
+            <h3>Financial Close Engine <span class="os-layer-status partial">◐ PARTIAL</span></h3>
+            <p>Deterministic 7-model engine suite — awaiting counterparty documents</p>
+          </div>
+        </div>
+        <div class="os-layer-body">
+          <div class="os-layer-grid">
+            <div class="os-lf">
+              <div class="os-lf-label">Models Built</div>
+              <div class="os-lf-val" style="color:var(--accent-green)">7 / 7</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Missing for Close</div>
+              <div class="os-lf-val" style="color:var(--cat-acquisition)">PPA · EPC · O&M</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Revenue Modeled</div>
+              <div class="os-lf-val">$397M (25-yr cumulative)</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Config SSOT</div>
+              <div class="os-lf-val">config/project.js</div>
+            </div>
+          </div>
+          <div class="os-layer-desc">
+            7 deterministic financial engines built: 25-year cashflow, BESS revenue, carbon credit, capital stack
+            sensitivity, land monetization, token waterfall, acquisition impact. All import from config/project.js.
+            <strong>Gap:</strong> PPA term sheet, bankability study, EPC/O&M term sheets needed to move from
+            modeled projections to bankable financial close.
+          </div>
+        </div>
+      </div>
+
+      <!-- Layer 4 -->
+      <div class="os-layer os-layer-online">
+        <div class="os-layer-head">
+          <div class="os-layer-num">04</div>
+          <div class="os-layer-info">
+            <h3>Capital Orchestration Engine <span class="os-layer-status online">● ONLINE</span></h3>
+            <p>14+ independently modeled funding pathways with term sheets</p>
+          </div>
+        </div>
+        <div class="os-layer-body">
+          <div class="os-layer-grid">
+            <div class="os-lf">
+              <div class="os-lf-label">Pathways</div>
+              <div class="os-lf-val">14+</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Term Sheets</div>
+              <div class="os-lf-val">Ready</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Total Deploy</div>
+              <div class="os-lf-val">$90M target</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Capital Matrix</div>
+              <div class="os-lf-val">9-structure engine</div>
+            </div>
+          </div>
+          <div class="os-layer-desc">
+            Green Bond (ICMA), Fideicomiso (SIMV), DFI Blended (IFC/IDB/DFC/GCF), Carbon Forward (Verra VCS),
+            BESS Ring-Fence SPV, Political Risk Insurance (MIGA), Sustainability-Linked Loan, PPP (Ley 47-20),
+            ECA Vendor Finance, Hybrid Token-Bond, Impact Agriculture, Sovereign Partner, YieldCo Exit,
+            Mezzanine/Sub-Debt. Each with compliance checklist and engagement roadmap.
+          </div>
+        </div>
+      </div>
+
+      <!-- Layer 5 -->
+      <div class="os-layer os-layer-online">
+        <div class="os-layer-head">
+          <div class="os-layer-num">05</div>
+          <div class="os-layer-info">
+            <h3>Governance & Enforcement Layer <span class="os-layer-status online">● ONLINE</span></h3>
+            <p>Programmatic covenants with state-machine escalation</p>
+          </div>
+        </div>
+        <div class="os-layer-body">
+          <div class="os-layer-grid">
+            <div class="os-lf">
+              <div class="os-lf-label">Covenants</div>
+              <div class="os-lf-val">9 monitored</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">State Machine</div>
+              <div class="os-lf-val">COMPLIANT → WATCH → CURE → DEFAULT</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Dispute Resolution</div>
+              <div class="os-lf-val">4-level escalation</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">DAO Overlay</div>
+              <div class="os-lf-val">Optional on-chain</div>
+            </div>
+          </div>
+          <div class="os-layer-desc">
+            Real-time covenant monitoring: DSCR (watch 1.20×, default 1.05×), LLCR, Debt/Equity, Acquisition Leverage,
+            Price Cap Test, Earn-Out Compliance. Enforcement engine with distribution suspension, cash sweep activation,
+            step-in rights. Dispute board: negotiation → mediation → DAB → ICC arbitration.
+          </div>
+        </div>
+      </div>
+
+      <!-- Layer 6 -->
+      <div class="os-layer os-layer-offline">
+        <div class="os-layer-head">
+          <div class="os-layer-num">06</div>
+          <div class="os-layer-info">
+            <h3>Digital Twin Layer <span class="os-layer-status offline">○ PENDING</span></h3>
+            <p>Settlement compression, real-time monitoring, predictive operations</p>
+          </div>
+        </div>
+        <div class="os-layer-body">
+          <div class="os-layer-grid">
+            <div class="os-lf">
+              <div class="os-lf-label">Status</div>
+              <div class="os-lf-val" style="color:var(--text-muted)">Pre-Construction</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Drone Data</div>
+              <div class="os-lf-val" style="color:var(--accent-green)">302 orthomosaic photos ready</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">KMZ Mapping</div>
+              <div class="os-lf-val" style="color:var(--accent-green)">Flight path captured</div>
+            </div>
+            <div class="os-lf">
+              <div class="os-lf-label">Activation</div>
+              <div class="os-lf-val">Post-NTP</div>
+            </div>
+          </div>
+          <div class="os-layer-desc">
+            Digital twin activates post-construction: SCADA integration, inverter-level monitoring, weather station
+            correlation, degradation tracking, predictive maintenance, energy yield reconciliation. Foundation data
+            already captured: 302 drone orthomosaic photos (Sept 2025), KMZ flight mapping, SRT telemetry with
+            GPS coordinates (18.300858°N, 70.361325°W).
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /os-layers -->
+  </div>
+</div><!-- /panel-layers -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB 4 — CAPITAL ENGINE                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-panel" id="panel-capital">
+
+  <div class="os-section">
+    <div class="os-section-head"><h2>💰 Capital Orchestration Engine — 14+ Independently Modeled Pathways</h2></div>
+    <p class="os-section-desc">$90M total basis ($35M acquisition + $55M CAPEX). Each pathway has term sheets, compliance checklists, and engagement roadmaps. Optimal blend shown below.</p>
+
+    <!-- Optimal Stack -->
+    <div class="os-cap-stack">
+      <h3 class="os-cap-title">Recommended Capital Stack — $90M</h3>
+      <div class="os-cap-bars">
+        <div class="os-cap-row">
+          <span class="os-cap-label">Senior Debt (Green Bond / SLL)</span>
+          <div class="os-cap-track"><div class="os-cap-fill" style="width:37%;background:var(--accent-green)"><span>$33M</span></div></div>
+          <span class="os-cap-pct">37%</span>
+        </div>
+        <div class="os-cap-row">
+          <span class="os-cap-label">BESS Ring-Fence SPV</span>
+          <div class="os-cap-track"><div class="os-cap-fill" style="width:28%;background:var(--accent-yellow)"><span>$25M</span></div></div>
+          <span class="os-cap-pct">28%</span>
+        </div>
+        <div class="os-cap-row">
+          <span class="os-cap-label">Equity (Token + Direct)</span>
+          <div class="os-cap-track"><div class="os-cap-fill" style="width:24%;background:var(--accent-blue)"><span>$22M</span></div></div>
+          <span class="os-cap-pct">24%</span>
+        </div>
+        <div class="os-cap-row">
+          <span class="os-cap-label">Carbon Forward Advance</span>
+          <div class="os-cap-track"><div class="os-cap-fill" style="width:6%;background:#3fb950"><span>$5M</span></div></div>
+          <span class="os-cap-pct">6%</span>
+        </div>
+        <div class="os-cap-row">
+          <span class="os-cap-label">Mezzanine / Sub-Debt</span>
+          <div class="os-cap-track"><div class="os-cap-fill" style="width:5%;background:var(--accent-purple)"><span>$5M</span></div></div>
+          <span class="os-cap-pct">5%</span>
+        </div>
+      </div>
+      <div class="os-cap-footer">Blended WACC: ~5.8% · DSCR: 3.90× · Payback: ~3 years · Total: $90M</div>
+    </div>
+
+    <!-- All 14 Pathways Grid -->
+    <h3 class="os-cap-title" style="margin-top:2rem">All 14+ Capital Pathways — Status & Capacity</h3>
+    <div class="os-pathway-grid">
+      <div class="os-pathway">
+        <div class="os-pw-icon">🌿</div>
+        <div class="os-pw-name">Green Bond (ICMA)</div>
+        <div class="os-pw-amount">$30M–$55M</div>
+        <div class="os-pw-status ready">TERM SHEET READY</div>
+        <div class="os-pw-detail">7 files · ICMA GBP checklist · SPO providers mapped · TVRD aligned</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🏛️</div>
+        <div class="os-pw-name">Fideicomiso (SIMV)</div>
+        <div class="os-pw-amount">$20M–$40M</div>
+        <div class="os-pw-status ready">TERM SHEET READY</div>
+        <div class="os-pw-detail">3 files · Cashflow ring-fence · Trust model complete</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🌐</div>
+        <div class="os-pw-name">DFI Blended Finance</div>
+        <div class="os-pw-amount">$25M–$45M</div>
+        <div class="os-pw-status ready">MODEL BUILT</div>
+        <div class="os-pw-detail">3 files · IFC/IDB/DFC/GCF · WACC −150-250bps</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🌍</div>
+        <div class="os-pw-name">Carbon Forward</div>
+        <div class="os-pw-amount">$5M–$15M</div>
+        <div class="os-pw-status ready">MODEL BUILT</div>
+        <div class="os-pw-detail">3 files · Verra VCS roadmap · Offtake model · 45K tCO2e/yr</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🔋</div>
+        <div class="os-pw-name">BESS Ring-Fence</div>
+        <div class="os-pw-amount">$20M–$25M</div>
+        <div class="os-pw-status ready">MODEL BUILT</div>
+        <div class="os-pw-detail">2 files · 25MW/100MWh standalone SPV · 5 revenue streams</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🛡️</div>
+        <div class="os-pw-name">Political Risk Insurance</div>
+        <div class="os-pw-amount">−50–150bps spread</div>
+        <div class="os-pw-status ready">ANALYSIS DONE</div>
+        <div class="os-pw-detail">1 file · MIGA/OPIC/PDG · Unlocks IG pricing</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">📊</div>
+        <div class="os-pw-name">Sustainability-Linked Loan</div>
+        <div class="os-pw-amount">$30M–$55M</div>
+        <div class="os-pw-status ready">KPI FRAMEWORK BUILT</div>
+        <div class="os-pw-detail">2 files · LMA/APLMA compliant · Margin ratchet model</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🤝</div>
+        <div class="os-pw-name">PPP (Ley 47-20)</div>
+        <div class="os-pw-amount">$30M–$90M</div>
+        <div class="os-pw-status ready">PATHWAY MAPPED</div>
+        <div class="os-pw-detail">1 file · DGAPP process · VfM analysis · BOT/BOOT structure</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🏭</div>
+        <div class="os-pw-name">ECA Vendor Finance</div>
+        <div class="os-pw-amount">$15M–$30M</div>
+        <div class="os-pw-status ready">PLAYBOOK READY</div>
+        <div class="os-pw-detail">1 file · Euler Hermes/KSURE/Sinosure/NEXI · OECD terms</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🔗</div>
+        <div class="os-pw-name">Hybrid Token-Bond</div>
+        <div class="os-pw-amount">$15M (150K tokens)</div>
+        <div class="os-pw-status ready">STRUCTURE READY</div>
+        <div class="os-pw-detail">1 file · ERC-20 + bond economics · Reg D 506(c) · T+0</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🌾</div>
+        <div class="os-pw-name">Impact Agriculture</div>
+        <div class="os-pw-amount">$3M–$8M</div>
+        <div class="os-pw-status ready">MODEL BUILT</div>
+        <div class="os-pw-detail">1 file · SDG 2+7 · Agrivoltaic dual-use finance</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🇩🇴</div>
+        <div class="os-pw-name">Sovereign Partner</div>
+        <div class="os-pw-amount">10–25% stake</div>
+        <div class="os-pw-status ready">MODEL BUILT</div>
+        <div class="os-pw-detail">2 files · EGEHID pathway · Unlocks govt guarantees</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">📈</div>
+        <div class="os-pw-name">YieldCo Exit</div>
+        <div class="os-pw-amount">$120M–$180M (Yr 7)</div>
+        <div class="os-pw-status ready">MODEL BUILT</div>
+        <div class="os-pw-detail">2 files · 7-12× EBITDA · Infra fund / pension buyer</div>
+      </div>
+      <div class="os-pathway">
+        <div class="os-pw-icon">🔀</div>
+        <div class="os-pw-name">Mezzanine / Sub-Debt</div>
+        <div class="os-pw-amount">$5M–$15M</div>
+        <div class="os-pw-status ready">MODELED</div>
+        <div class="os-pw-detail">In capital matrix · 10-14% · Convertible option</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPV Architecture -->
+  <div class="os-section" style="margin-top:2rem">
+    <div class="os-section-head"><h2>🏛️ SPV Architecture — 4-Entity Ring-Fence</h2></div>
+    <div class="os-spv-diagram">
+      <div class="os-spv-box os-spv-holdco">
+        <div class="os-spv-title">HoldCo</div>
+        <div class="os-spv-sub">Delaware LLC · GP/LP · Tax optimization</div>
+      </div>
+      <div class="os-spv-arrow">▼ 100% Ownership</div>
+      <div class="os-spv-row">
+        <div class="os-spv-box os-spv-land">
+          <div class="os-spv-title">LandCo</div>
+          <div class="os-spv-sub">440.68 ha · Title 0500009639 · Agrivoltaic</div>
+        </div>
+        <div class="os-spv-box os-spv-energy">
+          <div class="os-spv-title">EnergySPV</div>
+          <div class="os-spv-sub">50 MW PV · 25 MW BESS · PPA · Grid</div>
+        </div>
+        <div class="os-spv-box os-spv-token">
+          <div class="os-spv-title">TokenSPV</div>
+          <div class="os-spv-sub">$15M · 150K tokens · Reg D 506(c)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /panel-capital -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB 5 — DE-RISK TIMELINE                                -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-panel" id="panel-timeline">
+
+  <div class="os-section">
+    <div class="os-section-head"><h2>📅 De-Risking Timeline — Development to COD</h2></div>
+    <p class="os-section-desc">Current position in the project lifecycle. Green phases are complete, yellow are in progress, and gray are upcoming. The project is approximately 65% through the de-risking cycle with all foundational permits, land title, and engineering designs secured.</p>
+
+    <div class="os-timeline">
+      <!-- Phase 1 -->
+      <div class="os-tl-phase os-tl-complete">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 1 — Site Identification & Land Acquisition</div>
+          <div class="os-tl-status">✅ COMPLETE</div>
+          <div class="os-tl-detail">
+            <ul>
+              <li>440.68 ha parcel identified at Baní, Peravia Province</li>
+              <li>Land title secured (Matrícula 0500009639)</li>
+              <li>No superposition certification obtained</li>
+              <li>2020 cadastral survey (318+ GPS vertices)</li>
+              <li>2025 independent appraisal (RD$2.97B / ~US$47.9M)</li>
+              <li>$35M acquisition price agreed (26.9% below appraisal)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="os-tl-phase os-tl-complete">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 2 — Permitting & Concession</div>
+          <div class="os-tl-status">✅ COMPLETE</div>
+          <div class="os-tl-detail">
+            <ul>
+              <li>Provisional concession CNE-CP-0012-2020 (April 2020)</li>
+              <li>Definitive concession contract signed (March 2023)</li>
+              <li>Environmental License 0379-20 obtained</li>
+              <li>ETED no-objection for interconnection (Feb 2024)</li>
+              <li>ETED revalidation confirmed (May 2025)</li>
+              <li>Decreto 517-25 compliance mapped</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="os-tl-phase os-tl-complete">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 3 — Engineering & Design</div>
+          <div class="os-tl-status">✅ COMPLETE (3 configs)</div>
+          <div class="os-tl-detail">
+            <ul>
+              <li>50 MW baseline design (per concession)</li>
+              <li>100 MW alternative layout (Jairo Peña, July 2024)</li>
+              <li>140 MW expansion design (Jairo Peña, Sept 2024)</li>
+              <li>3D terrain visualizations (4 renders)</li>
+              <li>Satellite area mapping with precise measurements</li>
+              <li>Drone survey: 302 orthomosaic photos (Sept 2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="os-tl-phase os-tl-complete">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 4 — Financial Modeling & Capital Architecture</div>
+          <div class="os-tl-status">✅ COMPLETE (7 engines + 14 pathways)</div>
+          <div class="os-tl-detail">
+            <ul>
+              <li>7 deterministic financial engines built</li>
+              <li>14+ capital pathways with term sheets</li>
+              <li>126-combination capital stack sensitivity matrix</li>
+              <li>$90M total basis modeled ($35M acq + $55M CAPEX)</li>
+              <li>Governance: 9 covenants, enforcement engine, dispute board</li>
+              <li>Tokenization structure: $15M / 150K tokens / Reg D 506(c)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 5 — Current -->
+      <div class="os-tl-phase os-tl-current">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot pulse"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 5 — Financial Close & Counterparty Engagement [CURRENT]</div>
+          <div class="os-tl-status os-tl-status-current">🔄 IN PROGRESS</div>
+          <div class="os-tl-detail">
+            <ul class="os-tl-missing">
+              <li>❌ PPA term sheet / negotiated tariff framework</li>
+              <li>❌ Bankability study (independent engineer report)</li>
+              <li>❌ Updated irradiation measurement campaign</li>
+              <li>❌ EPC term sheet</li>
+              <li>❌ O&M term sheet</li>
+              <li>❌ Grid impact study finalization</li>
+              <li>❌ Concession transfer confirmation (if ownership changes)</li>
+              <li>❌ Environmental modification (if layout differs)</li>
+              <li>❌ BESS compliance certificate (post-517-25)</li>
+              <li>❌ Updated interconnection agreement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 6 -->
+      <div class="os-tl-phase os-tl-upcoming">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 6 — Construction Readiness</div>
+          <div class="os-tl-status os-tl-status-upcoming">⏳ UPCOMING</div>
+          <div class="os-tl-detail">
+            <ul class="os-tl-missing">
+              <li>❌ Geotechnical report</li>
+              <li>❌ Hydrology / drainage study</li>
+              <li>❌ Final layout PE-stamped</li>
+              <li>❌ Bill of quantities</li>
+              <li>❌ EPC pricing lock</li>
+              <li>❌ Construction timeline confirmation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 7 -->
+      <div class="os-tl-phase os-tl-upcoming">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+          <div class="os-tl-line"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 7 — Construction & Commissioning</div>
+          <div class="os-tl-status os-tl-status-upcoming">⏳ ~18-24 months post-NTP</div>
+          <div class="os-tl-detail">
+            <ul>
+              <li>Notice to Proceed (NTP)</li>
+              <li>Site mobilization & civil works</li>
+              <li>Piling, racking, module installation</li>
+              <li>Inverter & electrical BOS</li>
+              <li>BESS installation (25 MW / 100 MWh LFP)</li>
+              <li>Substation & 4.5km 138kV T-line</li>
+              <li>Commissioning & grid synchronization</li>
+              <li>COD — Commercial Operation Date</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 8 -->
+      <div class="os-tl-phase os-tl-upcoming">
+        <div class="os-tl-marker">
+          <div class="os-tl-dot"></div>
+        </div>
+        <div class="os-tl-content">
+          <div class="os-tl-label">PHASE 8 — Operations & Exit (25-Year Concession)</div>
+          <div class="os-tl-status os-tl-status-upcoming">⏳ Year 1–25</div>
+          <div class="os-tl-detail">
+            <ul>
+              <li>PPA revenue: ~$8.8M/yr (Year 1)</li>
+              <li>BESS revenue: ~$2.5M/yr (5 streams)</li>
+              <li>Carbon credits: ~$0.5M–$2M/yr (Verra VCS)</li>
+              <li>Agrivoltaic income: ~$0.8M/yr</li>
+              <li>YieldCo exit opportunity: Year 5–8 ($120M–$180M)</li>
+              <li>Total 25-year revenue: $397M (base case)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Acquisition Payment Timeline -->
+    <div class="os-acq-timeline">
+      <h3 class="os-cap-title">$35M Acquisition — 4-Tranche Milestone Schedule</h3>
+      <div class="os-acq-track">
+        <div class="os-acq-node" style="--nc:var(--cat-acquisition)">
+          <div class="os-acq-dot">1</div>
+          <div class="os-acq-label">Signing</div>
+          <div class="os-acq-amount">$5M</div>
+          <div class="os-acq-sub">Month 0 · Promesa de Venta deposit</div>
+        </div>
+        <div class="os-acq-connector"></div>
+        <div class="os-acq-node" style="--nc:var(--accent-purple)">
+          <div class="os-acq-dot">2</div>
+          <div class="os-acq-label">Financial Close</div>
+          <div class="os-acq-amount">$10M</div>
+          <div class="os-acq-sub">Month 6 · All CPs satisfied</div>
+        </div>
+        <div class="os-acq-connector"></div>
+        <div class="os-acq-node" style="--nc:var(--accent-yellow)">
+          <div class="os-acq-dot">3</div>
+          <div class="os-acq-label">NTP</div>
+          <div class="os-acq-amount">$10M</div>
+          <div class="os-acq-sub">Month 12 · Notice to Proceed</div>
+        </div>
+        <div class="os-acq-connector"></div>
+        <div class="os-acq-node" style="--nc:var(--accent-green)">
+          <div class="os-acq-dot">4</div>
+          <div class="os-acq-label">COD</div>
+          <div class="os-acq-amount">$10M</div>
+          <div class="os-acq-sub">Month 24 · Commercial Operation</div>
+        </div>
+      </div>
+      <div class="os-acq-escrow">Escrow: $3.5M (10%) — released 12 months post-COD after R&W survival</div>
+    </div>
+  </div>
+</div><!-- /panel-timeline -->
+
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--   TAB 6 — FINANCIAL DEEP-DIVE                             -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="os-panel" id="panel-financials">
+
+  <div class="os-section">
+    <div class="os-section-head"><h2>📊 Financial Deep-Dive — 7 Deterministic Engines</h2></div>
+    <p class="os-section-desc">All values computed from config/project.js. Run <code>node models/25-year-cashflow.js</code> to verify. Three scenarios: Conservative (0.85×), Base (1.0×), Aggressive (1.15×).</p>
+
+    <!-- Scenario Table -->
+    <div class="os-fin-block">
+      <h3 class="os-fin-title">Scenario Comparison — Key Returns</h3>
+      <table class="scenario-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th style="color:var(--accent-yellow)">Conservative (0.85×)</th>
+            <th style="color:var(--accent-green)" class="highlight">Base Case (1.0×)</th>
+            <th style="color:var(--accent-blue)">Aggressive (1.15×)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Levered IRR</td><td class="val-yellow">36.8%</td><td class="val-green highlight">43.3%</td><td class="val-blue">49.8%</td></tr>
+          <tr><td>Unlevered IRR</td><td class="val-yellow">18.2%</td><td class="val-green highlight">21.5%</td><td class="val-blue">24.8%</td></tr>
+          <tr><td>NPV @ 8% WACC</td><td class="val-yellow">$69.4M</td><td class="val-green highlight">$81.7M</td><td class="val-blue">$94.0M</td></tr>
+          <tr><td>Equity Multiple</td><td class="val-yellow">5.7×</td><td class="val-green highlight">6.7×</td><td class="val-blue">7.7×</td></tr>
+          <tr><td>Min DSCR</td><td class="val-yellow">3.32×</td><td class="val-green highlight">3.90×</td><td class="val-blue">4.49×</td></tr>
+          <tr><td>Payback Period</td><td class="val-yellow">~4 yrs</td><td class="val-green highlight">~3 yrs</td><td class="val-blue">~2.5 yrs</td></tr>
+          <tr><td>25-Yr Revenue</td><td class="val-yellow">$337M</td><td class="val-green highlight">$397M</td><td class="val-blue">$457M</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Revenue Breakdown -->
+    <div class="os-fin-block">
+      <h3 class="os-fin-title">Year 1 Revenue Breakdown — $13.2M Total</h3>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">PPA Solar</div><div class="bar-track"><div class="bar-fill" style="width:66.7%;background:var(--accent-yellow)">$8.8M</div></div><div class="bar-val" style="color:var(--accent-yellow)">66.7%</div></div>
+        <div class="bar-row"><div class="bar-label">BESS Revenue</div><div class="bar-track"><div class="bar-fill" style="width:18.9%;background:var(--accent-blue)">$2.5M</div></div><div class="bar-val" style="color:var(--accent-blue)">18.9%</div></div>
+        <div class="bar-row"><div class="bar-label">Carbon Credits</div><div class="bar-track"><div class="bar-fill" style="width:8.3%;background:var(--accent-green)">$1.1M</div></div><div class="bar-val" style="color:var(--accent-green)">8.3%</div></div>
+        <div class="bar-row"><div class="bar-label">Agriculture</div><div class="bar-track"><div class="bar-fill" style="width:6.1%;background:var(--accent-purple)">$0.8M</div></div><div class="bar-val" style="color:var(--accent-purple)">6.1%</div></div>
+      </div>
+    </div>
+
+    <!-- CAPEX -->
+    <div class="os-fin-block">
+      <h3 class="os-fin-title">CAPEX Structure — $90M Total Basis</h3>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">Solar PV EPC</div><div class="bar-track"><div class="bar-fill" style="width:54.5%;background:var(--accent-yellow)">$30M</div></div><div class="bar-val">$30M</div></div>
+        <div class="bar-row"><div class="bar-label">BESS (100 MWh)</div><div class="bar-track"><div class="bar-fill" style="width:45.5%;background:var(--accent-blue)">$25M</div></div><div class="bar-val">$25M</div></div>
+        <div class="bar-row"><div class="bar-label">Acquisition</div><div class="bar-track"><div class="bar-fill" style="width:63.6%;background:var(--cat-acquisition)">$35M</div></div><div class="bar-val">$35M</div></div>
+      </div>
+    </div>
+
+    <!-- Revenue Donut -->
+    <div class="os-fin-block">
+      <h3 class="os-fin-title">Revenue Mix — 4 Independent Streams (Year 1)</h3>
+      <div class="donut-container">
+        <div class="donut-chart">
+          <svg viewBox="0 0 160 160">
+            <circle stroke="rgba(255,255,255,0.05)" stroke-dasharray="377 377" stroke-dashoffset="0" fill="none" stroke-width="20" cx="80" cy="80" r="60"></circle>
+            <circle stroke="var(--accent-yellow)" stroke-dasharray="251.3 377" stroke-dashoffset="0" fill="none" stroke-width="20" cx="80" cy="80" r="60"></circle>
+            <circle stroke="var(--accent-blue)" stroke-dasharray="71.3 377" stroke-dashoffset="-251.3" fill="none" stroke-width="20" cx="80" cy="80" r="60"></circle>
+            <circle stroke="var(--accent-green)" stroke-dasharray="31.3 377" stroke-dashoffset="-322.6" fill="none" stroke-width="20" cx="80" cy="80" r="60"></circle>
+            <circle stroke="var(--accent-purple)" stroke-dasharray="23 377" stroke-dashoffset="-353.9" fill="none" stroke-width="20" cx="80" cy="80" r="60"></circle>
+          </svg>
+          <div class="donut-center">
+            <div class="dc-val" style="color:var(--accent-green)">$13.2M</div>
+            <div class="dc-lbl">Year 1</div>
+          </div>
+        </div>
+        <div class="donut-legend">
+          <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-yellow)"></div>PPA Solar — $8.8M (66.7%)</div>
+          <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-blue)"></div>BESS Revenue — $2.5M (18.9%)</div>
+          <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-green)"></div>Carbon Credits — $1.1M (8.3%)</div>
+          <div class="donut-legend-item"><div class="donut-legend-dot" style="background:var(--accent-purple)"></div>Agriculture — $0.8M (6.1%)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- D/E Sensitivity -->
+    <div class="os-fin-block">
+      <h3 class="os-fin-title">Capital Stack Sensitivity — Baseline 60/40 D/E @ 6.5%</h3>
+      <table class="scenario-table">
+        <thead><tr><th>D/E Ratio</th><th>Interest</th><th>Levered IRR</th><th>DSCR</th><th>WACC</th></tr></thead>
+        <tbody>
+          <tr><td>50/50</td><td>5.5%</td><td class="val-green">38.1%</td><td>4.50×</td><td>8.5%</td></tr>
+          <tr><td>55/45</td><td>6.0%</td><td class="val-green">40.7%</td><td>4.12×</td><td>8.1%</td></tr>
+          <tr class="highlight"><td><strong>60/40</strong></td><td><strong>6.5%</strong></td><td class="val-green"><strong>43.3%</strong></td><td><strong>3.90×</strong></td><td><strong>7.8%</strong></td></tr>
+          <tr><td>65/35</td><td>7.0%</td><td class="val-blue">46.0%</td><td>3.45×</td><td>7.5%</td></tr>
+          <tr><td>70/30</td><td>6.0%</td><td class="val-blue">49.1%</td><td>3.20×</td><td>6.8%</td></tr>
+          <tr><td>75/25</td><td>7.5%</td><td class="val-yellow">52.3%</td><td>2.65×</td><td>7.1%</td></tr>
+          <tr><td>80/20</td><td>5.5%</td><td class="val-yellow">55.8%</td><td>2.38×</td><td>5.9%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Financial Engines Index -->
+    <div class="os-fin-block">
+      <h3 class="os-fin-title">7 Financial Model Engines — File Index</h3>
+      <table class="os-tracker-table">
+        <thead><tr><th>Engine</th><th>File</th><th>Coverage</th></tr></thead>
+        <tbody>
+          <tr><td>25-Year Cashflow</td><td>models/25-year-cashflow.js</td><td>DSCR, debt service, CFADS, distributions, terminal value</td></tr>
+          <tr><td>BESS Revenue</td><td>models/bess-revenue-engine.js</td><td>5 streams · 25MW/100MWh · degradation · augmentation</td></tr>
+          <tr><td>Carbon Credit</td><td>models/carbon-credit-engine.js</td><td>38,400 tCO2e/yr · Verra VCS · 4 market scenarios</td></tr>
+          <tr><td>Capital Stack</td><td>models/capital-stack-sensitivity.js</td><td>126-combination matrix · D/E × rate × scenario</td></tr>
+          <tr><td>Land Monetization</td><td>models/land-monetization.js</td><td>440.68 ha · agrivoltaic · lease vs. ownership NPV</td></tr>
+          <tr><td>Token Waterfall</td><td>models/token-waterfall.js</td><td>$15M · 150K tokens · preferred 8% · participation 20%</td></tr>
+          <tr><td>Acquisition Impact</td><td>models/acquisition-impact.js</td><td>$35M price · basis $90M · earn-out +$1.5M/−$7M</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div><!-- /panel-financials -->
+
+</div><!-- /container -->
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <strong>SunFarm</strong> — Solar Infrastructure Operating System · Genesis Deployment
+  </div>
+  <p>Entity: Sunfarming Dom Rep Invest, S.R.L. · RNC 1-31-94471-1 · Baní, Peravia Province, Dominican Republic</p>
+  <p class="footer-links">
+    <a href="index.html">Full Platform Catalog</a> ·
+    <a href="https://github.com/FTHTrading/sunfarm--platform">English Repository</a> ·
+    <a href="https://github.com/FTHTrading/SunFarm-Plataforma-Infraestructura-Solar-Institucional-y-Motor-de-Orquestaci-n-de-Capital">Repositorio en Español</a>
+  </p>
+  <p class="footer-meta">Classification: CONFIDENTIAL — Qualified Investors Only · © 2025 FTH Trading · All Rights Reserved</p>
+</footer>
+
+<script>
+  // Tab switching
+  document.querySelectorAll('.os-tab[data-tab]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.os-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.os-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

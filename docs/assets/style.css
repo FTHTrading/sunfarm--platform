@@ -83,6 +83,18 @@ code {
   color: var(--text-muted); font-size: 1.05rem;
   max-width: 700px; margin: 0 auto 1.5rem; position: relative;
 }
+.os-launch-btn {
+  display: inline-block; position: relative; margin-bottom: 1.5rem;
+  padding: .6rem 1.8rem; font-size: .88rem; font-weight: 600;
+  color: #fff; background: linear-gradient(135deg, var(--accent-green), #238636);
+  border: 1px solid rgba(63,185,80,0.4); border-radius: 8px;
+  text-decoration: none; letter-spacing: .03em;
+  transition: transform .2s, box-shadow .2s;
+}
+.os-launch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(63,185,80,0.3);
+}
 
 /* KPI Strip */
 .kpi-strip {
